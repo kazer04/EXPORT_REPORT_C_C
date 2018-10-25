@@ -1,0 +1,107 @@
+ALTER TABLE t_order_transaction DROP FOREIGN KEY FK_t_order_transaction_lg_ORDER_ID
+ALTER TABLE t_order_transaction DROP FOREIGN KEY FK_t_order_transaction_lg_PRODUCT_ITEM_ID
+ALTER TABLE t_order_transaction DROP FOREIGN KEY UNQ_t_order_transaction_0
+ALTER TABLE t_user_fone DROP FOREIGN KEY FK_t_user_fone_lg_USER_ID
+ALTER TABLE t_caisse DROP FOREIGN KEY FK_t_caisse_lg_USER_ID
+ALTER TABLE t_role_user DROP FOREIGN KEY FK_t_role_user_lg_USER_ID
+ALTER TABLE t_role_user DROP FOREIGN KEY FK_t_role_user_lg_ROLE_ID
+ALTER TABLE t_role_user DROP FOREIGN KEY UNQ_t_role_user_0
+ALTER TABLE t_parameters DROP FOREIGN KEY UNQ_t_parameters_0
+ALTER TABLE t_product_item_stock DROP FOREIGN KEY FK_t_product_item_stock_lg_PRODUCT_ITEM_ID
+ALTER TABLE t_recettes DROP FOREIGN KEY FK_t_recettes_lg_TYPE_RECETTE_ID
+ALTER TABLE t_privilege DROP FOREIGN KEY UNQ_t_privilege_0
+ALTER TABLE t_alert_event DROP FOREIGN KEY UNQ_t_alert_event_0
+ALTER TABLE t_institutions DROP FOREIGN KEY UNQ_t_institutions_0
+ALTER TABLE t_order DROP FOREIGN KEY FK_t_order_lg_USER_ID
+ALTER TABLE t_order DROP FOREIGN KEY FK_t_order_lg_TABLE_ID
+ALTER TABLE t_order DROP FOREIGN KEY UNQ_t_order_0
+ALTER TABLE t_decoupe DROP FOREIGN KEY FK_t_decoupe_lg_SCHEMA_CARTE_ID
+ALTER TABLE t_decoupe DROP FOREIGN KEY UNQ_t_decoupe_0
+ALTER TABLE t_sous_menu DROP FOREIGN KEY FK_t_sous_menu_lg_MENU_ID
+ALTER TABLE t_sous_menu DROP FOREIGN KEY UNQ_t_sous_menu_0
+ALTER TABLE t_report DROP FOREIGN KEY FK_t_report_lg_DECOUPE_ID
+ALTER TABLE t_report DROP FOREIGN KEY FK_t_report_lg_REPORT_GROUPE_ID
+ALTER TABLE t_report DROP FOREIGN KEY UNQ_t_report_0
+ALTER TABLE t_table DROP FOREIGN KEY UNQ_t_table_0
+ALTER TABLE t_product_item DROP FOREIGN KEY UNQ_t_product_item_0
+ALTER TABLE t_resume_caisse DROP FOREIGN KEY FK_t_resume_caisse_lg_USER_ID
+ALTER TABLE t_resume_caisse DROP FOREIGN KEY FK_t_resume_caisse_ID_COFFRE_CAISSE
+ALTER TABLE t_channel DROP FOREIGN KEY UNQ_t_channel_0
+ALTER TABLE t_entity_map DROP FOREIGN KEY FK_t_entity_map_lg_DECOUPE_ID
+ALTER TABLE t_entity_map DROP FOREIGN KEY UNQ_t_entity_map_0
+ALTER TABLE t_role_privelege DROP FOREIGN KEY FK_t_role_privelege_lg_ROLE_ID
+ALTER TABLE t_role_privelege DROP FOREIGN KEY FK_t_role_privelege_lg_PRIVILEGE_ID
+ALTER TABLE t_role_privelege DROP FOREIGN KEY UNQ_t_role_privelege_0
+ALTER TABLE t_module DROP FOREIGN KEY UNQ_t_module_0
+ALTER TABLE t_warehouse DROP FOREIGN KEY FK_t_warehouse_lg_PRODUCT_ITEM_ID
+ALTER TABLE t_warehouse DROP FOREIGN KEY FK_t_warehouse_lg_USER_ID
+ALTER TABLE t_menu DROP FOREIGN KEY FK_t_menu_lg_MODULE_ID
+ALTER TABLE t_menu DROP FOREIGN KEY UNQ_t_menu_0
+ALTER TABLE t_notification DROP FOREIGN KEY FK_t_notification_lg_USER_ID_IN
+ALTER TABLE t_notification DROP FOREIGN KEY FK_t_notification_lg_USER_ID_OUT
+ALTER TABLE t_preference_schema_carte DROP FOREIGN KEY FK_t_preference_schema_carte_lg_SCHEMA_CARTE_ID
+ALTER TABLE t_preference_schema_carte DROP FOREIGN KEY FK_t_preference_schema_carte_lg_REPORT_ID
+ALTER TABLE t_preference_schema_carte DROP FOREIGN KEY FK_t_preference_schema_carte_lg_CUSTOMER_ID
+ALTER TABLE t_preference_schema_carte DROP FOREIGN KEY UNQ_t_preference_schema_carte_0
+ALTER TABLE t_user DROP FOREIGN KEY FK_t_user_lg_SKIN_ID
+ALTER TABLE t_user DROP FOREIGN KEY FK_t_user_lg_Language_ID
+ALTER TABLE t_user DROP FOREIGN KEY UNQ_t_user_0
+ALTER TABLE t_report_groupe DROP FOREIGN KEY FK_t_report_groupe_lg_SCHEMA_CARTE_ID
+ALTER TABLE t_report_groupe DROP FOREIGN KEY UNQ_t_report_groupe_0
+ALTER TABLE t_customer_institutions DROP FOREIGN KEY FK_t_customer_institutions_lg_CUSTOMER_ID
+ALTER TABLE t_customer_institutions DROP FOREIGN KEY FK_t_customer_institutions_lg_INSTITUTION_ID
+ALTER TABLE t_customer_institutions DROP FOREIGN KEY UNQ_t_customer_institutions_0
+ALTER TABLE t_depenses DROP FOREIGN KEY FK_t_depenses_lg_TYPE_DEPENSE_ID
+ALTER TABLE t_sms_not_send DROP FOREIGN KEY FK_t_sms_not_send_ID_SMS_MASTER
+ALTER TABLE t_role DROP FOREIGN KEY UNQ_t_role_0
+ALTER TABLE t_schema_carte DROP FOREIGN KEY FK_t_schema_carte_lg_INSTITUTION_ID
+ALTER TABLE t_schema_carte DROP FOREIGN KEY UNQ_t_schema_carte_0
+ALTER TABLE t_coffre_caisse DROP FOREIGN KEY FK_t_coffre_caisse_lg_USER_ID
+ALTER TABLE t_customer DROP FOREIGN KEY FK_t_customer_lg_SKIN_ID
+ALTER TABLE t_customer DROP FOREIGN KEY FK_t_customer_lg_Language_ID
+ALTER TABLE t_customer DROP FOREIGN KEY UNQ_t_customer_0
+ALTER TABLE t_sms_customer DROP FOREIGN KEY FK_t_sms_customer_ID_SMS
+ALTER TABLE t_sms_customer DROP FOREIGN KEY FK_t_sms_customer_lg_CUSTOMER_ID
+DROP TABLE t_order_transaction
+DROP TABLE t_skin
+DROP TABLE t_user_fone
+DROP TABLE t_caisse
+DROP TABLE t_role_user
+DROP TABLE t_parameters
+DROP TABLE t_product_item_stock
+DROP TABLE t_recettes
+DROP TABLE t_privilege
+DROP TABLE t_sms
+DROP TABLE t_alert_event
+DROP TABLE t_institutions
+DROP TABLE t_order
+DROP TABLE t_decoupe
+DROP TABLE t_sous_menu
+DROP TABLE t_language
+DROP TABLE t_report
+DROP TABLE t_table
+DROP TABLE t_product_item
+DROP TABLE t_inboud_message
+DROP TABLE t_cash_transaction
+DROP TABLE t_resume_caisse
+DROP TABLE t_channel
+DROP TABLE t_event_log
+DROP TABLE t_type_depense
+DROP TABLE t_entity_map
+DROP TABLE t_role_privelege
+DROP TABLE t_module
+DROP TABLE t_warehouse
+DROP TABLE t_menu
+DROP TABLE t_notification
+DROP TABLE t_preference_schema_carte
+DROP TABLE t_user
+DROP TABLE t_report_groupe
+DROP TABLE t_customer_institutions
+DROP TABLE t_depenses
+DROP TABLE t_sms_not_send
+DROP TABLE t_role
+DROP TABLE t_schema_carte
+DROP TABLE t_coffre_caisse
+DROP TABLE t_customer
+DROP TABLE t_type_recette
+DROP TABLE t_sms_customer

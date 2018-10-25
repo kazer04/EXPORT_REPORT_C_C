@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://nomadic:4040/topupservice/SubmitTransfert.asmx?WSDL" uri="xml-resources/web-service-references/SubmitTransfert/wsdl/nomadic_4040/topupservice/SubmitTransfert.asmx.wsdl"/>
+    <system systemId="http://10.12.1.21/paytus.webservice/CTransactionService.asmx?WSDL" uri="xml-resources/web-service-references/CTransactionService/wsdl/10.12.1.21/paytus.webservice/CTransactionService.asmx.wsdl"/>
+    <system systemId="http://10.12.1.21/wapservice/CSessionService.asmx?WSDL" uri="xml-resources/web-service-references/CSessionService/wsdl/10.12.1.21/wapservice/CSessionService.asmx.wsdl"/>
+    <system systemId="http://10.12.1.21/wapservice/CAuthenticationService.asmx?WSDL" uri="xml-resources/web-service-references/CAuthenticationService/wsdl/10.12.1.21/wapservice/CAuthenticationService.asmx.wsdl"/>
+</catalog>
+
+

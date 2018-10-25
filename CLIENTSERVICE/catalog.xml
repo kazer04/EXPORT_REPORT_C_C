@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/paytus_services/paytus_servicesService?wsdl" uri="xml-resources/web-service-references/paytus_servicesService/wsdl/localhost_8080/paytus_services/paytus_servicesService.wsdl"/>
+    <system systemId="http://localhost:8080/paytus_services/paytus_servicesService?xsd=1" uri="xml-resources/web-service-references/paytus_servicesService/wsdl/localhost_8080/paytus_services/paytus_servicesService.xsd_1.xsd"/>
+    <system systemId="http://10.12.1.71:8080/OrangeService/OrangeMoneyServicesService?wsdl" uri="xml-resources/web-service-references/OrangeMoneyServicesService/wsdl/10.12.1.71_8080/OrangeService/OrangeMoneyServicesService.wsdl"/>
+    <system systemId="http://10.12.1.71:8080/OrangeService/OrangeMoneyServicesService?xsd=1" uri="xml-resources/web-service-references/OrangeMoneyServicesService/wsdl/10.12.1.71_8080/OrangeService/OrangeMoneyServicesService.xsd_1.xsd"/>
+    <system systemId="http://10.12.1.33:31373/paytus_services/paytus_servicesService?wsdl" uri="xml-resources/web-service-references/paytus_servicesService/wsdl/10.12.1.33_31373/paytus_services/paytus_servicesService.wsdl"/>
+    <system systemId="http://10.12.1.33:31373/paytus_services/paytus_servicesService?xsd=1" uri="xml-resources/web-service-references/paytus_servicesService/wsdl/10.12.1.33_31373/paytus_services/paytus_servicesService.xsd_1.xsd"/>
+    <system systemId="http://10.12.1.33:8080/OrangeService/OrangeMoneyServicesService?wsdl" uri="xml-resources/web-service-references/OrangeMoneyServicesService/wsdl/10.12.1.33_8080/OrangeService/OrangeMoneyServicesService.wsdl"/>
+    <system systemId="http://10.12.1.33:8080/OrangeService/OrangeMoneyServicesService?xsd=1" uri="xml-resources/web-service-references/OrangeMoneyServicesService/wsdl/10.12.1.33_8080/OrangeService/OrangeMoneyServicesService.xsd_1.xsd"/>
+    <system systemId="http://10.12.1.33:8080/paytus_services/paytus_servicesService?wsdl" uri="xml-resources/web-service-references/paytus_servicesService/wsdl/10.12.1.33_8080/paytus_services/paytus_servicesService.wsdl"/>
+    <system systemId="http://10.12.1.33:8080/paytus_services/paytus_servicesService?xsd=1" uri="xml-resources/web-service-references/paytus_servicesService/wsdl/10.12.1.33_8080/paytus_services/paytus_servicesService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/gatewayrelevebi/gatewayrelevebiService?wsdl" uri="xml-resources/web-service-references/gatewayrelevebiService/wsdl/localhost_8080/gatewayrelevebi/gatewayrelevebiService.wsdl"/>
+    <system systemId="http://localhost:8080/gatewayrelevebi/gatewayrelevebiService?xsd=1" uri="xml-resources/web-service-references/gatewayrelevebiService/wsdl/localhost_8080/gatewayrelevebi/gatewayrelevebiService.xsd_1.xsd"/>
+    <system systemId="file:/C:/Users/INFOTRONIQUE/Desktop/hgg.wsdl" uri="xml-resources/web-service-references/hgg/wsdl/hgg.wsdl"/>
+    <system systemId="http://192.168.12.104/AsPrepaidWebservicesCIE/ExternFunctions.asmx?WSDL" uri="xml-resources/web-service-references/ExternFunctions/wsdl/192.168.12.104/AsPrepaidWebservicesCIE/ExternFunctions.asmx.wsdl"/>
+    <system systemId="http://192.168.12.104/AsPrepaidWebservicesCIE/ExternFunctions.asmx?schema=DataSetRevendeur" uri="xml-resources/web-service-references/ExternFunctions/wsdl/192.168.12.104/AsPrepaidWebservicesCIE/ExternFunctions.asmx.schema_datasetrevendeur.xsd"/>
+    <system systemId="https://billmap.mtn.ci:8443/WebServices/BillPayment.asmx?WSDL" uri="xml-resources/web-service-references/BillPayment/wsdl/billmap.mtn.ci_8443/WebServices/BillPayment.asmx.wsdl"/>
+</catalog>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<<<<<<< .mine
+
+=======
+
+
+
+
+
+
+
+
+
+>>>>>>> .r69
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

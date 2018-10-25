@@ -1,0 +1,12 @@
+[
+    {"total":"2 ","results":
+         [
+            {"lg_Pool_ID":"11215101015525320458","DESCRIPTION":"Soft-tech Pool","dt_Validity_Start":"2012-01-11 00:00:00","dt_Validity_End":"2012-01-13 02:30:00","dec_Mise":"400","str_STATUT":"valide","lg_Pool_Type_ID":"19131033214375415211","FIXTURE":
+                    {"int_Goals_Home":0,"lg_Tournament_ID":"Coupe D'afrique Des Nations","int_Goals_Away":0,"dec_Away_Win_Odds":1,"lg_Away_Team_ID":"Soudan","dt_Validity_Start":"2012-01-13 16:00:00","dt_Fixture_Date":"2012-01-15 16:00:00","dt_Validity_End":"2012-01-15 16:00:00","str_STATUT":"delete","dec_Draw_Odds":1.5,"dec_Home_Win_Odds":3,"str_Outcome":"","lg_Fixture_ID":"211316722454928638","lg_Home_Team_ID":"Cote Ivoire"}
+            },
+            {"lg_Pool_ID":"19141030184657011048","DESCRIPTION":"Bet Soccer Pool","dt_Validity_Start":"2012-01-11 00:00:00","dt_Validity_End":"2012-01-20 00:00:00","dec_Mise":"400","int_NUMBER":1,"str_STATUT":"valide","lg_Pool_Type_ID":"19131033214375415211","FIXTURE":
+                    {"int_Goals_Home":0,"lg_Tournament_ID":"Coupe D'afrique Des Nations","int_Goals_Away":0,"dec_Away_Win_Odds":2.1,"lg_Away_Team_ID":"GABON","dt_Validity_Start":"2012-01-12 15:30:00","dt_Fixture_Date":"2012-01-19 16:00:00","dt_Validity_End":"2012-01-19 16:00:00","str_STATUT":"valide","dec_Draw_Odds":1.2,"dec_Home_Win_Odds":3.5,"str_Outcome":"","lg_Fixture_ID":"21131725288607727480","lg_Home_Team_ID":"Burkina Faso"}
+            }
+        ]
+    }
+]

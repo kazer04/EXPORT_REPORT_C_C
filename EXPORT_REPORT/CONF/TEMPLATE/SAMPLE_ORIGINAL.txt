@@ -1,0 +1,23 @@
+<14-06-09 21:03010002/2      40.00 1105100600100CA20
+A  130 FILET MIGNON            2     120.00         00B520
+A 1219 P0MME TERRE FRI         1       0.00         005620
+A  516 SAUCE CREME CHA         1      15.00         00E920
+A  546 GRATIN DAUPHINO         1      20.00         003C20
+A  296 BELLE DAME              2      60.00         006020
+A   80 AWA GRAND               1      15.00         009F20
+R    1 ESPECES                 1     250.00D620   (il a donner )
+R    1 ESPECES                 0     -20.00E120  (‘on lui  a rendu)
+c    1 RESTAURANT              2       0.00                    05720
+
+LE TICKET REMPLACER
+
+<14-06-09 21:03010002/2      40.00 1105100600100CA20
+A 1224 RIZ                     1       0.00         00AC20
+A 1219 P0MME TERRE FRI         1       0.00         005620
+A  516 SAUCE CREME CHA         1      15.00         00E920
+A  546 GRATIN DAUPHINO         1      20.00         003C20
+A  296 BELLE DAME              2      60.00         006020
+A   80 AWA GRAND               1      15.00         009F20
+R    1 ESPECES                 1     250.00D620
+R    1 ESPECES                 0     -140.00E120
+c    1 RESTAURANT              2       0.00                    05720

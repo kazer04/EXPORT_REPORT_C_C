@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><ars> 
+   <config>  
+    <scr_report_file>VXpYZXNu8vmFKGM/9GKRpyeBRGaabytl32/n0XL+hP09ZdMPE4S0gA==</scr_report_file>
+	<scr_report_file_logo>D:\JAVA\PROJECTS\LABOREX\CONF\LOGO\logo_report.jpg</scr_report_file_logo>
+    <path_file_generate_relatif>resources/exported/</path_file_generate_relatif>
+    <path_file_generate_relatif_imported>resources/imported/</path_file_generate_relatif_imported>
+    <path_file_generate_absolute>D:\JAVA\PROJECTS\FLEX_COMPTA//ecap_2i_map//build//web//resources//exported//</path_file_generate_absolute>
+    <path_file_generate_absolute_imported>D:\JAVA\PROJECTS\FLEX_COMPTA//ecap_2i_map//build//web//resources//imported//</path_file_generate_absolute_imported>
+    <scr_report_pdf>D:\JAVA\PROJECTS\FLEX_COMPTA//ecap_2i_map//build//web//resources//reports//pdf//</scr_report_pdf>
+    <scr_report_xls>..//applications//j2ee-modules//ecap_2i_map//resources//reports//xls//</scr_report_xls>
+    <name>VXpYZXNu8vlHQRu5BmmTm1nbxYgG5J2O</name>
+    <user>VXpYZXNu8vmrbfjfQAxumw==</user>
+    <password>VXpYZXNu8vkUt97rSbI/6A==</password>
+    <host>Wk2z2te8gbRQC8R1gLZiDUPoXdnrICuI</host>
+    <port>VXpYZXNu8vkoQoq1962IuQ==</port>
+    <APP_NAME>PIE BLACK</APP_NAME>
+    <APP_VERSION>1.0.0</APP_VERSION>
+    <APP_RELOAD_ALL>1</APP_RELOAD_ALL>
+    <username_mail>arsnomadic@gmail.com</username_mail>
+    <password_mail>ars00000000</password_mail>
+    <int_size_pagination>20</int_size_pagination>
+    <log_file>../CONF/LOG\</log_file>
+	<temp_folder>D:\TEMP</temp_folder>
+	<mail_account>thierrybekola@gmail.com</mail_account>
+    <smtp_server>smtp.gmail.com</smtp_server>	
+    <mail_password>papito04</mail_password>
+	<path_photo_relatif>/</path_photo_relatif>
+	<path_photo_absolute>D:\JAVA\PROJECTS\RDV_VISA_PASSEPORT\flex_compta\build\web\data\</path_photo_absolute>
+	<APP_FOLDER_APP>wbR5cRRHVYCTVrfpOVUcgnj9e8dkPovw0Qskb3prbyG/7qP2IjV5vf1RegzAPo7gL7RgFzHtRAmbAheSdH0vNZYni5OO39f2</APP_FOLDER_APP>
+	<Ostr_projectweb>VXpYZXNu8vm2jM34RWi4ne/QhbuiqRgP</Ostr_projectweb>
+   </config>
+</ars>

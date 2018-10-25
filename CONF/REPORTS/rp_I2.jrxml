@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="rp_I2" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="65eb5205-e1b1-4b1e-b315-2a5871d88989">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:\\REPORT_EXPORT_REPORT\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     v_i_2_1.`str_NAME` AS v_i_2_1_str_NAME,
+     v_i_2_1.`int_POIDS` AS v_i_2_1_int_POIDS,
+     v_i_2_1.`str_PORT_EMBARQUEMENT` AS v_i_2_1_str_PORT_EMBARQUEMENT,
+     v_i_2_1.`int_ID` AS v_i_2_1_int_ID
+FROM
+     `v_i_2_1` v_i_2_1
+  ORDER BY v_i_2_1.`int_ID`]]>
+	</queryString>
+	<field name="v_i_2_1_str_NAME" class="java.lang.String"/>
+	<field name="v_i_2_1_int_POIDS" class="java.lang.Double"/>
+	<field name="v_i_2_1_str_PORT_EMBARQUEMENT" class="java.lang.String"/>
+	<field name="v_i_2_1_int_ID" class="java.lang.Integer"/>
+	<variable name="v_tableau_1_int_POIDS_REEL_SUM" class="java.lang.Double" resetType="Column" calculation="Sum">
+		<variableExpression><![CDATA[]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="802" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="11" width="555" height="20" uuid="37d71c4b-b005-4e9c-88ff-5c00add5e0b4"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tableau 5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="269" width="555" height="20" uuid="430c3ce6-a264-4a2a-a424-b2751cab1515"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tableau 6]]></text>
+			</staticText>
+			<crosstab>
+				<reportElement x="0" y="68" width="555" height="191" uuid="0e221e37-c115-40e7-8c8d-cefc28b1e1df"/>
+				<rowGroup name="v_i_2_1_str_NAME" width="106" totalPosition="End">
+					<bucket order="Descending" class="java.lang.String">
+						<bucketExpression><![CDATA[$F{v_i_2_1_str_NAME}]]></bucketExpression>
+					</bucket>
+					<crosstabRowHeader>
+						<cellContents backcolor="#F0F8FF" mode="Opaque">
+							<box>
+								<pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField>
+								<reportElement style="Crosstab Data Text" x="0" y="0" width="106" height="25" uuid="88253281-677a-4158-8902-4598f5ff6706"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle"/>
+								<textFieldExpression><![CDATA[$V{v_i_2_1_str_NAME}]]></textFieldExpression>
+							</textField>
+						</cellContents>
+					</crosstabRowHeader>
+					<crosstabTotalRowHeader>
+						<cellContents backcolor="#BFE1FF" mode="Opaque">
+							<box>
+								<pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="106" height="25" uuid="e9c015fe-1fd1-465b-b850-e76d609679c1"/>
+								<textElement textAlignment="Left" verticalAlignment="Middle"/>
+								<text><![CDATA[Taux de surtarage]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalRowHeader>
+				</rowGroup>
+				<columnGroup name="v_i_2_1_str_PORT_EMBARQUEMENT" height="29" totalPosition="End">
+					<bucket class="java.lang.String">
+						<bucketExpression><![CDATA[$F{v_i_2_1_str_PORT_EMBARQUEMENT}]]></bucketExpression>
+					</bucket>
+					<crosstabColumnHeader>
+						<cellContents backcolor="#F0F8FF" mode="Opaque">
+							<box>
+								<pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<textField>
+								<reportElement style="Crosstab Data Text" x="0" y="0" width="82" height="29" uuid="1878dd9f-7973-47d7-83a7-efd062eacc76"/>
+								<textFieldExpression><![CDATA[$V{v_i_2_1_str_PORT_EMBARQUEMENT}]]></textFieldExpression>
+							</textField>
+							<staticText>
+								<reportElement style="Crosstab Data Text" x="82" y="0" width="50" height="29" uuid="92758b4c-5037-47e7-95ec-b8e125c65721"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle"/>
+								<text><![CDATA[%]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabColumnHeader>
+					<crosstabTotalColumnHeader>
+						<cellContents backcolor="#BFE1FF" mode="Opaque">
+							<box>
+								<pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+							</box>
+							<staticText>
+								<reportElement x="0" y="0" width="78" height="29" uuid="cf7ecbc6-26e4-42df-a435-098399f14f3a"/>
+								<textElement textAlignment="Center" verticalAlignment="Middle"/>
+								<text><![CDATA[Total]]></text>
+							</staticText>
+							<staticText>
+								<reportElement style="Crosstab Data Text" x="78" y="0" width="46" height="29" uuid="795e20e7-92d0-4f05-98ca-0d0369a6f32b"/>
+								<textElement textAlignment="Right" verticalAlignment="Middle"/>
+								<text><![CDATA[%]]></text>
+							</staticText>
+						</cellContents>
+					</crosstabTotalColumnHeader>
+				</columnGroup>
+				<measure name="v_i_2_1_int_POIDSMeasure" class="java.lang.Double" calculation="Sum">
+					<measureExpression><![CDATA[$F{v_i_2_1_int_POIDS}]]></measureExpression>
+				</measure>
+				<measure name="measure1ty" class="java.lang.Integer" calculation="Count">
+					<measureExpression><![CDATA[""]]></measureExpression>
+				</measure>
+				<crosstabCell width="132" height="25">
+					<cellContents>
+						<box>
+							<pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textField pattern="#,##0.00">
+							<reportElement style="Crosstab Data Text" x="0" y="0" width="82" height="25" uuid="1541f69f-ab01-420b-9cb2-49b9fdb838b0"/>
+							<textElement textAlignment="Right" verticalAlignment="Middle">
+								<font size="6"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$V{v_i_2_1_int_POIDSMeasure}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement style="Crosstab Data Text" x="119" y="0" width="13" height="25" uuid="de195800-94e9-4da0-a545-6916a3268652"/>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font size="6"/>
+							</textElement>
+							<text><![CDATA[%]]></text>
+						</staticText>
+						<textField pattern="#,##0.00">
+							<reportElement style="Crosstab Data Text" x="82" y="0" width="37" height="25" uuid="db57f578-6720-4ada-bfee-8c31adffe1fd"/>
+							<textElement textAlignment="Right" verticalAlignment="Middle">
+								<font size="6"/>
+							</textElement>
+							<textFieldExpression><![CDATA[new Double(
+    (
+        $V{v_i_2_1_int_POIDSMeasure}.doubleValue()
+    /
+    $V{v_i_2_1_int_POIDSMeasure_v_i_2_1_str_PORT_EMBARQUEMENT_ALL}.doubleValue()
+    )*100
+)]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="132" height="25" rowTotalGroup="v_i_2_1_str_NAME">
+					<cellContents backcolor="#BFE1FF" mode="Opaque">
+						<box>
+							<pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textField pattern="#,##0.00">
+							<reportElement style="Crosstab Data Text" x="0" y="0" width="82" height="25" uuid="2f59d4f3-6f4c-48f6-afb6-1d7fded837d1"/>
+							<textElement textAlignment="Right" verticalAlignment="Middle">
+								<font size="6"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$V{v_i_2_1_int_POIDSMeasure}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement style="Crosstab Data Text" x="119" y="0" width="13" height="25" uuid="54f1dae3-6540-4472-8690-f33be654a026"/>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font size="6"/>
+							</textElement>
+							<text><![CDATA[%]]></text>
+						</staticText>
+						<textField pattern="#,##0.00">
+							<reportElement style="Crosstab Data Text" x="82" y="0" width="37" height="25" uuid="a5980fab-43d2-4d59-9a12-7221c463312e"/>
+							<textElement textAlignment="Right" verticalAlignment="Middle">
+								<font size="6"/>
+							</textElement>
+							<textFieldExpression><![CDATA[new Double(
+    (
+        $V{v_i_2_1_int_POIDSMeasure}.doubleValue()
+    /
+   $V{v_i_2_1_int_POIDSMeasure_v_i_2_1_str_PORT_EMBARQUEMENT_ALL}.doubleValue()
+    )*100
+
+)]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="124" height="25" columnTotalGroup="v_i_2_1_str_PORT_EMBARQUEMENT">
+					<cellContents backcolor="#BFE1FF" mode="Opaque">
+						<box>
+							<pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textField pattern="#,##0.00">
+							<reportElement style="Crosstab Data Text" x="0" y="0" width="78" height="25" uuid="55316c6a-d970-4426-b641-142c4623fde7"/>
+							<textElement textAlignment="Right" verticalAlignment="Middle">
+								<font size="6"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$V{v_i_2_1_int_POIDSMeasure}]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement style="Crosstab Data Text" x="110" y="0" width="14" height="25" uuid="912f9b8e-6ddb-449a-b562-7587b9665252"/>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font size="6"/>
+							</textElement>
+							<text><![CDATA[%]]></text>
+						</staticText>
+						<textField pattern="#,##0.00">
+							<reportElement style="Crosstab Data Text" x="78" y="0" width="32" height="25" uuid="b029a655-ff6f-4097-9ba0-be6d80fd5569"/>
+							<textElement textAlignment="Right" verticalAlignment="Middle">
+								<font size="6"/>
+							</textElement>
+							<textFieldExpression><![CDATA[new Double(
+    (
+        $V{v_i_2_1_int_POIDSMeasure}.doubleValue()
+    /
+$V{v_i_2_1_int_POIDSMeasure_v_i_2_1_str_NAME_ALL}.doubleValue()
+    )*100
+)]]></textFieldExpression>
+						</textField>
+					</cellContents>
+				</crosstabCell>
+				<crosstabCell width="124" rowTotalGroup="v_i_2_1_str_NAME" columnTotalGroup="v_i_2_1_str_PORT_EMBARQUEMENT">
+					<cellContents backcolor="#BFE1FF" mode="Opaque">
+						<box>
+							<pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+						</box>
+						<textField pattern="#,##0.00">
+							<reportElement style="Crosstab Data Text" x="0" y="0" width="78" height="25" uuid="d8dda6ee-b3b7-40b7-b373-0b976b8256a4"/>
+							<textElement textAlignment="Right" verticalAlignment="Middle">
+								<font size="6"/>
+							</textElement>
+							<textFieldExpression><![CDATA[$V{v_i_2_1_int_POIDSMeasure}]]></textFieldExpression>
+						</textField>
+						<textField pattern="#,##0.00">
+							<reportElement style="Crosstab Data Text" x="78" y="0" width="32" height="25" uuid="3fc24d5e-6eef-4b31-addd-cb2d22058ac8"/>
+							<textElement textAlignment="Right" verticalAlignment="Middle">
+								<font size="6"/>
+							</textElement>
+							<textFieldExpression><![CDATA[new Double(
+    (
+        $V{v_i_2_1_int_POIDSMeasure}.doubleValue()
+    /
+   $V{v_i_2_1_int_POIDSMeasure_v_i_2_1_str_NAME_v_i_2_1_str_PORT_EMBARQUEMENT_ALL}.doubleValue()
+    )*100
+)]]></textFieldExpression>
+						</textField>
+						<staticText>
+							<reportElement style="Crosstab Data Text" x="110" y="0" width="14" height="25" uuid="44a8b47c-9f14-42b7-8174-ff901562ef90"/>
+							<textElement textAlignment="Left" verticalAlignment="Middle">
+								<font size="6"/>
+							</textElement>
+							<text><![CDATA[%]]></text>
+						</staticText>
+					</cellContents>
+				</crosstabCell>
+			</crosstab>
+			<subreport>
+				<reportElement x="0" y="289" width="555" height="171" uuid="1c06f5af-ea27-4daa-9ac1-65449a32e14e"/>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR} + "rp_I2_subreport1.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="DALPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>dal.TAlertEventUserFone</class>
+    <class>dal.TUserFone</class>
+    <class>dal.TFile</class>
+    <class>dal.TNotification</class>
+    <class>dal.TModule</class>
+    <class>dal.TRole</class>
+    <class>dal.TInboudMessage</class>
+    <class>dal.TSmsNotSend</class>
+    <class>dal.TPrivilege</class>
+    <class>dal.TRolePrivelege</class>
+    <class>dal.TExportCcPoids</class>
+    <class>dal.TParameters</class>
+    <class>dal.TReport</class>
+    <class>dal.TUserImprimante</class>
+    <class>dal.TEventLog</class>
+    <class>dal.TCampagne</class>
+    <class>dal.TUser</class>
+    <class>dal.TAlertEvent</class>
+    <class>dal.TSkin</class>
+    <class>dal.TServices</class>
+    <class>dal.TLanguage</class>
+    <class>dal.TImprimante</class>
+    <class>dal.TRoleUser</class>
+    <class>dal.TSms</class>
+    <class>dal.TExportCcMontant</class>
+    <class>dal.TInstitutions</class>
+    <class>dal.TUserServices</class>
+    <class>dal.TCampagneMois</class>
+    <class>dal.TMessage</class>
+    <class>dal.TOutboudMessage</class>
+    <class>dal.TSousMenu</class>
+    <class>dal.TCampagneMontant</class>
+    <class>dal.TMenu</class>
+    <class>dal.TCampagnePoids</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/export_report_cc_db?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+    </properties>
+  </persistence-unit>
+</persistence>

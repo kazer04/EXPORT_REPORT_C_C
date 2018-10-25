@@ -1,0 +1,80 @@
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>D:\JAVA\PROJECTS\PARIS_SMS\CONFIG_EDITOR\dist\CONFIG_EDITOR.jar</jar>
+  <outfile>D:\JAVA\PROJECTS\PARIS_SMS\CONFIG_EDITOR\dist\CONFIG_EDITOR.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <customProcName>false</customProcName>
+  <stayAlive>false</stayAlive>
+  <manifest></manifest>
+  <icon></icon>
+  <classPath>
+    <mainClass>config_editor.Main</mainClass>
+    <cp>lib/BeanInfo.jar</cp>
+    <cp>lib/clientos.jar</cp>
+    <cp>lib/commonos.jar</cp>
+    <cp>lib/hessian-3.1.1.jar</cp>
+    <cp>lib/hsqldb.jar</cp>
+    <cp>lib/itext-1.4.8.jar</cp>
+    <cp>lib/iText-2.1.7.jar</cp>
+    <cp>lib/iText-rtf-2.1.7.jar</cp>
+    <cp>lib/jcalendar.jar</cp>
+    <cp>lib/jnlp-servlet.jar</cp>
+    <cp>lib/jnlp.jar</cp>
+    <cp>lib/log4j-1.2.7.jar</cp>
+    <cp>lib/poi-2.0-RC2-20040102.jar</cp>
+    <cp>lib/pooler.jar</cp>
+    <cp>lib/serveros.jar</cp>
+    <cp>lib/srcclientos.jar</cp>
+    <cp>lib/srccommonos.jar</cp>
+    <cp>lib/srcserveros.jar</cp>
+    <cp>lib/commons-collections-2.1.1.jar</cp>
+    <cp>lib/commons-collections-3.2.jar</cp>
+    <cp>lib/commons-el.jar</cp>
+    <cp>lib/commons-logging-1.1.jar</cp>
+    <cp>lib/iText-2.1.7.jar</cp>
+    <cp>lib/jdom.jar</cp>
+    <cp>lib/log4j-1.2.11.jar</cp>
+    <cp>lib/log4j.jar</cp>
+    <cp>lib/json-rpc-1.0.jar</cp>
+    <cp>lib/TOOLKITS.jar</cp>
+    <cp>lib/MULTILANGUE.jar</cp>
+    <cp>lib/mysql-connector-java-5.1.8-bin.jar</cp>
+    <cp>lib/toplink-essentials.jar</cp>
+    <cp>lib/toplink-essentials-agent.jar</cp>
+    <cp>lib/JTattoo.jar</cp>
+    <cp>lib/quaqua-filechooser-only.jar</cp>
+    <cp>lib/quaqua-test.jar</cp>
+    <cp>lib/quaqua.jar</cp>
+    <cp>lib/swing-layout.jar</cp>
+    <cp>lib/swingx.jar</cp>
+    <cp>lib/syntheticaSkyMetallic.jar</cp>
+    <cp>lib/trident.jar</cp>
+    <cp>lib/substance.jar</cp>
+    <cp>lib/jasypt-1.7.1.jar</cp>
+  </classPath>
+  <jre>
+    <path>C:\Program Files\Java\jre6</path>
+    <minVersion>1.4.2_10</minVersion>
+    <maxVersion>1.6.0_10</maxVersion>
+    <jdkPreference>preferJdk</jdkPreference>
+  </jre>
+  <splash>
+    <file>C:\Users\Admin\Desktop\thierry bekola.jpg</file>
+    <waitForWindow>true</waitForWindow>
+    <timeout>60</timeout>
+    <timeoutErr>true</timeoutErr>
+  </splash>
+  <messages>
+    <startupErr>An error occurred while starting the application.</startupErr>
+    <bundledJreErr>This application was configured to use a bundled Java Runtime Environment but the runtime is missing or corrupted.</bundledJreErr>
+    <jreVersionErr>This application requires a Java Runtime Environment</jreVersionErr>
+    <launcherErr>The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.</launcherErr>
+    <instanceAlreadyExistsMsg>An application instance is already running.</instanceAlreadyExistsMsg>
+  </messages>
+</launch4jConfig>

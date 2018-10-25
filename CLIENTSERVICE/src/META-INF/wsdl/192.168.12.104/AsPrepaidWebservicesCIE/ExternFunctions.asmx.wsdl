@@ -1,0 +1,3515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.AsConsulting.ci/PrepaidVending" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://www.AsConsulting.ci/PrepaidVending" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.AsConsulting.ci/PrepaidVending">
+      <s:import namespace="http://tempuri.org/DataSetRevendeur.xsd" />
+      <s:import schemaLocation="http://192.168.12.104/AsPrepaidWebservicesCIE/ExternFunctions.asmx?schema=DataSetRevendeur" namespace="http://tempuri.org/DataSetRevendeur.xsd" />
+      <s:element name="TestLock">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestLockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestLockResult" type="tns:cResultLock" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cResultLock">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="iPosition" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="dHeureDebut" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="dHeureFin" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SpecialLock">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pResourceToLock" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SpecialLockResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SpecialLockResult" type="tns:cResultLock" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestSecurityModule">
+        <s:complexType />
+      </s:element>
+      <s:element name="TestSecurityModuleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestSecurityModuleResult" type="tns:CErreurModuleSecurite" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CErreurModuleSecurite">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="m_eCode" type="tns:eCodeErreurModuleSecurite" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_sMessage" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="eCode" type="tns:eCodeErreurModuleSecurite" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageErreur" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="eCodeErreurModuleSecurite">
+        <s:restriction base="s:string">
+          <s:enumeration value="SUCCESSFUL" />
+          <s:enumeration value="DEVICE_FAILURE" />
+          <s:enumeration value="FORMAT_ERROR" />
+          <s:enumeration value="COMMAND_TIMED_OUT" />
+          <s:enumeration value="KEY_NUMBER_ERROR" />
+          <s:enumeration value="KEY_TYPE_ERROR" />
+          <s:enumeration value="KEY_INTEGRITY_ERROR" />
+          <s:enumeration value="KEY_PARITY_ERROR" />
+          <s:enumeration value="REDEFINITION_FAILED" />
+          <s:enumeration value="INPUT_DISPLAY_FAILED" />
+          <s:enumeration value="KEYPAD_ENTRY_CANCELLED" />
+          <s:enumeration value="INVALID_FUNCTION_KEY_MASK" />
+          <s:enumeration value="INVALID_AMOUNT_FORMAT" />
+          <s:enumeration value="READER_NOT_SUPPORTED" />
+          <s:enumeration value="CARD_NOT_READ" />
+          <s:enumeration value="MESSAGE_CYCLE_BUFFER_VIOLATION" />
+          <s:enumeration value="INVALID_PIN" />
+          <s:enumeration value="DEA2_PUBLIC_KEY_ERROR" />
+          <s:enumeration value="INVALID_PASSWORD" />
+          <s:enumeration value="INVALID_REPRESENTATION" />
+          <s:enumeration value="CHECKSUM_ERROR" />
+          <s:enumeration value="INVALID_REQUEST_HEADER" />
+          <s:enumeration value="MAX_KEY_COMPONENTS" />
+          <s:enumeration value="INVALID_DOMAIN" />
+          <s:enumeration value="KEY_TOKEN_ERROR" />
+          <s:enumeration value="WEAK_KEY_ERROR" />
+          <s:enumeration value="RSA_DES_KEYS_NOT_CLEARED" />
+          <s:enumeration value="PASSWORD_LOCKOUT" />
+          <s:enumeration value="PASSWORD_NOT_SET_ERROR" />
+          <s:enumeration value="PASSWORD_INTEGRITY_ERROR" />
+          <s:enumeration value="INVALID_STS_TOKEN" />
+          <s:enumeration value="INSUFFICIENT_CREDIT_BALANCE" />
+          <s:enumeration value="CREDIT_UPDATE_BLOCK_FORMAT_ERROR" />
+          <s:enumeration value="INVALID_SECURITY_MODULE_ID" />
+          <s:enumeration value="INVALID_CREDIT_UPDATE_SEQUENCE_NO" />
+          <s:enumeration value="CREDIT_OVERFLOW" />
+          <s:enumeration value="TARIFF_CREDIT_INTEGRITY_ERROR" />
+          <s:enumeration value="NO_TARIFF_CREDIT_DATA" />
+          <s:enumeration value="MAX_CREDIT_DOMAINS_REACHED" />
+          <s:enumeration value="SWITCHOVER_ERROR" />
+          <s:enumeration value="INVALID_DATE_ERROR" />
+          <s:enumeration value="PAM_CREDIT_UNDERFLOW" />
+          <s:enumeration value="PAM_TARIFF_EXPIRED" />
+          <s:enumeration value="KEYPAD_ENTRY_TERMINATED" />
+          <s:enumeration value="KEYPAD_ENTRY_CLEARED" />
+          <s:enumeration value="KEYPAD_ENTRY_ERROR" />
+          <s:enumeration value="INVALID_TERMINAL" />
+          <s:enumeration value="RSA_BLOCK_ERROR" />
+          <s:enumeration value="BALANCE_ERROR" />
+          <s:enumeration value="TRANS_SEQUENCE_NUMBER_ERROR" />
+          <s:enumeration value="INVALID_CARD_TYPE" />
+          <s:enumeration value="INVALID_OPTION" />
+          <s:enumeration value="RANDOM_NUMBER_ERROR" />
+          <s:enumeration value="PROTOCOL_SEQUENCE_ERROR" />
+          <s:enumeration value="REVERSAL_ERROR" />
+          <s:enumeration value="PIN_BLOCK_ERROR" />
+          <s:enumeration value="KEY_REGISTER_ERROR" />
+          <s:enumeration value="INVALID_AMOUNT" />
+          <s:enumeration value="PIN_ERROR" />
+          <s:enumeration value="TOKEN_INTERFACE_ERROR" />
+          <s:enumeration value="TOKEN_FORMAT_ERROR" />
+          <s:enumeration value="AUTHENTICATION_ERROR" />
+          <s:enumeration value="CHECK_DIGIT_ERROR" />
+          <s:enumeration value="NO_CARD_PRESENT" />
+          <s:enumeration value="INVALID_TOKEN" />
+          <s:enumeration value="SIGNATURE_ERROR" />
+          <s:enumeration value="KEY_PROTOCOL_ERROR" />
+          <s:enumeration value="PUBLIC_KEY_ALREADY_PRESENT" />
+          <s:enumeration value="PUBLIC_KEY_NOT_LOADED_ERROR" />
+          <s:enumeration value="DEVICE_NOT_READY" />
+          <s:enumeration value="APPLICATION_ERROR" />
+          <s:enumeration value="NO_DATA" />
+          <s:enumeration value="DEVICE_PORT_CLOSED" />
+          <s:enumeration value="KEYFILE_NOT_EXIST" />
+          <s:enumeration value="INVALID_KEY_FORMAT" />
+          <s:enumeration value="TOKEN_KEY_EXPIRED" />
+          <s:enumeration value="DEVICE_NO_COMPANY_KEY_LOADED" />
+          <s:enumeration value="KEYLOAD_WRONG_DEVICE" />
+          <s:enumeration value="KEYLOAD_WRONG_DEVICE_AUT_CODE" />
+          <s:enumeration value="KEYLOAD_WRONG_FIRMWARE_AUT_CODE" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="OuvrirCaisse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCultureName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCaisse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCaissier" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFondsDeCaisse" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pContinueSuspend" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIDEquipement" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OuvrirCaisseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OuvrirCaisseResult" type="tns:cResultOuverture" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cResultOuverture">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErreurTraitement" type="tns:CErreurAppli" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParametresSite" type="tns:ParametresSite" />
+          <s:element minOccurs="0" maxOccurs="1" name="DetailsSession" type="tns:SessionCaisse" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CErreurAppli">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="m_eCode" type="tns:eCodeErreur" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_sMessage" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="eCodeErreur">
+        <s:restriction base="s:string">
+          <s:enumeration value="NO_ERROR" />
+          <s:enumeration value="ERROR" />
+          <s:enumeration value="COMPTEUR_INEXISTANT" />
+          <s:enumeration value="COMPTEUR_INACTIF" />
+          <s:enumeration value="PB_RECHERCHE_COMPTEUR" />
+          <s:enumeration value="CONSO_INFERIEUR_UNITE" />
+          <s:enumeration value="FIN_DIVISION_CONSO_TRANCHE" />
+          <s:enumeration value="PB_CHARGEMENT_DONNEES_DE_BASE" />
+          <s:enumeration value="PB_RECHERCHE_TARIF_FIXE" />
+          <s:enumeration value="PB_RECHERCHE_TARIF_CONSO" />
+          <s:enumeration value="CAISSE_INEXISTANTE" />
+          <s:enumeration value="PB_OUVERTURE_DE_CAISSE" />
+          <s:enumeration value="PB_FERMETURE_DE_CAISSE" />
+          <s:enumeration value="AUCUNE_CAISSE_OUVERTE" />
+          <s:enumeration value="SESSION_UTILISATEUR_OUVERTE" />
+          <s:enumeration value="PERIODECOURANTE_INF_DERNIEREPERIODE" />
+          <s:enumeration value="SESSION_AUTRE_UTILISATEUR_OUVERTE" />
+          <s:enumeration value="PB_GENERATION_DETAIL_ACHAT" />
+          <s:enumeration value="PB_VALIDATION_ACHAT_BASE" />
+          <s:enumeration value="DETTE_SUP_ACHAT" />
+          <s:enumeration value="PRIMEFIXE_SUP_ACHAT" />
+          <s:enumeration value="DETTEPRIMEFIXE_SUP_ACHAT" />
+          <s:enumeration value="COMPTEUR_LONGUEUR_DRN_ERRONE" />
+          <s:enumeration value="COMPTEUR_NUMERO_NON_NUMERIQUE" />
+          <s:enumeration value="COMPTEUR_CHECKDIGIT_COMPTEUR_ERRONNE" />
+          <s:enumeration value="TOKEN_ERREUR" />
+          <s:enumeration value="TOKENID_ERREUR" />
+          <s:enumeration value="TOKENID_DATE_ERREUR" />
+          <s:enumeration value="TOKENAMOUNT_ERREUR" />
+          <s:enumeration value="TOKENCRC_ERREUR" />
+          <s:enumeration value="TOKENCLASS_ERREUR" />
+          <s:enumeration value="TOKENSUBCLASS_ERREUR" />
+          <s:enumeration value="SECURITYMODULE_NOT_READY" />
+          <s:enumeration value="ERREUR_CHAINECONNEXION" />
+          <s:enumeration value="PB_CONNECTION_BASEDEDONNEES" />
+          <s:enumeration value="CHAMPS_NON_RENSEIGNE" />
+          <s:enumeration value="UTILISATEUR_INEXISTANT" />
+          <s:enumeration value="EQUIPEMENT_NON_HABILITE" />
+          <s:enumeration value="AUCUNE_ENTREPRISE_PAR_DEFAUT" />
+          <s:enumeration value="OPERATION_ANNULEE" />
+          <s:enumeration value="CAISSE_VERROUILLEE" />
+          <s:enumeration value="PLUSIEURS_SESSIONS_CAISSE_OUVERTE" />
+          <s:enumeration value="MOT_DE_PASSE_ERRONE" />
+          <s:enumeration value="UTILISATEUR_NON_AUTORISE_POUR_CETTE_ACTION" />
+          <s:enumeration value="MODEM_NON_INITIALISE" />
+          <s:enumeration value="AUCUN_MODEM_CONNECTE_AU_PORT" />
+          <s:enumeration value="ECHEC_MODIFICATION_FORMAT_SMS" />
+          <s:enumeration value="LECTURE_SMS_TRONQUE" />
+          <s:enumeration value="ECHEC_LECTURE_SMS" />
+          <s:enumeration value="ECHEC_ENVOIE_SMS" />
+          <s:enumeration value="CAISSE_NON_ATTRIBUEE" />
+          <s:enumeration value="CAISSE_NON_OUVERTE" />
+          <s:enumeration value="PROBLEME_MODIFICATION_MOT_PASSE" />
+          <s:enumeration value="AUCUNE_LIGNE_POUR_CETTE_RECHERCHE" />
+          <s:enumeration value="MONTANT_ACHAT_SUPERIEUR_MONTANT_MAXIMAL" />
+          <s:enumeration value="CAISSE_DEJA_VERROUILLEE" />
+          <s:enumeration value="CAISSE_DEJA_DEVERROUILLEE" />
+          <s:enumeration value="FORMAT_SMS_INCORRECTE" />
+          <s:enumeration value="AUCUNE_REDEVANCE_DEFINIE_POUR_L_ABONNE" />
+          <s:enumeration value="MOT_DE_PASSE_EXPIRE" />
+          <s:enumeration value="NUMERO_TRANSACT_DUPLIQUE" />
+          <s:enumeration value="CLIENT_RESILIE" />
+          <s:enumeration value="CLIENT_INACTIF" />
+          <s:enumeration value="PROBLEME_CONFIGURATION_CAISSE_REVENDEUR" />
+          <s:enumeration value="SOLDE_DEP_REVENDEUR_INSUFFISANT" />
+          <s:enumeration value="SOLDE_REVENDEUR_INSUFFISANT" />
+          <s:enumeration value="AUCUN_SERVICE_TROUVE" />
+          <s:enumeration value="CARTES_NON_VALIDES" />
+          <s:enumeration value="CARTES_DEJA_UTILISEES" />
+          <s:enumeration value="CARTES_NON_ACTIVES" />
+          <s:enumeration value="CARTES_EXPIREES" />
+          <s:enumeration value="CAISSE_NON_VALIDE" />
+          <s:enumeration value="VOLUME_INSUFFISANT" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ParametresSite">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="dNbreDecimalConso" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="dNbreDecimalMonnaie" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="sCodeMonnaie" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sSymboleMonnaie" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sUniteConso" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="dMotantMaxiAchat" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="dVolumeMin" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SessionCaisse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="m_CodeVendeur" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_CodeCaisse" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Caissier" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_NomCaissier" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_Dateouverture" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_FondDeCaisse" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_MontantEncaisse" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_NbTransactions" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_TypeCompte" type="tns:eTypeCompte" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_SoldeCompte" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_LimiteDepassement" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_NumeroSession" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="eTypeCompte">
+        <s:restriction base="s:string">
+          <s:enumeration value="SITE" />
+          <s:enumeration value="REVENDEUR_POSTPAYE" />
+          <s:enumeration value="REVENDEUR_PREPAYE" />
+          <s:enumeration value="CAISSE_PREPAYE" />
+          <s:enumeration value="LIE_AU_REVENDEUR" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="OuvrirCaisseByEquipement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCultureName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pContinueSuspend" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="pIdEquipement" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pPassword" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pFondsDeCaisse" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="peModeVente" type="tns:eModeVente" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="eModeVente">
+        <s:restriction base="s:string">
+          <s:enumeration value="PC" />
+          <s:enumeration value="TSP" />
+          <s:enumeration value="SMS" />
+          <s:enumeration value="ECLIPSE" />
+          <s:enumeration value="MOBILE_MONEY" />
+          <s:enumeration value="CARTE_A_GRATER" />
+          <s:enumeration value="WEB" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="OuvrirCaisseByEquipementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OuvrirCaisseByEquipementResult" type="tns:cResultOuverture" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TraiterRequetePaiement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pMeterNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pByMontant" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pMontantAchat" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pVolumeAchat" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pModePaiement" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pModeVente" type="tns:eModeVente" />
+            <s:element minOccurs="1" maxOccurs="1" name="pIsEspece" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="bUseExternAcquit" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="sExternAquit" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TraiterRequetePaiementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TraiterRequetePaiementResult" type="tns:cResultTraitement" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cResultTraitement">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErreurTraitement" type="tns:CErreurAppli" />
+          <s:element minOccurs="0" maxOccurs="1" name="DetailsClient" type="tns:DetailsClient" />
+          <s:element minOccurs="0" maxOccurs="1" name="DetailsAchat" type="tns:ArrayOfDetailsRedevance" />
+          <s:element minOccurs="1" maxOccurs="1" name="pValMinAchat" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DetailsClient">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="m_ReferenceCli" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_NomCli" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Compteur" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_EtatCompt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_CatCli" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_DAbon" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_DRes" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Tarif" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_LibTarif" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Adresse1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Adresse2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Telephone1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Telephone2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Fax" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_DateAchatCourant" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_DateDernierAchat" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_MontantDernierAchat" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_VolumeDernierAchat" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_MontantFraisFixe" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_MontantEnergie" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_MontantAchat" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_VolumeAchat" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_TvaAchat" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_DetteFacturee" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_TotalDette" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_EcartMontant" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_EcartQuantite" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_MtFraisTimbre" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_CodeFraisTimbre" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_MtFraisTimbreDernierAchat" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_Rendu" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_Percu" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_RefAchat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Token" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDetailsRedevance">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DetailsRedevance" nillable="true" type="tns:DetailsRedevance" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DetailsRedevance">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="m_TypeRedevance" type="tns:eTypeRedevance" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Redevance" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_LibRedevance" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_Tranche" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_Conso" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_ConsoNonArrondie" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Periode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_PrixUnite" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_CoutHT" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_Taxe" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_CoutTotal" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_EcartMontant" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_IsRedRef" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_CodeOperation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_ReferenceOperation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_CodeTaxe" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_TauxTaxe" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_MontantTaxExo" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_TauxTaxReelle" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_PositionRedevance" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="eTypeRedevance">
+        <s:restriction base="s:string">
+          <s:enumeration value="FIXE" />
+          <s:enumeration value="VARIABLE" />
+          <s:enumeration value="TVA" />
+          <s:enumeration value="DETTE_ANT" />
+          <s:enumeration value="TIMBRE" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="TraiterRequetePaiementAvecDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pDateAchat" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pMeterNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pByMontant" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pMontantAchat" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pVolumeAchat" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="pModePaiement" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pModeVente" type="tns:eModeVente" />
+            <s:element minOccurs="1" maxOccurs="1" name="pIsEspece" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="bUseExternAcquit" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="sExternAquit" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TraiterRequetePaiementAvecDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TraiterRequetePaiementAvecDateResult" type="tns:cResultTraitement" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValiderPaiement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pPercu" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pRendu" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="pEcart" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValiderPaiementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ValiderPaiementResult" type="tns:cResultValidation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cResultValidation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErreurTraitement" type="tns:CErreurAppli" />
+          <s:element minOccurs="0" maxOccurs="1" name="DetailsSession" type="tns:SessionCaisse" />
+          <s:element minOccurs="0" maxOccurs="1" name="sTokenAchat" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sReferenceAchat" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="dPercu" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="dRendu" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="dSoldeRevendeur" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="dLimiteDepassement" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="eTypeCompteRevendeur" type="tns:eTypeCompte" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FermerCaisse">
+        <s:complexType />
+      </s:element>
+      <s:element name="FermerCaisseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FermerCaisseResult" type="tns:CErreurAppli" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SuspendreCaisse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SuspendreCaisseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SuspendreCaisseResult" type="tns:CErreurAppli" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetListeTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pTailleBlock" type="tns:eTailleBlockTransaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="eTailleBlockTransaction">
+        <s:restriction base="s:string">
+          <s:enumeration value="TOUT" />
+          <s:enumeration value="BLOCK10" />
+          <s:enumeration value="BLOCK20" />
+          <s:enumeration value="BLOCK50" />
+          <s:enumeration value="BLOCK100" />
+          <s:enumeration value="BLOCK200" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetListeTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetListeTransactionResult" type="tns:cResultListeTransaction" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cResultListeTransaction">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErreurTraitement" type="tns:CErreurAppli" />
+          <s:element minOccurs="0" maxOccurs="1" name="ListeTransact" type="tns:ArrayOfDetailsTransaction" />
+          <s:element minOccurs="1" maxOccurs="1" name="iNombreTotalTransac" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="iNombrePage" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDetailsTransaction">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DetailsTransaction" nillable="true" type="tns:DetailsTransaction" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DetailsTransaction">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="m_RefTransaction" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_DateTrans" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Compteur" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_RefClient" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_Mode_Vente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="m_ModePaiement" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_Montant" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_Quantite" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_Percu" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_Rendu" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="m_MontantTimbre" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetInfoUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sLogin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfoUserResult" type="tns:cResultInfoUser" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cResultInfoUser">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="erreurTraitement" type="tns:CErreurAppli" />
+          <s:element minOccurs="0" maxOccurs="1" name="sUserMatricule" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sUserLogin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sUserPasswordDecrypt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sUserPasswordCrypt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sUserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sUserCodeVendeur" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetMontantEncaissementAutorise">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CodeCaisse" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMontantEncaissementAutoriseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetMontantEncaissementAutoriseResult" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestUserConnexion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestUserConnexionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestUserConnexionResult" type="tns:CErreurAppli" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTicketToPrintAgain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pAcquit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCompteur" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTicketToPrintAgainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTicketToPrintAgainResult" type="tns:cResultPrintAgain" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cResultPrintAgain">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="erreurTraitement" type="tns:CErreurAppli" />
+          <s:element minOccurs="0" maxOccurs="1" name="DetailsClient" type="tns:DetailsClient" />
+          <s:element minOccurs="0" maxOccurs="1" name="DetailAchat" type="tns:ArrayOfDetailsRedevance" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTicketToPrintAgainCompteur">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCompteur" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTicketToPrintAgainCompteurResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTicketToPrintAgainCompteurResult" type="tns:cResultPrintAgain" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SessionIsLost">
+        <s:complexType />
+      </s:element>
+      <s:element name="SessionIsLostResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SessionIsLostResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifierSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pidSms" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="_CorpsSMS" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_IdEmetteur" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModifierSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ModifierSMSResult" type="tns:CErreurAppli" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pIdEmetteur" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pDateEnvoi" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCorpSms" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsertSMSResult" type="tns:CErreurAppli" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnregistrerSMS_TRAITE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pNumSms" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDestinataire" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pDateTraitement" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="pMessageRetour" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="peStatutRetour" type="tns:eStatutRetour" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDestinairesCC" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="eStatutRetour">
+        <s:restriction base="s:string">
+          <s:enumeration value="EnAttente" />
+          <s:enumeration value="CodeServiceErrone" />
+          <s:enumeration value="ErreurSystem" />
+          <s:enumeration value="Succes" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="EnregistrerSMS_TRAITEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnregistrerSMS_TRAITEResult" type="tns:CErreurAppli" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnregistrerSMS_Envoye">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="pidSms" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="pDestinataire" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="bStatutTraitement" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EnregistrerSMS_EnvoyeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EnregistrerSMS_EnvoyeResult" type="tns:CErreurAppli" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsNewSession">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsNewSessionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="IsNewSessionResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnnulerEncaissement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Compteur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumCaisse" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RefTransaction" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AnnulerEncaissementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AnnulerEncaissementResult" type="tns:CErreurAppli" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckMeterState">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pMeterNumber" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckMeterStateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckMeterStateResult" type="tns:cResultVerificationCompteur" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cResultVerificationCompteur">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ErreurTraitement" type="tns:CErreurAppli" />
+          <s:element minOccurs="0" maxOccurs="1" name="NomClient" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DateDernierAchatClient" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="VolumeDernierAchatClient" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="MontantDernierAchatClient" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="HasDernierAchat" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GenererTokenZero">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCompteur" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pTokenID" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenererTokenZeroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenererTokenZeroResult" type="tns:CErreurAppli" />
+            <s:element minOccurs="0" maxOccurs="1" name="pToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearCreditTokenFunction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pCompteur" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ClearCreditTokenFunctionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClearCreditTokenFunctionResult" type="tns:CErreurAppli" />
+            <s:element minOccurs="0" maxOccurs="1" name="pToken" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAutoriserSimulationVolume">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CodeCaisse" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAutoriserSimulationVolumeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAutoriserSimulationVolumeResult" type="tns:cResultSimulationAutorise" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cResultSimulationAutorise">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="erreurTraitement" type="tns:CErreurAppli" />
+          <s:element minOccurs="1" maxOccurs="1" name="sSimulationAutorise" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BaseServeur">
+        <s:complexType />
+      </s:element>
+      <s:element name="BaseServeurResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BaseServeurResult" type="tns:cResultBaseServeur" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cResultBaseServeur">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="erreurTraitement" type="tns:CErreurAppli" />
+          <s:element minOccurs="0" maxOccurs="1" name="sBaseDonnees" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sServeurHost" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ConstitutionDeReference">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Caisse" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConstitutionDeReferenceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConstitutionDeReferenceResult" type="tns:cResultConstitutionDeReference" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cResultConstitutionDeReference">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="erreurTraitement" type="tns:CErreurAppli" />
+          <s:element minOccurs="0" maxOccurs="1" name="sReference" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTicketToPrintAgainTousCanaux">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pAcquit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pLogin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pCompteur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="_sRefTransc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTicketToPrintAgainTousCanauxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTicketToPrintAgainTousCanauxResult" type="tns:cResultPrintAgain" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChargerCAISSES">
+        <s:complexType />
+      </s:element>
+      <s:element name="ChargerCAISSESResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChargerCAISSESResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DataSetRevendeur.xsd" name="namespace" />
+                <s:attribute fixed="CAISSESDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChargerRevendeur">
+        <s:complexType />
+      </s:element>
+      <s:element name="ChargerRevendeurResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChargerRevendeurResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DataSetRevendeur.xsd" name="namespace" />
+                <s:attribute fixed="REVENDEURDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChargerPOINT_VENTE">
+        <s:complexType />
+      </s:element>
+      <s:element name="ChargerPOINT_VENTEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChargerPOINT_VENTEResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DataSetRevendeur.xsd" name="namespace" />
+                <s:attribute fixed="POINT_VENTEDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChargerTauxCommission">
+        <s:complexType />
+      </s:element>
+      <s:element name="ChargerTauxCommissionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChargerTauxCommissionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DataSetRevendeur.xsd" name="namespace" />
+                <s:attribute fixed="TauxCommissionDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChargerCOMPTE_VENDEUR">
+        <s:complexType />
+      </s:element>
+      <s:element name="ChargerCOMPTE_VENDEURResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChargerCOMPTE_VENDEURResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+                <s:attribute fixed="http://tempuri.org/DataSetRevendeur.xsd" name="namespace" />
+                <s:attribute fixed="COMPTE_VENDEURDataTable" name="tableTypeName" />
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetourneString">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetourneStringResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetourneStringResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMontantEncaissementAutoriseClasse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CodeCaisse" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMontantEncaissementAutoriseClasseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMontantEncaissementAutoriseClasseResult" type="tns:cResultMontantEncaissementAutorise" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="cResultMontantEncaissementAutorise">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="erreurTraitement" type="tns:CErreurAppli" />
+          <s:element minOccurs="1" maxOccurs="1" name="sMontEncAutorise" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="cResultLock" nillable="true" type="tns:cResultLock" />
+      <s:element name="CErreurModuleSecurite" nillable="true" type="tns:CErreurModuleSecurite" />
+      <s:element name="cResultOuverture" nillable="true" type="tns:cResultOuverture" />
+      <s:element name="cResultTraitement" nillable="true" type="tns:cResultTraitement" />
+      <s:element name="cResultValidation" nillable="true" type="tns:cResultValidation" />
+      <s:element name="CErreurAppli" nillable="true" type="tns:CErreurAppli" />
+      <s:element name="cResultListeTransaction" nillable="true" type="tns:cResultListeTransaction" />
+      <s:element name="cResultInfoUser" nillable="true" type="tns:cResultInfoUser" />
+      <s:element name="decimal" type="s:decimal" />
+      <s:element name="cResultPrintAgain" nillable="true" type="tns:cResultPrintAgain" />
+      <s:element name="boolean" type="s:boolean" />
+      <s:element name="cResultVerificationCompteur" nillable="true" type="tns:cResultVerificationCompteur" />
+      <s:element name="cResultSimulationAutorise" nillable="true" type="tns:cResultSimulationAutorise" />
+      <s:element name="cResultBaseServeur" nillable="true" type="tns:cResultBaseServeur" />
+      <s:element name="cResultConstitutionDeReference" nillable="true" type="tns:cResultConstitutionDeReference" />
+      <s:element name="CAISSESDataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+          <s:attribute fixed="http://tempuri.org/DataSetRevendeur.xsd" name="namespace" />
+          <s:attribute fixed="CAISSESDataTable" name="tableTypeName" />
+        </s:complexType>
+      </s:element>
+      <s:element name="REVENDEURDataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+          <s:attribute fixed="http://tempuri.org/DataSetRevendeur.xsd" name="namespace" />
+          <s:attribute fixed="REVENDEURDataTable" name="tableTypeName" />
+        </s:complexType>
+      </s:element>
+      <s:element name="POINT_VENTEDataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+          <s:attribute fixed="http://tempuri.org/DataSetRevendeur.xsd" name="namespace" />
+          <s:attribute fixed="POINT_VENTEDataTable" name="tableTypeName" />
+        </s:complexType>
+      </s:element>
+      <s:element name="TauxCommissionDataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+          <s:attribute fixed="http://tempuri.org/DataSetRevendeur.xsd" name="namespace" />
+          <s:attribute fixed="TauxCommissionDataTable" name="tableTypeName" />
+        </s:complexType>
+      </s:element>
+      <s:element name="COMPTE_VENDEURDataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+          <s:attribute fixed="http://tempuri.org/DataSetRevendeur.xsd" name="namespace" />
+          <s:attribute fixed="COMPTE_VENDEURDataTable" name="tableTypeName" />
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="cResultMontantEncaissementAutorise" nillable="true" type="tns:cResultMontantEncaissementAutorise" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="TestLockSoapIn">
+    <wsdl:part name="parameters" element="tns:TestLock" />
+  </wsdl:message>
+  <wsdl:message name="TestLockSoapOut">
+    <wsdl:part name="parameters" element="tns:TestLockResponse" />
+  </wsdl:message>
+  <wsdl:message name="SpecialLockSoapIn">
+    <wsdl:part name="parameters" element="tns:SpecialLock" />
+  </wsdl:message>
+  <wsdl:message name="SpecialLockSoapOut">
+    <wsdl:part name="parameters" element="tns:SpecialLockResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestSecurityModuleSoapIn">
+    <wsdl:part name="parameters" element="tns:TestSecurityModule" />
+  </wsdl:message>
+  <wsdl:message name="TestSecurityModuleSoapOut">
+    <wsdl:part name="parameters" element="tns:TestSecurityModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="OuvrirCaisseSoapIn">
+    <wsdl:part name="parameters" element="tns:OuvrirCaisse" />
+  </wsdl:message>
+  <wsdl:message name="OuvrirCaisseSoapOut">
+    <wsdl:part name="parameters" element="tns:OuvrirCaisseResponse" />
+  </wsdl:message>
+  <wsdl:message name="OuvrirCaisseByEquipementSoapIn">
+    <wsdl:part name="parameters" element="tns:OuvrirCaisseByEquipement" />
+  </wsdl:message>
+  <wsdl:message name="OuvrirCaisseByEquipementSoapOut">
+    <wsdl:part name="parameters" element="tns:OuvrirCaisseByEquipementResponse" />
+  </wsdl:message>
+  <wsdl:message name="TraiterRequetePaiementSoapIn">
+    <wsdl:part name="parameters" element="tns:TraiterRequetePaiement" />
+  </wsdl:message>
+  <wsdl:message name="TraiterRequetePaiementSoapOut">
+    <wsdl:part name="parameters" element="tns:TraiterRequetePaiementResponse" />
+  </wsdl:message>
+  <wsdl:message name="TraiterRequetePaiementAvecDateSoapIn">
+    <wsdl:part name="parameters" element="tns:TraiterRequetePaiementAvecDate" />
+  </wsdl:message>
+  <wsdl:message name="TraiterRequetePaiementAvecDateSoapOut">
+    <wsdl:part name="parameters" element="tns:TraiterRequetePaiementAvecDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ValiderPaiementSoapIn">
+    <wsdl:part name="parameters" element="tns:ValiderPaiement" />
+  </wsdl:message>
+  <wsdl:message name="ValiderPaiementSoapOut">
+    <wsdl:part name="parameters" element="tns:ValiderPaiementResponse" />
+  </wsdl:message>
+  <wsdl:message name="FermerCaisseSoapIn">
+    <wsdl:part name="parameters" element="tns:FermerCaisse" />
+  </wsdl:message>
+  <wsdl:message name="FermerCaisseSoapOut">
+    <wsdl:part name="parameters" element="tns:FermerCaisseResponse" />
+  </wsdl:message>
+  <wsdl:message name="SuspendreCaisseSoapIn">
+    <wsdl:part name="parameters" element="tns:SuspendreCaisse" />
+  </wsdl:message>
+  <wsdl:message name="SuspendreCaisseSoapOut">
+    <wsdl:part name="parameters" element="tns:SuspendreCaisseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetListeTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetListeTransaction" />
+  </wsdl:message>
+  <wsdl:message name="GetListeTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetListeTransactionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoUserSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfoUser" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoUserSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfoUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMontantEncaissementAutoriseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMontantEncaissementAutorise" />
+  </wsdl:message>
+  <wsdl:message name="GetMontantEncaissementAutoriseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMontantEncaissementAutoriseResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestUserConnexionSoapIn">
+    <wsdl:part name="parameters" element="tns:TestUserConnexion" />
+  </wsdl:message>
+  <wsdl:message name="TestUserConnexionSoapOut">
+    <wsdl:part name="parameters" element="tns:TestUserConnexionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTicketToPrintAgain" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTicketToPrintAgainResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainCompteurSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTicketToPrintAgainCompteur" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainCompteurSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTicketToPrintAgainCompteurResponse" />
+  </wsdl:message>
+  <wsdl:message name="SessionIsLostSoapIn">
+    <wsdl:part name="parameters" element="tns:SessionIsLost" />
+  </wsdl:message>
+  <wsdl:message name="SessionIsLostSoapOut">
+    <wsdl:part name="parameters" element="tns:SessionIsLostResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModifierSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:ModifierSMS" />
+  </wsdl:message>
+  <wsdl:message name="ModifierSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:ModifierSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertSMS" />
+  </wsdl:message>
+  <wsdl:message name="InsertSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="EnregistrerSMS_TRAITESoapIn">
+    <wsdl:part name="parameters" element="tns:EnregistrerSMS_TRAITE" />
+  </wsdl:message>
+  <wsdl:message name="EnregistrerSMS_TRAITESoapOut">
+    <wsdl:part name="parameters" element="tns:EnregistrerSMS_TRAITEResponse" />
+  </wsdl:message>
+  <wsdl:message name="EnregistrerSMS_EnvoyeSoapIn">
+    <wsdl:part name="parameters" element="tns:EnregistrerSMS_Envoye" />
+  </wsdl:message>
+  <wsdl:message name="EnregistrerSMS_EnvoyeSoapOut">
+    <wsdl:part name="parameters" element="tns:EnregistrerSMS_EnvoyeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsNewSessionSoapIn">
+    <wsdl:part name="parameters" element="tns:IsNewSession" />
+  </wsdl:message>
+  <wsdl:message name="IsNewSessionSoapOut">
+    <wsdl:part name="parameters" element="tns:IsNewSessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AnnulerEncaissementSoapIn">
+    <wsdl:part name="parameters" element="tns:AnnulerEncaissement" />
+  </wsdl:message>
+  <wsdl:message name="AnnulerEncaissementSoapOut">
+    <wsdl:part name="parameters" element="tns:AnnulerEncaissementResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckMeterStateSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckMeterState" />
+  </wsdl:message>
+  <wsdl:message name="CheckMeterStateSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckMeterStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenererTokenZeroSoapIn">
+    <wsdl:part name="parameters" element="tns:GenererTokenZero" />
+  </wsdl:message>
+  <wsdl:message name="GenererTokenZeroSoapOut">
+    <wsdl:part name="parameters" element="tns:GenererTokenZeroResponse" />
+  </wsdl:message>
+  <wsdl:message name="ClearCreditTokenFunctionSoapIn">
+    <wsdl:part name="parameters" element="tns:ClearCreditTokenFunction" />
+  </wsdl:message>
+  <wsdl:message name="ClearCreditTokenFunctionSoapOut">
+    <wsdl:part name="parameters" element="tns:ClearCreditTokenFunctionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAutoriserSimulationVolumeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAutoriserSimulationVolume" />
+  </wsdl:message>
+  <wsdl:message name="GetAutoriserSimulationVolumeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAutoriserSimulationVolumeResponse" />
+  </wsdl:message>
+  <wsdl:message name="BaseServeurSoapIn">
+    <wsdl:part name="parameters" element="tns:BaseServeur" />
+  </wsdl:message>
+  <wsdl:message name="BaseServeurSoapOut">
+    <wsdl:part name="parameters" element="tns:BaseServeurResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConstitutionDeReferenceSoapIn">
+    <wsdl:part name="parameters" element="tns:ConstitutionDeReference" />
+  </wsdl:message>
+  <wsdl:message name="ConstitutionDeReferenceSoapOut">
+    <wsdl:part name="parameters" element="tns:ConstitutionDeReferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainTousCanauxSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTicketToPrintAgainTousCanaux" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainTousCanauxSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTicketToPrintAgainTousCanauxResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChargerCAISSESSoapIn">
+    <wsdl:part name="parameters" element="tns:ChargerCAISSES" />
+  </wsdl:message>
+  <wsdl:message name="ChargerCAISSESSoapOut">
+    <wsdl:part name="parameters" element="tns:ChargerCAISSESResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChargerRevendeurSoapIn">
+    <wsdl:part name="parameters" element="tns:ChargerRevendeur" />
+  </wsdl:message>
+  <wsdl:message name="ChargerRevendeurSoapOut">
+    <wsdl:part name="parameters" element="tns:ChargerRevendeurResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChargerPOINT_VENTESoapIn">
+    <wsdl:part name="parameters" element="tns:ChargerPOINT_VENTE" />
+  </wsdl:message>
+  <wsdl:message name="ChargerPOINT_VENTESoapOut">
+    <wsdl:part name="parameters" element="tns:ChargerPOINT_VENTEResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChargerTauxCommissionSoapIn">
+    <wsdl:part name="parameters" element="tns:ChargerTauxCommission" />
+  </wsdl:message>
+  <wsdl:message name="ChargerTauxCommissionSoapOut">
+    <wsdl:part name="parameters" element="tns:ChargerTauxCommissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChargerCOMPTE_VENDEURSoapIn">
+    <wsdl:part name="parameters" element="tns:ChargerCOMPTE_VENDEUR" />
+  </wsdl:message>
+  <wsdl:message name="ChargerCOMPTE_VENDEURSoapOut">
+    <wsdl:part name="parameters" element="tns:ChargerCOMPTE_VENDEURResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetourneStringSoapIn">
+    <wsdl:part name="parameters" element="tns:RetourneString" />
+  </wsdl:message>
+  <wsdl:message name="RetourneStringSoapOut">
+    <wsdl:part name="parameters" element="tns:RetourneStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMontantEncaissementAutoriseClasseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMontantEncaissementAutoriseClasse" />
+  </wsdl:message>
+  <wsdl:message name="GetMontantEncaissementAutoriseClasseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMontantEncaissementAutoriseClasseResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestLockHttpGetIn" />
+  <wsdl:message name="TestLockHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultLock" />
+  </wsdl:message>
+  <wsdl:message name="SpecialLockHttpGetIn">
+    <wsdl:part name="pResourceToLock" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SpecialLockHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultLock" />
+  </wsdl:message>
+  <wsdl:message name="TestSecurityModuleHttpGetIn" />
+  <wsdl:message name="TestSecurityModuleHttpGetOut">
+    <wsdl:part name="Body" element="tns:CErreurModuleSecurite" />
+  </wsdl:message>
+  <wsdl:message name="OuvrirCaisseHttpGetIn">
+    <wsdl:part name="pCultureName" type="s:string" />
+    <wsdl:part name="pCaisse" type="s:string" />
+    <wsdl:part name="pCaissier" type="s:string" />
+    <wsdl:part name="pFondsDeCaisse" type="s:string" />
+    <wsdl:part name="pContinueSuspend" type="s:string" />
+    <wsdl:part name="pIDEquipement" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OuvrirCaisseHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultOuverture" />
+  </wsdl:message>
+  <wsdl:message name="OuvrirCaisseByEquipementHttpGetIn">
+    <wsdl:part name="pCultureName" type="s:string" />
+    <wsdl:part name="pContinueSuspend" type="s:string" />
+    <wsdl:part name="pIdEquipement" type="s:string" />
+    <wsdl:part name="pPassword" type="s:string" />
+    <wsdl:part name="pFondsDeCaisse" type="s:string" />
+    <wsdl:part name="peModeVente" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OuvrirCaisseByEquipementHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultOuverture" />
+  </wsdl:message>
+  <wsdl:message name="TraiterRequetePaiementHttpGetIn">
+    <wsdl:part name="pMeterNumber" type="s:string" />
+    <wsdl:part name="pByMontant" type="s:string" />
+    <wsdl:part name="pMontantAchat" type="s:string" />
+    <wsdl:part name="pVolumeAchat" type="s:string" />
+    <wsdl:part name="pModePaiement" type="s:string" />
+    <wsdl:part name="pModeVente" type="s:string" />
+    <wsdl:part name="pIsEspece" type="s:string" />
+    <wsdl:part name="bUseExternAcquit" type="s:string" />
+    <wsdl:part name="sExternAquit" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TraiterRequetePaiementHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultTraitement" />
+  </wsdl:message>
+  <wsdl:message name="TraiterRequetePaiementAvecDateHttpGetIn">
+    <wsdl:part name="pDateAchat" type="s:string" />
+    <wsdl:part name="pMeterNumber" type="s:string" />
+    <wsdl:part name="pByMontant" type="s:string" />
+    <wsdl:part name="pMontantAchat" type="s:string" />
+    <wsdl:part name="pVolumeAchat" type="s:string" />
+    <wsdl:part name="pModePaiement" type="s:string" />
+    <wsdl:part name="pModeVente" type="s:string" />
+    <wsdl:part name="pIsEspece" type="s:string" />
+    <wsdl:part name="bUseExternAcquit" type="s:string" />
+    <wsdl:part name="sExternAquit" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TraiterRequetePaiementAvecDateHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultTraitement" />
+  </wsdl:message>
+  <wsdl:message name="ValiderPaiementHttpGetIn">
+    <wsdl:part name="pPercu" type="s:string" />
+    <wsdl:part name="pRendu" type="s:string" />
+    <wsdl:part name="pEcart" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValiderPaiementHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultValidation" />
+  </wsdl:message>
+  <wsdl:message name="FermerCaisseHttpGetIn" />
+  <wsdl:message name="FermerCaisseHttpGetOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="SuspendreCaisseHttpGetIn" />
+  <wsdl:message name="SuspendreCaisseHttpGetOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="GetListeTransactionHttpGetIn">
+    <wsdl:part name="pTailleBlock" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListeTransactionHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultListeTransaction" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoUserHttpGetIn">
+    <wsdl:part name="sLogin" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoUserHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultInfoUser" />
+  </wsdl:message>
+  <wsdl:message name="GetMontantEncaissementAutoriseHttpGetIn">
+    <wsdl:part name="CodeCaisse" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMontantEncaissementAutoriseHttpGetOut">
+    <wsdl:part name="Body" element="tns:decimal" />
+  </wsdl:message>
+  <wsdl:message name="TestUserConnexionHttpGetIn">
+    <wsdl:part name="sLogin" type="s:string" />
+    <wsdl:part name="sPassword" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TestUserConnexionHttpGetOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainHttpGetIn">
+    <wsdl:part name="pAcquit" type="s:string" />
+    <wsdl:part name="pLogin" type="s:string" />
+    <wsdl:part name="pCompteur" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultPrintAgain" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainCompteurHttpGetIn">
+    <wsdl:part name="pCompteur" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainCompteurHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultPrintAgain" />
+  </wsdl:message>
+  <wsdl:message name="SessionIsLostHttpGetIn" />
+  <wsdl:message name="SessionIsLostHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="ModifierSMSHttpGetIn">
+    <wsdl:part name="pidSms" type="s:string" />
+    <wsdl:part name="_CorpsSMS" type="s:string" />
+    <wsdl:part name="_IdEmetteur" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ModifierSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="InsertSMSHttpGetIn">
+    <wsdl:part name="pIdEmetteur" type="s:string" />
+    <wsdl:part name="pDateEnvoi" type="s:string" />
+    <wsdl:part name="pCorpSms" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="EnregistrerSMS_TRAITEHttpGetIn">
+    <wsdl:part name="pNumSms" type="s:string" />
+    <wsdl:part name="pDestinataire" type="s:string" />
+    <wsdl:part name="pDateTraitement" type="s:string" />
+    <wsdl:part name="pMessageRetour" type="s:string" />
+    <wsdl:part name="peStatutRetour" type="s:string" />
+    <wsdl:part name="sDestinairesCC" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EnregistrerSMS_TRAITEHttpGetOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="EnregistrerSMS_EnvoyeHttpGetIn">
+    <wsdl:part name="pidSms" type="s:string" />
+    <wsdl:part name="pDestinataire" type="s:string" />
+    <wsdl:part name="bStatutTraitement" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EnregistrerSMS_EnvoyeHttpGetOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="IsNewSessionHttpGetIn" />
+  <wsdl:message name="IsNewSessionHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="AnnulerEncaissementHttpGetIn">
+    <wsdl:part name="Compteur" type="s:string" />
+    <wsdl:part name="Login" type="s:string" />
+    <wsdl:part name="NumCaisse" type="s:string" />
+    <wsdl:part name="RefTransaction" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnnulerEncaissementHttpGetOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="CheckMeterStateHttpGetIn">
+    <wsdl:part name="pMeterNumber" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckMeterStateHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultVerificationCompteur" />
+  </wsdl:message>
+  <wsdl:message name="GetAutoriserSimulationVolumeHttpGetIn">
+    <wsdl:part name="CodeCaisse" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAutoriserSimulationVolumeHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultSimulationAutorise" />
+  </wsdl:message>
+  <wsdl:message name="BaseServeurHttpGetIn" />
+  <wsdl:message name="BaseServeurHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultBaseServeur" />
+  </wsdl:message>
+  <wsdl:message name="ConstitutionDeReferenceHttpGetIn">
+    <wsdl:part name="Caisse" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConstitutionDeReferenceHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultConstitutionDeReference" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainTousCanauxHttpGetIn">
+    <wsdl:part name="pAcquit" type="s:string" />
+    <wsdl:part name="pLogin" type="s:string" />
+    <wsdl:part name="pCompteur" type="s:string" />
+    <wsdl:part name="_sRefTransc" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainTousCanauxHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultPrintAgain" />
+  </wsdl:message>
+  <wsdl:message name="ChargerCAISSESHttpGetIn" />
+  <wsdl:message name="ChargerCAISSESHttpGetOut">
+    <wsdl:part name="Body" element="tns:CAISSESDataTable" />
+  </wsdl:message>
+  <wsdl:message name="ChargerRevendeurHttpGetIn" />
+  <wsdl:message name="ChargerRevendeurHttpGetOut">
+    <wsdl:part name="Body" element="tns:REVENDEURDataTable" />
+  </wsdl:message>
+  <wsdl:message name="ChargerPOINT_VENTEHttpGetIn" />
+  <wsdl:message name="ChargerPOINT_VENTEHttpGetOut">
+    <wsdl:part name="Body" element="tns:POINT_VENTEDataTable" />
+  </wsdl:message>
+  <wsdl:message name="ChargerTauxCommissionHttpGetIn" />
+  <wsdl:message name="ChargerTauxCommissionHttpGetOut">
+    <wsdl:part name="Body" element="tns:TauxCommissionDataTable" />
+  </wsdl:message>
+  <wsdl:message name="ChargerCOMPTE_VENDEURHttpGetIn" />
+  <wsdl:message name="ChargerCOMPTE_VENDEURHttpGetOut">
+    <wsdl:part name="Body" element="tns:COMPTE_VENDEURDataTable" />
+  </wsdl:message>
+  <wsdl:message name="RetourneStringHttpGetIn" />
+  <wsdl:message name="RetourneStringHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMontantEncaissementAutoriseClasseHttpGetIn">
+    <wsdl:part name="CodeCaisse" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMontantEncaissementAutoriseClasseHttpGetOut">
+    <wsdl:part name="Body" element="tns:cResultMontantEncaissementAutorise" />
+  </wsdl:message>
+  <wsdl:message name="TestLockHttpPostIn" />
+  <wsdl:message name="TestLockHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultLock" />
+  </wsdl:message>
+  <wsdl:message name="SpecialLockHttpPostIn">
+    <wsdl:part name="pResourceToLock" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SpecialLockHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultLock" />
+  </wsdl:message>
+  <wsdl:message name="TestSecurityModuleHttpPostIn" />
+  <wsdl:message name="TestSecurityModuleHttpPostOut">
+    <wsdl:part name="Body" element="tns:CErreurModuleSecurite" />
+  </wsdl:message>
+  <wsdl:message name="OuvrirCaisseHttpPostIn">
+    <wsdl:part name="pCultureName" type="s:string" />
+    <wsdl:part name="pCaisse" type="s:string" />
+    <wsdl:part name="pCaissier" type="s:string" />
+    <wsdl:part name="pFondsDeCaisse" type="s:string" />
+    <wsdl:part name="pContinueSuspend" type="s:string" />
+    <wsdl:part name="pIDEquipement" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OuvrirCaisseHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultOuverture" />
+  </wsdl:message>
+  <wsdl:message name="OuvrirCaisseByEquipementHttpPostIn">
+    <wsdl:part name="pCultureName" type="s:string" />
+    <wsdl:part name="pContinueSuspend" type="s:string" />
+    <wsdl:part name="pIdEquipement" type="s:string" />
+    <wsdl:part name="pPassword" type="s:string" />
+    <wsdl:part name="pFondsDeCaisse" type="s:string" />
+    <wsdl:part name="peModeVente" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OuvrirCaisseByEquipementHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultOuverture" />
+  </wsdl:message>
+  <wsdl:message name="TraiterRequetePaiementHttpPostIn">
+    <wsdl:part name="pMeterNumber" type="s:string" />
+    <wsdl:part name="pByMontant" type="s:string" />
+    <wsdl:part name="pMontantAchat" type="s:string" />
+    <wsdl:part name="pVolumeAchat" type="s:string" />
+    <wsdl:part name="pModePaiement" type="s:string" />
+    <wsdl:part name="pModeVente" type="s:string" />
+    <wsdl:part name="pIsEspece" type="s:string" />
+    <wsdl:part name="bUseExternAcquit" type="s:string" />
+    <wsdl:part name="sExternAquit" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TraiterRequetePaiementHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultTraitement" />
+  </wsdl:message>
+  <wsdl:message name="TraiterRequetePaiementAvecDateHttpPostIn">
+    <wsdl:part name="pDateAchat" type="s:string" />
+    <wsdl:part name="pMeterNumber" type="s:string" />
+    <wsdl:part name="pByMontant" type="s:string" />
+    <wsdl:part name="pMontantAchat" type="s:string" />
+    <wsdl:part name="pVolumeAchat" type="s:string" />
+    <wsdl:part name="pModePaiement" type="s:string" />
+    <wsdl:part name="pModeVente" type="s:string" />
+    <wsdl:part name="pIsEspece" type="s:string" />
+    <wsdl:part name="bUseExternAcquit" type="s:string" />
+    <wsdl:part name="sExternAquit" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TraiterRequetePaiementAvecDateHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultTraitement" />
+  </wsdl:message>
+  <wsdl:message name="ValiderPaiementHttpPostIn">
+    <wsdl:part name="pPercu" type="s:string" />
+    <wsdl:part name="pRendu" type="s:string" />
+    <wsdl:part name="pEcart" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ValiderPaiementHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultValidation" />
+  </wsdl:message>
+  <wsdl:message name="FermerCaisseHttpPostIn" />
+  <wsdl:message name="FermerCaisseHttpPostOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="SuspendreCaisseHttpPostIn" />
+  <wsdl:message name="SuspendreCaisseHttpPostOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="GetListeTransactionHttpPostIn">
+    <wsdl:part name="pTailleBlock" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetListeTransactionHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultListeTransaction" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoUserHttpPostIn">
+    <wsdl:part name="sLogin" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoUserHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultInfoUser" />
+  </wsdl:message>
+  <wsdl:message name="GetMontantEncaissementAutoriseHttpPostIn">
+    <wsdl:part name="CodeCaisse" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMontantEncaissementAutoriseHttpPostOut">
+    <wsdl:part name="Body" element="tns:decimal" />
+  </wsdl:message>
+  <wsdl:message name="TestUserConnexionHttpPostIn">
+    <wsdl:part name="sLogin" type="s:string" />
+    <wsdl:part name="sPassword" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TestUserConnexionHttpPostOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainHttpPostIn">
+    <wsdl:part name="pAcquit" type="s:string" />
+    <wsdl:part name="pLogin" type="s:string" />
+    <wsdl:part name="pCompteur" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultPrintAgain" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainCompteurHttpPostIn">
+    <wsdl:part name="pCompteur" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainCompteurHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultPrintAgain" />
+  </wsdl:message>
+  <wsdl:message name="SessionIsLostHttpPostIn" />
+  <wsdl:message name="SessionIsLostHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="ModifierSMSHttpPostIn">
+    <wsdl:part name="pidSms" type="s:string" />
+    <wsdl:part name="_CorpsSMS" type="s:string" />
+    <wsdl:part name="_IdEmetteur" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ModifierSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="InsertSMSHttpPostIn">
+    <wsdl:part name="pIdEmetteur" type="s:string" />
+    <wsdl:part name="pDateEnvoi" type="s:string" />
+    <wsdl:part name="pCorpSms" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="InsertSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="EnregistrerSMS_TRAITEHttpPostIn">
+    <wsdl:part name="pNumSms" type="s:string" />
+    <wsdl:part name="pDestinataire" type="s:string" />
+    <wsdl:part name="pDateTraitement" type="s:string" />
+    <wsdl:part name="pMessageRetour" type="s:string" />
+    <wsdl:part name="peStatutRetour" type="s:string" />
+    <wsdl:part name="sDestinairesCC" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EnregistrerSMS_TRAITEHttpPostOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="EnregistrerSMS_EnvoyeHttpPostIn">
+    <wsdl:part name="pidSms" type="s:string" />
+    <wsdl:part name="pDestinataire" type="s:string" />
+    <wsdl:part name="bStatutTraitement" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EnregistrerSMS_EnvoyeHttpPostOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="IsNewSessionHttpPostIn" />
+  <wsdl:message name="IsNewSessionHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="AnnulerEncaissementHttpPostIn">
+    <wsdl:part name="Compteur" type="s:string" />
+    <wsdl:part name="Login" type="s:string" />
+    <wsdl:part name="NumCaisse" type="s:string" />
+    <wsdl:part name="RefTransaction" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AnnulerEncaissementHttpPostOut">
+    <wsdl:part name="Body" element="tns:CErreurAppli" />
+  </wsdl:message>
+  <wsdl:message name="CheckMeterStateHttpPostIn">
+    <wsdl:part name="pMeterNumber" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CheckMeterStateHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultVerificationCompteur" />
+  </wsdl:message>
+  <wsdl:message name="GetAutoriserSimulationVolumeHttpPostIn">
+    <wsdl:part name="CodeCaisse" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAutoriserSimulationVolumeHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultSimulationAutorise" />
+  </wsdl:message>
+  <wsdl:message name="BaseServeurHttpPostIn" />
+  <wsdl:message name="BaseServeurHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultBaseServeur" />
+  </wsdl:message>
+  <wsdl:message name="ConstitutionDeReferenceHttpPostIn">
+    <wsdl:part name="Caisse" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ConstitutionDeReferenceHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultConstitutionDeReference" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainTousCanauxHttpPostIn">
+    <wsdl:part name="pAcquit" type="s:string" />
+    <wsdl:part name="pLogin" type="s:string" />
+    <wsdl:part name="pCompteur" type="s:string" />
+    <wsdl:part name="_sRefTransc" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetTicketToPrintAgainTousCanauxHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultPrintAgain" />
+  </wsdl:message>
+  <wsdl:message name="ChargerCAISSESHttpPostIn" />
+  <wsdl:message name="ChargerCAISSESHttpPostOut">
+    <wsdl:part name="Body" element="tns:CAISSESDataTable" />
+  </wsdl:message>
+  <wsdl:message name="ChargerRevendeurHttpPostIn" />
+  <wsdl:message name="ChargerRevendeurHttpPostOut">
+    <wsdl:part name="Body" element="tns:REVENDEURDataTable" />
+  </wsdl:message>
+  <wsdl:message name="ChargerPOINT_VENTEHttpPostIn" />
+  <wsdl:message name="ChargerPOINT_VENTEHttpPostOut">
+    <wsdl:part name="Body" element="tns:POINT_VENTEDataTable" />
+  </wsdl:message>
+  <wsdl:message name="ChargerTauxCommissionHttpPostIn" />
+  <wsdl:message name="ChargerTauxCommissionHttpPostOut">
+    <wsdl:part name="Body" element="tns:TauxCommissionDataTable" />
+  </wsdl:message>
+  <wsdl:message name="ChargerCOMPTE_VENDEURHttpPostIn" />
+  <wsdl:message name="ChargerCOMPTE_VENDEURHttpPostOut">
+    <wsdl:part name="Body" element="tns:COMPTE_VENDEURDataTable" />
+  </wsdl:message>
+  <wsdl:message name="RetourneStringHttpPostIn" />
+  <wsdl:message name="RetourneStringHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMontantEncaissementAutoriseClasseHttpPostIn">
+    <wsdl:part name="CodeCaisse" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMontantEncaissementAutoriseClasseHttpPostOut">
+    <wsdl:part name="Body" element="tns:cResultMontantEncaissementAutorise" />
+  </wsdl:message>
+  <wsdl:portType name="ExternalFunctionsSoap">
+    <wsdl:operation name="TestLock">
+      <wsdl:input message="tns:TestLockSoapIn" />
+      <wsdl:output message="tns:TestLockSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SpecialLock">
+      <wsdl:input message="tns:SpecialLockSoapIn" />
+      <wsdl:output message="tns:SpecialLockSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestSecurityModule">
+      <wsdl:input message="tns:TestSecurityModuleSoapIn" />
+      <wsdl:output message="tns:TestSecurityModuleSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisse">
+      <wsdl:input message="tns:OuvrirCaisseSoapIn" />
+      <wsdl:output message="tns:OuvrirCaisseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisseByEquipement">
+      <wsdl:input message="tns:OuvrirCaisseByEquipementSoapIn" />
+      <wsdl:output message="tns:OuvrirCaisseByEquipementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiement">
+      <wsdl:input message="tns:TraiterRequetePaiementSoapIn" />
+      <wsdl:output message="tns:TraiterRequetePaiementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiementAvecDate">
+      <wsdl:input message="tns:TraiterRequetePaiementAvecDateSoapIn" />
+      <wsdl:output message="tns:TraiterRequetePaiementAvecDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValiderPaiement">
+      <wsdl:input message="tns:ValiderPaiementSoapIn" />
+      <wsdl:output message="tns:ValiderPaiementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FermerCaisse">
+      <wsdl:input message="tns:FermerCaisseSoapIn" />
+      <wsdl:output message="tns:FermerCaisseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SuspendreCaisse">
+      <wsdl:input message="tns:SuspendreCaisseSoapIn" />
+      <wsdl:output message="tns:SuspendreCaisseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListeTransaction">
+      <wsdl:input message="tns:GetListeTransactionSoapIn" />
+      <wsdl:output message="tns:GetListeTransactionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoUser">
+      <wsdl:input message="tns:GetInfoUserSoapIn" />
+      <wsdl:output message="tns:GetInfoUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutorise">
+      <wsdl:input message="tns:GetMontantEncaissementAutoriseSoapIn" />
+      <wsdl:output message="tns:GetMontantEncaissementAutoriseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestUserConnexion">
+      <wsdl:input message="tns:TestUserConnexionSoapIn" />
+      <wsdl:output message="tns:TestUserConnexionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgain">
+      <wsdl:input message="tns:GetTicketToPrintAgainSoapIn" />
+      <wsdl:output message="tns:GetTicketToPrintAgainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainCompteur">
+      <wsdl:input message="tns:GetTicketToPrintAgainCompteurSoapIn" />
+      <wsdl:output message="tns:GetTicketToPrintAgainCompteurSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SessionIsLost">
+      <wsdl:input message="tns:SessionIsLostSoapIn" />
+      <wsdl:output message="tns:SessionIsLostSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifierSMS">
+      <wsdl:input message="tns:ModifierSMSSoapIn" />
+      <wsdl:output message="tns:ModifierSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSMS">
+      <wsdl:input message="tns:InsertSMSSoapIn" />
+      <wsdl:output message="tns:InsertSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_TRAITE">
+      <wsdl:input message="tns:EnregistrerSMS_TRAITESoapIn" />
+      <wsdl:output message="tns:EnregistrerSMS_TRAITESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_Envoye">
+      <wsdl:input message="tns:EnregistrerSMS_EnvoyeSoapIn" />
+      <wsdl:output message="tns:EnregistrerSMS_EnvoyeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsNewSession">
+      <wsdl:input message="tns:IsNewSessionSoapIn" />
+      <wsdl:output message="tns:IsNewSessionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnnulerEncaissement">
+      <wsdl:input message="tns:AnnulerEncaissementSoapIn" />
+      <wsdl:output message="tns:AnnulerEncaissementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckMeterState">
+      <wsdl:input message="tns:CheckMeterStateSoapIn" />
+      <wsdl:output message="tns:CheckMeterStateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenererTokenZero">
+      <wsdl:input message="tns:GenererTokenZeroSoapIn" />
+      <wsdl:output message="tns:GenererTokenZeroSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearCreditTokenFunction">
+      <wsdl:input message="tns:ClearCreditTokenFunctionSoapIn" />
+      <wsdl:output message="tns:ClearCreditTokenFunctionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAutoriserSimulationVolume">
+      <wsdl:input message="tns:GetAutoriserSimulationVolumeSoapIn" />
+      <wsdl:output message="tns:GetAutoriserSimulationVolumeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BaseServeur">
+      <wsdl:input message="tns:BaseServeurSoapIn" />
+      <wsdl:output message="tns:BaseServeurSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConstitutionDeReference">
+      <wsdl:input message="tns:ConstitutionDeReferenceSoapIn" />
+      <wsdl:output message="tns:ConstitutionDeReferenceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainTousCanaux">
+      <wsdl:input message="tns:GetTicketToPrintAgainTousCanauxSoapIn" />
+      <wsdl:output message="tns:GetTicketToPrintAgainTousCanauxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCAISSES">
+      <wsdl:input message="tns:ChargerCAISSESSoapIn" />
+      <wsdl:output message="tns:ChargerCAISSESSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerRevendeur">
+      <wsdl:input message="tns:ChargerRevendeurSoapIn" />
+      <wsdl:output message="tns:ChargerRevendeurSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerPOINT_VENTE">
+      <wsdl:input message="tns:ChargerPOINT_VENTESoapIn" />
+      <wsdl:output message="tns:ChargerPOINT_VENTESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerTauxCommission">
+      <wsdl:input message="tns:ChargerTauxCommissionSoapIn" />
+      <wsdl:output message="tns:ChargerTauxCommissionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCOMPTE_VENDEUR">
+      <wsdl:input message="tns:ChargerCOMPTE_VENDEURSoapIn" />
+      <wsdl:output message="tns:ChargerCOMPTE_VENDEURSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetourneString">
+      <wsdl:input message="tns:RetourneStringSoapIn" />
+      <wsdl:output message="tns:RetourneStringSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutoriseClasse">
+      <wsdl:input message="tns:GetMontantEncaissementAutoriseClasseSoapIn" />
+      <wsdl:output message="tns:GetMontantEncaissementAutoriseClasseSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ExternalFunctionsHttpGet">
+    <wsdl:operation name="TestLock">
+      <wsdl:input message="tns:TestLockHttpGetIn" />
+      <wsdl:output message="tns:TestLockHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SpecialLock">
+      <wsdl:input message="tns:SpecialLockHttpGetIn" />
+      <wsdl:output message="tns:SpecialLockHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestSecurityModule">
+      <wsdl:input message="tns:TestSecurityModuleHttpGetIn" />
+      <wsdl:output message="tns:TestSecurityModuleHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisse">
+      <wsdl:input message="tns:OuvrirCaisseHttpGetIn" />
+      <wsdl:output message="tns:OuvrirCaisseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisseByEquipement">
+      <wsdl:input message="tns:OuvrirCaisseByEquipementHttpGetIn" />
+      <wsdl:output message="tns:OuvrirCaisseByEquipementHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiement">
+      <wsdl:input message="tns:TraiterRequetePaiementHttpGetIn" />
+      <wsdl:output message="tns:TraiterRequetePaiementHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiementAvecDate">
+      <wsdl:input message="tns:TraiterRequetePaiementAvecDateHttpGetIn" />
+      <wsdl:output message="tns:TraiterRequetePaiementAvecDateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValiderPaiement">
+      <wsdl:input message="tns:ValiderPaiementHttpGetIn" />
+      <wsdl:output message="tns:ValiderPaiementHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FermerCaisse">
+      <wsdl:input message="tns:FermerCaisseHttpGetIn" />
+      <wsdl:output message="tns:FermerCaisseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SuspendreCaisse">
+      <wsdl:input message="tns:SuspendreCaisseHttpGetIn" />
+      <wsdl:output message="tns:SuspendreCaisseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListeTransaction">
+      <wsdl:input message="tns:GetListeTransactionHttpGetIn" />
+      <wsdl:output message="tns:GetListeTransactionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoUser">
+      <wsdl:input message="tns:GetInfoUserHttpGetIn" />
+      <wsdl:output message="tns:GetInfoUserHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutorise">
+      <wsdl:input message="tns:GetMontantEncaissementAutoriseHttpGetIn" />
+      <wsdl:output message="tns:GetMontantEncaissementAutoriseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestUserConnexion">
+      <wsdl:input message="tns:TestUserConnexionHttpGetIn" />
+      <wsdl:output message="tns:TestUserConnexionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgain">
+      <wsdl:input message="tns:GetTicketToPrintAgainHttpGetIn" />
+      <wsdl:output message="tns:GetTicketToPrintAgainHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainCompteur">
+      <wsdl:input message="tns:GetTicketToPrintAgainCompteurHttpGetIn" />
+      <wsdl:output message="tns:GetTicketToPrintAgainCompteurHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SessionIsLost">
+      <wsdl:input message="tns:SessionIsLostHttpGetIn" />
+      <wsdl:output message="tns:SessionIsLostHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifierSMS">
+      <wsdl:input message="tns:ModifierSMSHttpGetIn" />
+      <wsdl:output message="tns:ModifierSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSMS">
+      <wsdl:input message="tns:InsertSMSHttpGetIn" />
+      <wsdl:output message="tns:InsertSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_TRAITE">
+      <wsdl:input message="tns:EnregistrerSMS_TRAITEHttpGetIn" />
+      <wsdl:output message="tns:EnregistrerSMS_TRAITEHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_Envoye">
+      <wsdl:input message="tns:EnregistrerSMS_EnvoyeHttpGetIn" />
+      <wsdl:output message="tns:EnregistrerSMS_EnvoyeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsNewSession">
+      <wsdl:input message="tns:IsNewSessionHttpGetIn" />
+      <wsdl:output message="tns:IsNewSessionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnnulerEncaissement">
+      <wsdl:input message="tns:AnnulerEncaissementHttpGetIn" />
+      <wsdl:output message="tns:AnnulerEncaissementHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckMeterState">
+      <wsdl:input message="tns:CheckMeterStateHttpGetIn" />
+      <wsdl:output message="tns:CheckMeterStateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAutoriserSimulationVolume">
+      <wsdl:input message="tns:GetAutoriserSimulationVolumeHttpGetIn" />
+      <wsdl:output message="tns:GetAutoriserSimulationVolumeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BaseServeur">
+      <wsdl:input message="tns:BaseServeurHttpGetIn" />
+      <wsdl:output message="tns:BaseServeurHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConstitutionDeReference">
+      <wsdl:input message="tns:ConstitutionDeReferenceHttpGetIn" />
+      <wsdl:output message="tns:ConstitutionDeReferenceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainTousCanaux">
+      <wsdl:input message="tns:GetTicketToPrintAgainTousCanauxHttpGetIn" />
+      <wsdl:output message="tns:GetTicketToPrintAgainTousCanauxHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCAISSES">
+      <wsdl:input message="tns:ChargerCAISSESHttpGetIn" />
+      <wsdl:output message="tns:ChargerCAISSESHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerRevendeur">
+      <wsdl:input message="tns:ChargerRevendeurHttpGetIn" />
+      <wsdl:output message="tns:ChargerRevendeurHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerPOINT_VENTE">
+      <wsdl:input message="tns:ChargerPOINT_VENTEHttpGetIn" />
+      <wsdl:output message="tns:ChargerPOINT_VENTEHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerTauxCommission">
+      <wsdl:input message="tns:ChargerTauxCommissionHttpGetIn" />
+      <wsdl:output message="tns:ChargerTauxCommissionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCOMPTE_VENDEUR">
+      <wsdl:input message="tns:ChargerCOMPTE_VENDEURHttpGetIn" />
+      <wsdl:output message="tns:ChargerCOMPTE_VENDEURHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetourneString">
+      <wsdl:input message="tns:RetourneStringHttpGetIn" />
+      <wsdl:output message="tns:RetourneStringHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutoriseClasse">
+      <wsdl:input message="tns:GetMontantEncaissementAutoriseClasseHttpGetIn" />
+      <wsdl:output message="tns:GetMontantEncaissementAutoriseClasseHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ExternalFunctionsHttpPost">
+    <wsdl:operation name="TestLock">
+      <wsdl:input message="tns:TestLockHttpPostIn" />
+      <wsdl:output message="tns:TestLockHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SpecialLock">
+      <wsdl:input message="tns:SpecialLockHttpPostIn" />
+      <wsdl:output message="tns:SpecialLockHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestSecurityModule">
+      <wsdl:input message="tns:TestSecurityModuleHttpPostIn" />
+      <wsdl:output message="tns:TestSecurityModuleHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisse">
+      <wsdl:input message="tns:OuvrirCaisseHttpPostIn" />
+      <wsdl:output message="tns:OuvrirCaisseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisseByEquipement">
+      <wsdl:input message="tns:OuvrirCaisseByEquipementHttpPostIn" />
+      <wsdl:output message="tns:OuvrirCaisseByEquipementHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiement">
+      <wsdl:input message="tns:TraiterRequetePaiementHttpPostIn" />
+      <wsdl:output message="tns:TraiterRequetePaiementHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiementAvecDate">
+      <wsdl:input message="tns:TraiterRequetePaiementAvecDateHttpPostIn" />
+      <wsdl:output message="tns:TraiterRequetePaiementAvecDateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ValiderPaiement">
+      <wsdl:input message="tns:ValiderPaiementHttpPostIn" />
+      <wsdl:output message="tns:ValiderPaiementHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FermerCaisse">
+      <wsdl:input message="tns:FermerCaisseHttpPostIn" />
+      <wsdl:output message="tns:FermerCaisseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SuspendreCaisse">
+      <wsdl:input message="tns:SuspendreCaisseHttpPostIn" />
+      <wsdl:output message="tns:SuspendreCaisseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListeTransaction">
+      <wsdl:input message="tns:GetListeTransactionHttpPostIn" />
+      <wsdl:output message="tns:GetListeTransactionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoUser">
+      <wsdl:input message="tns:GetInfoUserHttpPostIn" />
+      <wsdl:output message="tns:GetInfoUserHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutorise">
+      <wsdl:input message="tns:GetMontantEncaissementAutoriseHttpPostIn" />
+      <wsdl:output message="tns:GetMontantEncaissementAutoriseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestUserConnexion">
+      <wsdl:input message="tns:TestUserConnexionHttpPostIn" />
+      <wsdl:output message="tns:TestUserConnexionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgain">
+      <wsdl:input message="tns:GetTicketToPrintAgainHttpPostIn" />
+      <wsdl:output message="tns:GetTicketToPrintAgainHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainCompteur">
+      <wsdl:input message="tns:GetTicketToPrintAgainCompteurHttpPostIn" />
+      <wsdl:output message="tns:GetTicketToPrintAgainCompteurHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SessionIsLost">
+      <wsdl:input message="tns:SessionIsLostHttpPostIn" />
+      <wsdl:output message="tns:SessionIsLostHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModifierSMS">
+      <wsdl:input message="tns:ModifierSMSHttpPostIn" />
+      <wsdl:output message="tns:ModifierSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertSMS">
+      <wsdl:input message="tns:InsertSMSHttpPostIn" />
+      <wsdl:output message="tns:InsertSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_TRAITE">
+      <wsdl:input message="tns:EnregistrerSMS_TRAITEHttpPostIn" />
+      <wsdl:output message="tns:EnregistrerSMS_TRAITEHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_Envoye">
+      <wsdl:input message="tns:EnregistrerSMS_EnvoyeHttpPostIn" />
+      <wsdl:output message="tns:EnregistrerSMS_EnvoyeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsNewSession">
+      <wsdl:input message="tns:IsNewSessionHttpPostIn" />
+      <wsdl:output message="tns:IsNewSessionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AnnulerEncaissement">
+      <wsdl:input message="tns:AnnulerEncaissementHttpPostIn" />
+      <wsdl:output message="tns:AnnulerEncaissementHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckMeterState">
+      <wsdl:input message="tns:CheckMeterStateHttpPostIn" />
+      <wsdl:output message="tns:CheckMeterStateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAutoriserSimulationVolume">
+      <wsdl:input message="tns:GetAutoriserSimulationVolumeHttpPostIn" />
+      <wsdl:output message="tns:GetAutoriserSimulationVolumeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BaseServeur">
+      <wsdl:input message="tns:BaseServeurHttpPostIn" />
+      <wsdl:output message="tns:BaseServeurHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConstitutionDeReference">
+      <wsdl:input message="tns:ConstitutionDeReferenceHttpPostIn" />
+      <wsdl:output message="tns:ConstitutionDeReferenceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainTousCanaux">
+      <wsdl:input message="tns:GetTicketToPrintAgainTousCanauxHttpPostIn" />
+      <wsdl:output message="tns:GetTicketToPrintAgainTousCanauxHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCAISSES">
+      <wsdl:input message="tns:ChargerCAISSESHttpPostIn" />
+      <wsdl:output message="tns:ChargerCAISSESHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerRevendeur">
+      <wsdl:input message="tns:ChargerRevendeurHttpPostIn" />
+      <wsdl:output message="tns:ChargerRevendeurHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerPOINT_VENTE">
+      <wsdl:input message="tns:ChargerPOINT_VENTEHttpPostIn" />
+      <wsdl:output message="tns:ChargerPOINT_VENTEHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerTauxCommission">
+      <wsdl:input message="tns:ChargerTauxCommissionHttpPostIn" />
+      <wsdl:output message="tns:ChargerTauxCommissionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCOMPTE_VENDEUR">
+      <wsdl:input message="tns:ChargerCOMPTE_VENDEURHttpPostIn" />
+      <wsdl:output message="tns:ChargerCOMPTE_VENDEURHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetourneString">
+      <wsdl:input message="tns:RetourneStringHttpPostIn" />
+      <wsdl:output message="tns:RetourneStringHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutoriseClasse">
+      <wsdl:input message="tns:GetMontantEncaissementAutoriseClasseHttpPostIn" />
+      <wsdl:output message="tns:GetMontantEncaissementAutoriseClasseHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ExternalFunctionsSoap" type="tns:ExternalFunctionsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestLock">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/TestLock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpecialLock">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/SpecialLock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestSecurityModule">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/TestSecurityModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisse">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/OuvrirCaisse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisseByEquipement">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/OuvrirCaisseByEquipement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiement">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/TraiterRequetePaiement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiementAvecDate">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/TraiterRequetePaiementAvecDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValiderPaiement">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ValiderPaiement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FermerCaisse">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/FermerCaisse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuspendreCaisse">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/SuspendreCaisse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListeTransaction">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetListeTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoUser">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetInfoUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutorise">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetMontantEncaissementAutorise" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestUserConnexion">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/TestUserConnexion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgain">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetTicketToPrintAgain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainCompteur">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetTicketToPrintAgainCompteur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SessionIsLost">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/SessionIsLost" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifierSMS">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ModifierSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSMS">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/InsertSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_TRAITE">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/EnregistrerSMS_TRAITE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_Envoye">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/EnregistrerSMS_Envoye" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsNewSession">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/IsNewSession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnnulerEncaissement">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/AnnulerEncaissement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckMeterState">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/CheckMeterState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenererTokenZero">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GenererTokenZero" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearCreditTokenFunction">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ClearCreditTokenFunction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAutoriserSimulationVolume">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetAutoriserSimulationVolume" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BaseServeur">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/BaseServeur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConstitutionDeReference">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ConstitutionDeReference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainTousCanaux">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetTicketToPrintAgainTousCanaux" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCAISSES">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ChargerCAISSES" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerRevendeur">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ChargerRevendeur" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerPOINT_VENTE">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ChargerPOINT_VENTE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerTauxCommission">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ChargerTauxCommission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCOMPTE_VENDEUR">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ChargerCOMPTE_VENDEUR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetourneString">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/RetourneString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutoriseClasse">
+      <soap:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetMontantEncaissementAutoriseClasse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExternalFunctionsSoap12" type="tns:ExternalFunctionsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestLock">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/TestLock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpecialLock">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/SpecialLock" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestSecurityModule">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/TestSecurityModule" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisse">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/OuvrirCaisse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisseByEquipement">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/OuvrirCaisseByEquipement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiement">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/TraiterRequetePaiement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiementAvecDate">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/TraiterRequetePaiementAvecDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValiderPaiement">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ValiderPaiement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FermerCaisse">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/FermerCaisse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuspendreCaisse">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/SuspendreCaisse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListeTransaction">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetListeTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoUser">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetInfoUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutorise">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetMontantEncaissementAutorise" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestUserConnexion">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/TestUserConnexion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgain">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetTicketToPrintAgain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainCompteur">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetTicketToPrintAgainCompteur" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SessionIsLost">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/SessionIsLost" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifierSMS">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ModifierSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSMS">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/InsertSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_TRAITE">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/EnregistrerSMS_TRAITE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_Envoye">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/EnregistrerSMS_Envoye" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsNewSession">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/IsNewSession" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnnulerEncaissement">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/AnnulerEncaissement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckMeterState">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/CheckMeterState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenererTokenZero">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GenererTokenZero" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ClearCreditTokenFunction">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ClearCreditTokenFunction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAutoriserSimulationVolume">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetAutoriserSimulationVolume" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BaseServeur">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/BaseServeur" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConstitutionDeReference">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ConstitutionDeReference" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainTousCanaux">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetTicketToPrintAgainTousCanaux" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCAISSES">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ChargerCAISSES" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerRevendeur">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ChargerRevendeur" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerPOINT_VENTE">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ChargerPOINT_VENTE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerTauxCommission">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ChargerTauxCommission" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCOMPTE_VENDEUR">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/ChargerCOMPTE_VENDEUR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetourneString">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/RetourneString" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutoriseClasse">
+      <soap12:operation soapAction="http://www.AsConsulting.ci/PrepaidVending/GetMontantEncaissementAutoriseClasse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExternalFunctionsHttpGet" type="tns:ExternalFunctionsHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="TestLock">
+      <http:operation location="/TestLock" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpecialLock">
+      <http:operation location="/SpecialLock" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestSecurityModule">
+      <http:operation location="/TestSecurityModule" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisse">
+      <http:operation location="/OuvrirCaisse" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisseByEquipement">
+      <http:operation location="/OuvrirCaisseByEquipement" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiement">
+      <http:operation location="/TraiterRequetePaiement" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiementAvecDate">
+      <http:operation location="/TraiterRequetePaiementAvecDate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValiderPaiement">
+      <http:operation location="/ValiderPaiement" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FermerCaisse">
+      <http:operation location="/FermerCaisse" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuspendreCaisse">
+      <http:operation location="/SuspendreCaisse" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListeTransaction">
+      <http:operation location="/GetListeTransaction" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoUser">
+      <http:operation location="/GetInfoUser" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutorise">
+      <http:operation location="/GetMontantEncaissementAutorise" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestUserConnexion">
+      <http:operation location="/TestUserConnexion" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgain">
+      <http:operation location="/GetTicketToPrintAgain" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainCompteur">
+      <http:operation location="/GetTicketToPrintAgainCompteur" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SessionIsLost">
+      <http:operation location="/SessionIsLost" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifierSMS">
+      <http:operation location="/ModifierSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSMS">
+      <http:operation location="/InsertSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_TRAITE">
+      <http:operation location="/EnregistrerSMS_TRAITE" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_Envoye">
+      <http:operation location="/EnregistrerSMS_Envoye" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsNewSession">
+      <http:operation location="/IsNewSession" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnnulerEncaissement">
+      <http:operation location="/AnnulerEncaissement" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckMeterState">
+      <http:operation location="/CheckMeterState" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAutoriserSimulationVolume">
+      <http:operation location="/GetAutoriserSimulationVolume" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BaseServeur">
+      <http:operation location="/BaseServeur" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConstitutionDeReference">
+      <http:operation location="/ConstitutionDeReference" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainTousCanaux">
+      <http:operation location="/GetTicketToPrintAgainTousCanaux" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCAISSES">
+      <http:operation location="/ChargerCAISSES" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerRevendeur">
+      <http:operation location="/ChargerRevendeur" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerPOINT_VENTE">
+      <http:operation location="/ChargerPOINT_VENTE" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerTauxCommission">
+      <http:operation location="/ChargerTauxCommission" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCOMPTE_VENDEUR">
+      <http:operation location="/ChargerCOMPTE_VENDEUR" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetourneString">
+      <http:operation location="/RetourneString" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutoriseClasse">
+      <http:operation location="/GetMontantEncaissementAutoriseClasse" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ExternalFunctionsHttpPost" type="tns:ExternalFunctionsHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="TestLock">
+      <http:operation location="/TestLock" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpecialLock">
+      <http:operation location="/SpecialLock" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestSecurityModule">
+      <http:operation location="/TestSecurityModule" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisse">
+      <http:operation location="/OuvrirCaisse" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OuvrirCaisseByEquipement">
+      <http:operation location="/OuvrirCaisseByEquipement" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiement">
+      <http:operation location="/TraiterRequetePaiement" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TraiterRequetePaiementAvecDate">
+      <http:operation location="/TraiterRequetePaiementAvecDate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValiderPaiement">
+      <http:operation location="/ValiderPaiement" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FermerCaisse">
+      <http:operation location="/FermerCaisse" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SuspendreCaisse">
+      <http:operation location="/SuspendreCaisse" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListeTransaction">
+      <http:operation location="/GetListeTransaction" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoUser">
+      <http:operation location="/GetInfoUser" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutorise">
+      <http:operation location="/GetMontantEncaissementAutorise" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestUserConnexion">
+      <http:operation location="/TestUserConnexion" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgain">
+      <http:operation location="/GetTicketToPrintAgain" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainCompteur">
+      <http:operation location="/GetTicketToPrintAgainCompteur" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SessionIsLost">
+      <http:operation location="/SessionIsLost" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModifierSMS">
+      <http:operation location="/ModifierSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertSMS">
+      <http:operation location="/InsertSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_TRAITE">
+      <http:operation location="/EnregistrerSMS_TRAITE" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnregistrerSMS_Envoye">
+      <http:operation location="/EnregistrerSMS_Envoye" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsNewSession">
+      <http:operation location="/IsNewSession" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnnulerEncaissement">
+      <http:operation location="/AnnulerEncaissement" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckMeterState">
+      <http:operation location="/CheckMeterState" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAutoriserSimulationVolume">
+      <http:operation location="/GetAutoriserSimulationVolume" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BaseServeur">
+      <http:operation location="/BaseServeur" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConstitutionDeReference">
+      <http:operation location="/ConstitutionDeReference" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTicketToPrintAgainTousCanaux">
+      <http:operation location="/GetTicketToPrintAgainTousCanaux" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCAISSES">
+      <http:operation location="/ChargerCAISSES" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerRevendeur">
+      <http:operation location="/ChargerRevendeur" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerPOINT_VENTE">
+      <http:operation location="/ChargerPOINT_VENTE" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerTauxCommission">
+      <http:operation location="/ChargerTauxCommission" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargerCOMPTE_VENDEUR">
+      <http:operation location="/ChargerCOMPTE_VENDEUR" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetourneString">
+      <http:operation location="/RetourneString" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMontantEncaissementAutoriseClasse">
+      <http:operation location="/GetMontantEncaissementAutoriseClasse" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ExternalFunctions">
+    <wsdl:port name="ExternalFunctionsSoap" binding="tns:ExternalFunctionsSoap">
+      <soap:address location="http://192.168.12.104/AsPrepaidWebservicesCIE/ExternFunctions.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ExternalFunctionsSoap12" binding="tns:ExternalFunctionsSoap12">
+      <soap12:address location="http://192.168.12.104/AsPrepaidWebservicesCIE/ExternFunctions.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ExternalFunctionsHttpGet" binding="tns:ExternalFunctionsHttpGet">
+      <http:address location="http://192.168.12.104/AsPrepaidWebservicesCIE/ExternFunctions.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ExternalFunctionsHttpPost" binding="tns:ExternalFunctionsHttpPost">
+      <http:address location="http://192.168.12.104/AsPrepaidWebservicesCIE/ExternFunctions.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

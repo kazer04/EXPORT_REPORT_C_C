@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://billpayment.wsapi.billmanager.mtn.ci/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://billpayment.wsapi.billmanager.mtn.ci/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://billpayment.wsapi.billmanager.mtn.ci/">
+      <s:element name="ProcessOnlinePayment">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="User" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubscriberID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Reference" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Balance" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="TextMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImmediateReply" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessOnlinePaymentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessOnlinePaymentResult" type="tns:GeneralResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GeneralResponse">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RESPONSECODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RESPONSEMESSAGE" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RequestPaymentResponse">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:GeneralResponse">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="FUNDAMOTRANSACTIONID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="THIRDPARTYACCOUNTREF" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ProcessOnlinePayment_V1.1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="User" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubscriberID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Reference" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Balance" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="TextMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImmediateReply" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImmediatePayment" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessOnlinePayment_V1.1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessOnlinePayment_V1.1Result" type="tns:GeneralResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessOnlinePayment_V1.2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="User" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubscriberID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Reference" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Balance" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="TextMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Token" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImmediateReply" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="ImmediatePayment" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessOnlinePayment_V1.2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessOnlinePayment_V1.2Result" type="tns:GeneralResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessOnlinePayment_V1.3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serviceCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subscriberId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reference" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="balance" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="textMessage" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="immediateReply" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="immediatePayment" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessOnlinePayment_V1.3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessOnlinePayment_V1.3Result" type="tns:GeneralResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeneralResponse" nillable="true" type="tns:GeneralResponse" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ProcessOnlinePaymentSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessOnlinePayment" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePaymentSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessOnlinePaymentResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.1SoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessOnlinePayment_V1.1" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.1SoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessOnlinePayment_V1.1Response" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.2SoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessOnlinePayment_V1.2" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.2SoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessOnlinePayment_V1.2Response" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.3SoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessOnlinePayment_V1.3" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.3SoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessOnlinePayment_V1.3Response" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePaymentHttpGetIn">
+    <wsdl:part name="User" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ServiceCode" type="s:string" />
+    <wsdl:part name="SubscriberID" type="s:string" />
+    <wsdl:part name="Reference" type="s:string" />
+    <wsdl:part name="Balance" type="s:string" />
+    <wsdl:part name="TextMessage" type="s:string" />
+    <wsdl:part name="Token" type="s:string" />
+    <wsdl:part name="ImmediateReply" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePaymentHttpGetOut">
+    <wsdl:part name="Body" element="tns:GeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.1HttpGetIn">
+    <wsdl:part name="User" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ServiceCode" type="s:string" />
+    <wsdl:part name="SubscriberID" type="s:string" />
+    <wsdl:part name="Reference" type="s:string" />
+    <wsdl:part name="Balance" type="s:string" />
+    <wsdl:part name="TextMessage" type="s:string" />
+    <wsdl:part name="Token" type="s:string" />
+    <wsdl:part name="ImmediateReply" type="s:string" />
+    <wsdl:part name="ImmediatePayment" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.1HttpGetOut">
+    <wsdl:part name="Body" element="tns:GeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.2HttpGetIn">
+    <wsdl:part name="User" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ServiceCode" type="s:string" />
+    <wsdl:part name="SubscriberID" type="s:string" />
+    <wsdl:part name="Reference" type="s:string" />
+    <wsdl:part name="Balance" type="s:string" />
+    <wsdl:part name="TextMessage" type="s:string" />
+    <wsdl:part name="Token" type="s:string" />
+    <wsdl:part name="ImmediateReply" type="s:string" />
+    <wsdl:part name="ImmediatePayment" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.2HttpGetOut">
+    <wsdl:part name="Body" element="tns:GeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.3HttpGetIn">
+    <wsdl:part name="user" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="serviceCode" type="s:string" />
+    <wsdl:part name="subscriberId" type="s:string" />
+    <wsdl:part name="reference" type="s:string" />
+    <wsdl:part name="balance" type="s:string" />
+    <wsdl:part name="textMessage" type="s:string" />
+    <wsdl:part name="immediateReply" type="s:string" />
+    <wsdl:part name="immediatePayment" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.3HttpGetOut">
+    <wsdl:part name="Body" element="tns:GeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePaymentHttpPostIn">
+    <wsdl:part name="User" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ServiceCode" type="s:string" />
+    <wsdl:part name="SubscriberID" type="s:string" />
+    <wsdl:part name="Reference" type="s:string" />
+    <wsdl:part name="Balance" type="s:string" />
+    <wsdl:part name="TextMessage" type="s:string" />
+    <wsdl:part name="Token" type="s:string" />
+    <wsdl:part name="ImmediateReply" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePaymentHttpPostOut">
+    <wsdl:part name="Body" element="tns:GeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.1HttpPostIn">
+    <wsdl:part name="User" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ServiceCode" type="s:string" />
+    <wsdl:part name="SubscriberID" type="s:string" />
+    <wsdl:part name="Reference" type="s:string" />
+    <wsdl:part name="Balance" type="s:string" />
+    <wsdl:part name="TextMessage" type="s:string" />
+    <wsdl:part name="Token" type="s:string" />
+    <wsdl:part name="ImmediateReply" type="s:string" />
+    <wsdl:part name="ImmediatePayment" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.1HttpPostOut">
+    <wsdl:part name="Body" element="tns:GeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.2HttpPostIn">
+    <wsdl:part name="User" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="ServiceCode" type="s:string" />
+    <wsdl:part name="SubscriberID" type="s:string" />
+    <wsdl:part name="Reference" type="s:string" />
+    <wsdl:part name="Balance" type="s:string" />
+    <wsdl:part name="TextMessage" type="s:string" />
+    <wsdl:part name="Token" type="s:string" />
+    <wsdl:part name="ImmediateReply" type="s:string" />
+    <wsdl:part name="ImmediatePayment" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.2HttpPostOut">
+    <wsdl:part name="Body" element="tns:GeneralResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.3HttpPostIn">
+    <wsdl:part name="user" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="serviceCode" type="s:string" />
+    <wsdl:part name="subscriberId" type="s:string" />
+    <wsdl:part name="reference" type="s:string" />
+    <wsdl:part name="balance" type="s:string" />
+    <wsdl:part name="textMessage" type="s:string" />
+    <wsdl:part name="immediateReply" type="s:string" />
+    <wsdl:part name="immediatePayment" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProcessOnlinePayment_V1.3HttpPostOut">
+    <wsdl:part name="Body" element="tns:GeneralResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BillPaymentSoap">
+    <wsdl:operation name="ProcessOnlinePayment">
+      <wsdl:input message="tns:ProcessOnlinePaymentSoapIn" />
+      <wsdl:output message="tns:ProcessOnlinePaymentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment">
+      <wsdl:input name="ProcessOnlinePayment_V1.1" message="tns:ProcessOnlinePayment_V1.1SoapIn" />
+      <wsdl:output name="ProcessOnlinePayment_V1.1" message="tns:ProcessOnlinePayment_V1.1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V2">
+      <wsdl:input name="ProcessOnlinePayment_V1.2" message="tns:ProcessOnlinePayment_V1.2SoapIn" />
+      <wsdl:output name="ProcessOnlinePayment_V1.2" message="tns:ProcessOnlinePayment_V1.2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V3">
+      <wsdl:input name="ProcessOnlinePayment_V1.3" message="tns:ProcessOnlinePayment_V1.3SoapIn" />
+      <wsdl:output name="ProcessOnlinePayment_V1.3" message="tns:ProcessOnlinePayment_V1.3SoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="BillPaymentSoap2">
+    <wsdl:operation name="ProcessOnlinePayment">
+      <wsdl:input message="tns:ProcessOnlinePaymentHttpGetIn" />
+      <wsdl:output message="tns:ProcessOnlinePaymentHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment">
+      <wsdl:input name="ProcessOnlinePayment_V1.1" message="tns:ProcessOnlinePayment_V1.1HttpGetIn" />
+      <wsdl:output name="ProcessOnlinePayment_V1.1" message="tns:ProcessOnlinePayment_V1.1HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V2">
+      <wsdl:input name="ProcessOnlinePayment_V1.2" message="tns:ProcessOnlinePayment_V1.2HttpGetIn" />
+      <wsdl:output name="ProcessOnlinePayment_V1.2" message="tns:ProcessOnlinePayment_V1.2HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V3">
+      <wsdl:input name="ProcessOnlinePayment_V1.3" message="tns:ProcessOnlinePayment_V1.3HttpGetIn" />
+      <wsdl:output name="ProcessOnlinePayment_V1.3" message="tns:ProcessOnlinePayment_V1.3HttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="BillPaymentSoap3">
+    <wsdl:operation name="ProcessOnlinePayment">
+      <wsdl:input message="tns:ProcessOnlinePaymentHttpPostIn" />
+      <wsdl:output message="tns:ProcessOnlinePaymentHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment">
+      <wsdl:input name="ProcessOnlinePayment_V1.1" message="tns:ProcessOnlinePayment_V1.1HttpPostIn" />
+      <wsdl:output name="ProcessOnlinePayment_V1.1" message="tns:ProcessOnlinePayment_V1.1HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V2">
+      <wsdl:input name="ProcessOnlinePayment_V1.2" message="tns:ProcessOnlinePayment_V1.2HttpPostIn" />
+      <wsdl:output name="ProcessOnlinePayment_V1.2" message="tns:ProcessOnlinePayment_V1.2HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V3">
+      <wsdl:input name="ProcessOnlinePayment_V1.3" message="tns:ProcessOnlinePayment_V1.3HttpPostIn" />
+      <wsdl:output name="ProcessOnlinePayment_V1.3" message="tns:ProcessOnlinePayment_V1.3HttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BillPaymentSoap" type="tns:BillPaymentSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcessOnlinePayment">
+      <soap:operation soapAction="http://billpayment.wsapi.billmanager.mtn.ci/ProcessOnlinePayment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment">
+      <soap:operation soapAction="http://billpayment.wsapi.billmanager.mtn.ci/ProcessOnlinePayment" style="document" />
+      <wsdl:input name="ProcessOnlinePayment_V1.1">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ProcessOnlinePayment_V1.1">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V2">
+      <soap:operation soapAction="http://billpayment.wsapi.billmanager.mtn.ci/ProcessOnlinePayment" style="document" />
+      <wsdl:input name="ProcessOnlinePayment_V1.2">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ProcessOnlinePayment_V1.2">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V3">
+      <soap:operation soapAction="http://billpayment.wsapi.billmanager.mtn.ci/ProcessOnlinePayment" style="document" />
+      <wsdl:input name="ProcessOnlinePayment_V1.3">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ProcessOnlinePayment_V1.3">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BillPaymentSoap1" type="tns:BillPaymentSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcessOnlinePayment">
+      <soap12:operation soapAction="http://billpayment.wsapi.billmanager.mtn.ci/ProcessOnlinePayment" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment">
+      <soap12:operation soapAction="http://billpayment.wsapi.billmanager.mtn.ci/ProcessOnlinePayment" style="document" />
+      <wsdl:input name="ProcessOnlinePayment_V1.1">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ProcessOnlinePayment_V1.1">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V2">
+      <soap12:operation soapAction="http://billpayment.wsapi.billmanager.mtn.ci/ProcessOnlinePayment" style="document" />
+      <wsdl:input name="ProcessOnlinePayment_V1.2">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ProcessOnlinePayment_V1.2">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V3">
+      <soap12:operation soapAction="http://billpayment.wsapi.billmanager.mtn.ci/ProcessOnlinePayment" style="document" />
+      <wsdl:input name="ProcessOnlinePayment_V1.3">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ProcessOnlinePayment_V1.3">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BillPaymentSoap2" type="tns:BillPaymentSoap2">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ProcessOnlinePayment">
+      <http:operation location="/ProcessOnlinePayment" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment">
+      <http:operation location="/ProcessOnlinePayment_V1.1" />
+      <wsdl:input name="ProcessOnlinePayment_V1.1">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="ProcessOnlinePayment_V1.1">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V2">
+      <http:operation location="/ProcessOnlinePayment_V1.2" />
+      <wsdl:input name="ProcessOnlinePayment_V1.2">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="ProcessOnlinePayment_V1.2">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V3">
+      <http:operation location="/ProcessOnlinePayment_V1.3" />
+      <wsdl:input name="ProcessOnlinePayment_V1.3">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="ProcessOnlinePayment_V1.3">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BillPaymentSoap3" type="tns:BillPaymentSoap3">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ProcessOnlinePayment">
+      <http:operation location="/ProcessOnlinePayment" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment">
+      <http:operation location="/ProcessOnlinePayment_V1.1" />
+      <wsdl:input name="ProcessOnlinePayment_V1.1">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="ProcessOnlinePayment_V1.1">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V2">
+      <http:operation location="/ProcessOnlinePayment_V1.2" />
+      <wsdl:input name="ProcessOnlinePayment_V1.2">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="ProcessOnlinePayment_V1.2">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessOnlinePayment_V3">
+      <http:operation location="/ProcessOnlinePayment_V1.3" />
+      <wsdl:input name="ProcessOnlinePayment_V1.3">
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output name="ProcessOnlinePayment_V1.3">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BillPayment">
+    <wsdl:port name="BillPaymentSoap" binding="tns:BillPaymentSoap">
+      <soap:address location="https://billmap.mtn.ci:8443/WebServices/BillPayment.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BillPaymentSoap1" binding="tns:BillPaymentSoap1">
+      <soap12:address location="https://billmap.mtn.ci:8443/WebServices/BillPayment.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BillPaymentSoap2" binding="tns:BillPaymentSoap2">
+      <http:address location="https://billmap.mtn.ci:8443/WebServices/BillPayment.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BillPaymentSoap3" binding="tns:BillPaymentSoap3">
+      <http:address location="https://billmap.mtn.ci:8443/WebServices/BillPayment.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,605 @@
+INFO 2017-05-15 00:06:19  Charment de EntityManager
+INFO 2017-05-15 00:06:19  Charment de ModelManager
+INFO 2017-05-15 00:06:19  Charment de GridManager
+INFO 2017-05-15 00:06:19  Charment de AddManager
+INFO 2017-05-15 00:06:19  Charment de AppManager
+INFO 2017-05-15 00:06:19  Charment de DataWsManager
+INFO 2017-05-15 00:06:19  Charment de TransactionManager
+INFO 2017-05-15 00:06:19  Charment de PersistanceManager
+INFO 2017-05-15 00:06:19  Charment de JasperReportManager
+INFO 2017-05-15 00:06:21  Charment de LoadAllTableAndView
+INFO 2017-05-15 00:06:21  \vall2\\web\\\general\app\model
+INFO 2017-05-15 00:06:21  buildModel
+INFO 2017-05-15 00:06:21  buildGrid
+INFO 2017-05-15 00:06:21  buildApp
+INFO 2017-05-15 00:06:21  buildDal
+INFO 2017-05-15 00:06:22  DosetJavaClass
+INFO 2017-05-15 00:06:22  buildDal
+INFO 2017-05-15 00:06:22  buildDataWs
+INFO 2017-05-15 00:06:22  buildDataWs
+INFO 2017-05-15 00:06:22  t_alert_event_user_fone  -> strEvent
+INFO 2017-05-15 00:06:22  t_alert_event
+INFO 2017-05-15 00:06:22  t_alert_event_user_fone  -> lgUSERFONEID
+INFO 2017-05-15 00:06:22  t_user_fone
+INFO 2017-05-15 00:06:22  t_menu  -> lgMODULEID
+INFO 2017-05-15 00:06:22  t_module
+INFO 2017-05-15 00:06:22  t_notification  -> lgUSERIDIN
+INFO 2017-05-15 00:06:22  t_user
+INFO 2017-05-15 00:06:22  t_notification  -> lgUSERIDOUT
+INFO 2017-05-15 00:06:22  t_user
+INFO 2017-05-15 00:06:22  t_role_privelege  -> lgROLEID
+INFO 2017-05-15 00:06:22  t_role
+INFO 2017-05-15 00:06:22  t_role_privelege  -> lgPRIVILEGEID
+INFO 2017-05-15 00:06:22  t_privilege
+INFO 2017-05-15 00:06:22  t_role_user  -> lgROLEID
+INFO 2017-05-15 00:06:22  t_role
+INFO 2017-05-15 00:06:22  t_role_user  -> lgUSERID
+INFO 2017-05-15 00:06:22  t_user
+INFO 2017-05-15 00:06:22  t_sms_not_send  -> idSmsMaster
+INFO 2017-05-15 00:06:22  t_sms
+INFO 2017-05-15 00:06:22  t_sous_menu  -> lgMENUID
+INFO 2017-05-15 00:06:22  t_menu
+INFO 2017-05-15 00:06:22  t_user  -> lgLanguageID
+INFO 2017-05-15 00:06:22  t_language
+INFO 2017-05-15 00:06:22  t_user  -> lgSKINID
+INFO 2017-05-15 00:06:22  t_skin
+INFO 2017-05-15 00:06:22  t_user_fone  -> lgUSERID
+INFO 2017-05-15 00:06:22  t_user
+INFO 2017-05-15 00:06:22  t_user_imprimante  -> lgUSERID
+INFO 2017-05-15 00:06:22  t_user
+INFO 2017-05-15 00:06:22  t_user_imprimante  -> lgIMPRIMANTEID
+INFO 2017-05-15 00:06:22  t_imprimante
+INFO 2017-05-15 00:06:22  t_user_services  -> lgSERVICESID
+INFO 2017-05-15 00:06:22  t_services
+INFO 2017-05-15 00:06:22  t_user_services  -> lgUSERID
+INFO 2017-05-15 00:06:22  t_user
+INFO 2017-05-15 00:06:22  buildAdd
+WARNING 2017-05-15 00:06:47  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:47  Suppresion Ok
+WARNING 2017-05-15 00:06:47  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:47  Suppresion Ok
+WARNING 2017-05-15 00:06:47  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:47  Suppresion Ok
+WARNING 2017-05-15 00:06:47  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:47  Suppresion Ok
+WARNING 2017-05-15 00:06:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:48  Suppresion Ok
+WARNING 2017-05-15 00:06:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:48  Suppresion Ok
+WARNING 2017-05-15 00:06:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:48  Suppresion Ok
+WARNING 2017-05-15 00:06:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:48  Suppresion Ok
+WARNING 2017-05-15 00:06:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:48  Suppresion Ok
+WARNING 2017-05-15 00:06:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:48  Suppresion Ok
+WARNING 2017-05-15 00:06:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:48  Suppresion Ok
+WARNING 2017-05-15 00:06:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:48  Suppresion Ok
+WARNING 2017-05-15 00:06:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:48  Suppresion Ok
+WARNING 2017-05-15 00:06:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:49  Suppresion Ok
+WARNING 2017-05-15 00:06:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:49  Suppresion Ok
+WARNING 2017-05-15 00:06:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:49  Suppresion Ok
+WARNING 2017-05-15 00:06:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:49  Suppresion Ok
+WARNING 2017-05-15 00:06:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:49  Suppresion Ok
+WARNING 2017-05-15 00:06:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:49  Suppresion Ok
+WARNING 2017-05-15 00:06:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:49  Suppresion Ok
+WARNING 2017-05-15 00:06:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:49  Suppresion Ok
+WARNING 2017-05-15 00:06:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:49  Suppresion Ok
+WARNING 2017-05-15 00:06:50  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:50  Suppresion Ok
+WARNING 2017-05-15 00:06:50  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:50  Suppresion Ok
+WARNING 2017-05-15 00:06:50  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:50  Suppresion Ok
+WARNING 2017-05-15 00:06:50  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:50  Suppresion Ok
+WARNING 2017-05-15 00:06:50  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:50  Suppresion Ok
+WARNING 2017-05-15 00:06:50  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:50  Suppresion Ok
+WARNING 2017-05-15 00:06:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:51  Suppresion Ok
+WARNING 2017-05-15 00:06:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:51  Suppresion Ok
+WARNING 2017-05-15 00:06:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:51  Suppresion Ok
+WARNING 2017-05-15 00:06:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:51  Suppresion Ok
+WARNING 2017-05-15 00:06:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:51  Suppresion Ok
+WARNING 2017-05-15 00:06:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:51  Suppresion Ok
+WARNING 2017-05-15 00:06:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:51  Suppresion Ok
+WARNING 2017-05-15 00:06:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:51  Suppresion Ok
+WARNING 2017-05-15 00:06:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:51  Suppresion Ok
+WARNING 2017-05-15 00:06:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:51  Suppresion Ok
+WARNING 2017-05-15 00:06:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:51  Suppresion Ok
+WARNING 2017-05-15 00:06:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:51  Suppresion Ok
+WARNING 2017-05-15 00:06:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:52  Suppresion Ok
+WARNING 2017-05-15 00:06:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:52  Suppresion Ok
+WARNING 2017-05-15 00:06:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:52  Suppresion Ok
+WARNING 2017-05-15 00:06:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:52  Suppresion Ok
+WARNING 2017-05-15 00:06:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:52  Suppresion Ok
+WARNING 2017-05-15 00:06:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:52  Suppresion Ok
+WARNING 2017-05-15 00:06:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:52  Suppresion Ok
+WARNING 2017-05-15 00:06:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:52  Suppresion Ok
+WARNING 2017-05-15 00:06:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:52  Suppresion Ok
+WARNING 2017-05-15 00:06:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:52  Suppresion Ok
+WARNING 2017-05-15 00:06:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:52  Suppresion Ok
+WARNING 2017-05-15 00:06:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:53  Suppresion Ok
+WARNING 2017-05-15 00:06:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:53  Suppresion Ok
+WARNING 2017-05-15 00:06:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:53  Suppresion Ok
+WARNING 2017-05-15 00:06:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:53  Suppresion Ok
+WARNING 2017-05-15 00:06:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:53  Suppresion Ok
+WARNING 2017-05-15 00:06:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:53  Suppresion Ok
+WARNING 2017-05-15 00:06:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:53  Suppresion Ok
+WARNING 2017-05-15 00:06:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:53  Suppresion Ok
+WARNING 2017-05-15 00:06:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:53  Suppresion Ok
+WARNING 2017-05-15 00:06:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:53  Suppresion Ok
+WARNING 2017-05-15 00:06:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:53  Suppresion Ok
+WARNING 2017-05-15 00:06:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:54  Suppresion Ok
+WARNING 2017-05-15 00:06:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:54  Suppresion Ok
+WARNING 2017-05-15 00:06:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:54  Suppresion Ok
+WARNING 2017-05-15 00:06:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:54  Suppresion Ok
+WARNING 2017-05-15 00:06:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:54  Suppresion Ok
+WARNING 2017-05-15 00:06:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:54  Suppresion Ok
+WARNING 2017-05-15 00:06:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:54  Suppresion Ok
+WARNING 2017-05-15 00:06:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:54  Suppresion Ok
+WARNING 2017-05-15 00:06:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:54  Suppresion Ok
+WARNING 2017-05-15 00:06:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:54  Suppresion Ok
+WARNING 2017-05-15 00:06:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:54  Suppresion Ok
+WARNING 2017-05-15 00:06:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:54  Suppresion Ok
+WARNING 2017-05-15 00:06:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:55  Suppresion Ok
+WARNING 2017-05-15 00:06:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:55  Suppresion Ok
+WARNING 2017-05-15 00:06:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:55  Suppresion Ok
+WARNING 2017-05-15 00:06:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:55  Suppresion Ok
+WARNING 2017-05-15 00:06:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:55  Suppresion Ok
+WARNING 2017-05-15 00:06:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:55  Suppresion Ok
+WARNING 2017-05-15 00:06:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:55  Suppresion Ok
+WARNING 2017-05-15 00:06:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Suppresion Ok
+INFO 2017-05-15 00:06:55  Suppresion Ok
+INFO 2017-05-15 00:06:55  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:55  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:55  Opération effectuée avec succes
+INFO 2017-05-15 00:06:55  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:56  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:56  Opération effectuée avec succes
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:56  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:56  Opération effectuée avec succes
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:56  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:56  Opération effectuée avec succes
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:56  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:56  Opération effectuée avec succes
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:56  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:56  Opération effectuée avec succes
+INFO 2017-05-15 00:06:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:57  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:57  Opération effectuée avec succes
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:57  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:57  Opération effectuée avec succes
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:57  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:57  Opération effectuée avec succes
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:57  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:57  Opération effectuée avec succes
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:58  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:58  Opération effectuée avec succes
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:58  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:58  Opération effectuée avec succes
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:58  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:58  Opération effectuée avec succes
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:58  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:58  Opération effectuée avec succes
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:58  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:58  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:58  Opération effectuée avec succes
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:59  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:59  Opération effectuée avec succes
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:59  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:59  Opération effectuée avec succes
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:59  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:59  Opération effectuée avec succes
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:06:59  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:06:59  Opération effectuée avec succes
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:06:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:07:00  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:07:00  Opération effectuée avec succes
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:07:00  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:07:00  Opération effectuée avec succes
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:07:00  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:07:00  Opération effectuée avec succes
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:07:00  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:07:00  Opération effectuée avec succes
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:07:00  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:07:00  Opération effectuée avec succes
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:01  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:07:01  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:07:01  Opération effectuée avec succes
+INFO 2017-05-15 00:07:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:01  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:07:01  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:07:01  Opération effectuée avec succes
+INFO 2017-05-15 00:07:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:01  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:07:01  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:07:01  Opération effectuée avec succes
+INFO 2017-05-15 00:07:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-05-15 00:07:01  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-05-15 00:07:01  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-05-15 00:07:01  Opération effectuée avec succes
+INFO 2017-05-15 00:07:01  initMenuConfig
+INFO 2017-05-15 00:07:01  t_alert_event  - TAlertEvent - str_Event null
+INFO 2017-05-15 00:07:01             dtDateEnvoi Date false  null
+INFO 2017-05-15 00:07:01             intMaxMessages Integer false  null
+INFO 2017-05-15 00:07:01             strEvent String false  null
+INFO 2017-05-15 00:07:01             bIsCommand Boolean false  null
+INFO 2017-05-15 00:07:01             strSMSEnglishText String false  null
+INFO 2017-05-15 00:07:01             decNumPercent BigDecimal false  null
+INFO 2017-05-15 00:07:01             strMAILEnglishText String false  null
+INFO 2017-05-15 00:07:01             bRowActive Boolean false  null
+INFO 2017-05-15 00:07:01             strSMSFrenchText String false  null
+INFO 2017-05-15 00:07:01             lgUIDWhoNew String false  null
+INFO 2017-05-15 00:07:01             lgUIDWhoLastUpdate String false  null
+INFO 2017-05-15 00:07:01             strMAILFrenchText String false  null
+INFO 2017-05-15 00:07:01             dtLastEnterDate Date false  null
+INFO 2017-05-15 00:07:01             strERRORCODE String false  null
+INFO 2017-05-15 00:07:01  t_alert_event_user_fone  - TAlertEventUserFone - lg_ID null
+INFO 2017-05-15 00:07:01             lgID String false  null
+INFO 2017-05-15 00:07:01             strEvent TAlertEvent true TAlertEvent 0
+INFO 2017-05-15 00:07:01             lgUSERFONEID TUserFone true TUserFone 23
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01             dtCREATED String false  null
+INFO 2017-05-15 00:07:01  t_event_log  - TEventLog - lg_EVENT_LOG_ID strDESCRIPTION
+INFO 2017-05-15 00:07:01             lgEVENTLOGID String false  null
+INFO 2017-05-15 00:07:01             matriculeEleve String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strDESCRIPTION String false  null
+INFO 2017-05-15 00:07:01             strCREATEDBY String false  null
+INFO 2017-05-15 00:07:01             strUPDATEDBY String false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01             strTABLECONCERN String false  null
+INFO 2017-05-15 00:07:01             strMODULECONCERN String false  null
+INFO 2017-05-15 00:07:01  t_imprimante  - TImprimante - lg_IMPRIMANTE_ID strNAME
+INFO 2017-05-15 00:07:01             lgIMPRIMANTEID String false  null
+INFO 2017-05-15 00:07:01             strNAME String false  null
+INFO 2017-05-15 00:07:01             strDESCRIPTION String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01  t_inboud_message  - TInboudMessage - lg_INBOUND_MESSAGE_ID null
+INFO 2017-05-15 00:07:01             lgINBOUNDMESSAGEID String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strMESSAGE String false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01             strPHONE String false  null
+INFO 2017-05-15 00:07:01  t_institutions  - TInstitutions - lg_INSTITUTION_ID strNAME
+INFO 2017-05-15 00:07:01             lgINSTITUTIONID String false  null
+INFO 2017-05-15 00:07:01             strNAME String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01             strADRESSE String false  null
+INFO 2017-05-15 00:07:01             strEMAIL String false  null
+INFO 2017-05-15 00:07:01             strLOGOLARGE String false  null
+INFO 2017-05-15 00:07:01             strLOGOMIDDLE String false  null
+INFO 2017-05-15 00:07:01             strLOGOSMALL String false  null
+INFO 2017-05-15 00:07:01             strNUMCONTRIBUABLE String false  null
+INFO 2017-05-15 00:07:01             strPARAM1 String false  null
+INFO 2017-05-15 00:07:01             strPARAM2 String false  null
+INFO 2017-05-15 00:07:01             strPARAM3 String false  null
+INFO 2017-05-15 00:07:01             strPHONE String false  null
+INFO 2017-05-15 00:07:01  t_language  - TLanguage - lg_Language_ID strDescription
+INFO 2017-05-15 00:07:01             lgLanguageID String false  null
+INFO 2017-05-15 00:07:01             strLocalCty String false  null
+INFO 2017-05-15 00:07:01             strLocalLg String false  null
+INFO 2017-05-15 00:07:01             strCode String false  null
+INFO 2017-05-15 00:07:01             strDescription String false  null
+INFO 2017-05-15 00:07:01  t_menu  - TMenu - lg_MENU_ID strVALUE
+INFO 2017-05-15 00:07:01             lgMENUID String false  null
+INFO 2017-05-15 00:07:01             strVALUE String false  null
+INFO 2017-05-15 00:07:01             strDESCRIPTION String false  null
+INFO 2017-05-15 00:07:01             intPRIORITY Integer false  null
+INFO 2017-05-15 00:07:01             strStatus String false  null
+INFO 2017-05-15 00:07:01             pKey String false  null
+INFO 2017-05-15 00:07:01             lgMODULEID TModule true TModule 9
+INFO 2017-05-15 00:07:01  t_message  - TMessage - lg_MESSAGE_ID strMESSAGE
+INFO 2017-05-15 00:07:01             lgMESSAGEID String false  null
+INFO 2017-05-15 00:07:01             strMESSAGE String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01  t_module  - TModule - lg_MODULE_ID strVALUE
+INFO 2017-05-15 00:07:01             lgMODULEID String false  null
+INFO 2017-05-15 00:07:01             strVALUE String false  null
+INFO 2017-05-15 00:07:01             strDESCRIPTION String false  null
+INFO 2017-05-15 00:07:01             intPRIORITY Integer false  null
+INFO 2017-05-15 00:07:01             strStatus String false  null
+INFO 2017-05-15 00:07:01             pKey String false  null
+INFO 2017-05-15 00:07:01             strLink String false  null
+INFO 2017-05-15 00:07:01             strIcone String false  null
+INFO 2017-05-15 00:07:01             strIconehover String false  null
+INFO 2017-05-15 00:07:01             strIconeout String false  null
+INFO 2017-05-15 00:07:01             strLinkdefault String false  null
+INFO 2017-05-15 00:07:01  t_notification  - TNotification - lg_ID strDESCRIPTION
+INFO 2017-05-15 00:07:01             lgID String false  null
+INFO 2017-05-15 00:07:01             lgUSERIDIN TUser true TUser 22
+INFO 2017-05-15 00:07:01             lgUSERIDOUT TUser true TUser 22
+INFO 2017-05-15 00:07:01             strDESCRIPTION String false  null
+INFO 2017-05-15 00:07:01             strCONTENT String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01             strTYPE String false  null
+INFO 2017-05-15 00:07:01             strREFRESSOURCE String false  null
+INFO 2017-05-15 00:07:01  t_outboud_message  - TOutboudMessage - lg_OUTBOUND_MESSAGE_ID null
+INFO 2017-05-15 00:07:01             lgOUTBOUNDMESSAGEID String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strMESSAGE String false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01             strPHONE String false  null
+INFO 2017-05-15 00:07:01  t_parameters  - TParameters - str_KEY strVALUE
+INFO 2017-05-15 00:07:01             strKEY String false  null
+INFO 2017-05-15 00:07:01             strVALUE String false  null
+INFO 2017-05-15 00:07:01             strDESCRIPTION String false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01             strISENKRYPTED String false  null
+INFO 2017-05-15 00:07:01             strSECTIONKEY String false  null
+INFO 2017-05-15 00:07:01             strTYPE String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01  t_privilege  - TPrivilege - lg_PRIVELEGE_ID strNAME
+INFO 2017-05-15 00:07:01             lgPRIVELEGEID String false  null
+INFO 2017-05-15 00:07:01             strNAME String false  null
+INFO 2017-05-15 00:07:01             strDESCRIPTION String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             lgCREATEDBY String false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             lgUPDATEDBY String false  null
+INFO 2017-05-15 00:07:01             lgPRIVELEGEIDDEP String false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01  t_role  - TRole - lg_ROLE_ID strNAME
+INFO 2017-05-15 00:07:01             lgROLEID String false  null
+INFO 2017-05-15 00:07:01             strNAME String false  null
+INFO 2017-05-15 00:07:01             strDESIGNATION String false  null
+INFO 2017-05-15 00:07:01             strTYPE String false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01  t_role_privelege  - TRolePrivelege - lg_ROLE_PRIVILEGE null
+INFO 2017-05-15 00:07:01             lgROLEPRIVILEGE String false  null
+INFO 2017-05-15 00:07:01             lgROLEID TRole true TRole 14
+INFO 2017-05-15 00:07:01             lgPRIVILEGEID TPrivilege true TPrivilege 13
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             strCREATEDBY String false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strUPDATEDBY String false  null
+INFO 2017-05-15 00:07:01  t_role_user  - TRoleUser - lg_USER_ROLE_ID null
+INFO 2017-05-15 00:07:01             lgUSERROLEID String false  null
+INFO 2017-05-15 00:07:01             lgROLEID TRole true TRole 14
+INFO 2017-05-15 00:07:01             lgUSERID TUser true TUser 22
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strCREATEDBY String false  null
+INFO 2017-05-15 00:07:01             strUPDATEDBY String false  null
+INFO 2017-05-15 00:07:01  t_services  - TServices - lg_SERVICES_ID strNAME
+INFO 2017-05-15 00:07:01             lgSERVICESID String false  null
+INFO 2017-05-15 00:07:01             strNAME String false  null
+INFO 2017-05-15 00:07:01             strDESCRIPTION String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01  t_skin  - TSkin - lg_SKIN_ID strDESCRIPTION
+INFO 2017-05-15 00:07:01             lgSKINID String false  null
+INFO 2017-05-15 00:07:01             strRESOURCE String false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01             strDESCRIPTION String false  null
+INFO 2017-05-15 00:07:01             strDETAILPATH String false  null
+INFO 2017-05-15 00:07:01  t_sms  - TSms - ID_SMS message
+INFO 2017-05-15 00:07:01             idSms String false  null
+INFO 2017-05-15 00:07:01             message String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             lgCREATEDBY String false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             lgUPDATEDBY String false  null
+INFO 2017-05-15 00:07:01             statut String false  null
+INFO 2017-05-15 00:07:01  t_sms_not_send  - TSmsNotSend - ID_SMS messages
+INFO 2017-05-15 00:07:01             idSms String false  null
+INFO 2017-05-15 00:07:01             expediteur String false  null
+INFO 2017-05-15 00:07:01             destinateur String false  null
+INFO 2017-05-15 00:07:01             messages String false  null
+INFO 2017-05-15 00:07:01             statut String false  null
+INFO 2017-05-15 00:07:01             credit Double false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             lgCREATEDBY String false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             lgUPDATEDBY String false  null
+INFO 2017-05-15 00:07:01             idSmsMaster TSms true TSms 19
+INFO 2017-05-15 00:07:01  t_sous_menu  - TSousMenu - lg_SOUS_MENU_ID strVALUE
+INFO 2017-05-15 00:07:01             lgSOUSMENUID String false  null
+INFO 2017-05-15 00:07:01             strVALUE String false  null
+INFO 2017-05-15 00:07:01             strDESCRIPTION String false  null
+INFO 2017-05-15 00:07:01             strCOMPOSANT String false  null
+INFO 2017-05-15 00:07:01             lgMENUID TMenu true TMenu 7
+INFO 2017-05-15 00:07:01             intPRIORITY Integer false  null
+INFO 2017-05-15 00:07:01             strURL String false  null
+INFO 2017-05-15 00:07:01             strStatus String false  null
+INFO 2017-05-15 00:07:01             pKey String false  null
+INFO 2017-05-15 00:07:01  t_user  - TUser - lg_USER_ID strLOGIN
+INFO 2017-05-15 00:07:01             lgUSERID String false  null
+INFO 2017-05-15 00:07:01             strLOGIN String false  null
+INFO 2017-05-15 00:07:01             strPASSWORD String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strCREATEDBY String false  null
+INFO 2017-05-15 00:07:01             strUPDATEDBY String false  null
+INFO 2017-05-15 00:07:01             strFIRSTNAME String false  null
+INFO 2017-05-15 00:07:01             strLASTNAME String false  null
+INFO 2017-05-15 00:07:01             strLASTCONNECTIONDATE Date false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01             dtLASTACTIVITY Date false  null
+INFO 2017-05-15 00:07:01             function String false  null
+INFO 2017-05-15 00:07:01             strPHONE String false  null
+INFO 2017-05-15 00:07:01             strMAIL String false  null
+INFO 2017-05-15 00:07:01             lgLanguageID TLanguage true TLanguage 6
+INFO 2017-05-15 00:07:01             lgSKINID TSkin true TSkin 18
+INFO 2017-05-15 00:07:01             strIDS Integer false  null
+INFO 2017-05-15 00:07:01             bCHANGEPASSWORD Boolean false  null
+INFO 2017-05-15 00:07:01             intCONNEXION Integer false  null
+INFO 2017-05-15 00:07:01             strFUNCTION String false  null
+INFO 2017-05-15 00:07:01             lgEMPLACEMENTID String false  null
+INFO 2017-05-15 00:07:01             bIsConnected Boolean false  null
+INFO 2017-05-15 00:07:01  t_user_fone  - TUserFone - lg_USER_FONE_ID null
+INFO 2017-05-15 00:07:01             lgUSERFONEID String false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             strPHONE String false  null
+INFO 2017-05-15 00:07:01             lgUSERID TUser true TUser 22
+INFO 2017-05-15 00:07:01  t_user_imprimante  - TUserImprimante - lg_USER_IMPRIMQNTE_ID strNAME
+INFO 2017-05-15 00:07:01             lgUSERIMPRIMQNTEID String false  null
+INFO 2017-05-15 00:07:01             lgUSERID TUser true TUser 22
+INFO 2017-05-15 00:07:01             lgIMPRIMANTEID TImprimante true TImprimante 3
+INFO 2017-05-15 00:07:01             strNAME String false  null
+INFO 2017-05-15 00:07:01             strDESCRIPTION String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01  t_user_services  - TUserServices - lg_USER_SERVICES_ID null
+INFO 2017-05-15 00:07:01             lgUSERSERVICESID String false  null
+INFO 2017-05-15 00:07:01             dtUPDATED Date false  null
+INFO 2017-05-15 00:07:01             strSTATUT String false  null
+INFO 2017-05-15 00:07:01             dtCREATED Date false  null
+INFO 2017-05-15 00:07:01             lgSERVICESID TServices true TServices 17
+INFO 2017-05-15 00:07:01             lgUSERID TUser true TUser 22

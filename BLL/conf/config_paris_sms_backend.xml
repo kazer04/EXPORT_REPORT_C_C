@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ars> 
+   <airtime_config>  
+    <Parisservices_WSDL>http://localhost/paytus.webservice/CTransactionService.asmx?WSDL</Parisservices_WSDL>
+    <paris_portal_link>http://localhost/paris_portal/index.php</paris_portal_link>
+    <TransactionService_ressource_wsdl>http://10.12.1.21/paytus.webservice/CTransactionService.asmx?WSDL</TransactionService_ressource_wsdl>
+    <SessionService_ressource_wsdl>http://10.12.1.21/wapservice/CSessionService.asmx?WSDL</SessionService_ressource_wsdl>
+    <AuthenticationService_ressource_wsdl>http://10.12.1.21/wapservice/CAuthenticationService.asmx?WSDL</AuthenticationService_ressource_wsdl>
+    <topup_ressource_wsdl>http://topup-gateway/topupservice/SubmitTransfert.asmx?WSDL</topup_ressource_wsdl>
+    <paytus_ressource_wsdl>http://localhost:8080/paytus_services/paytus_servicesService?WSDL</paytus_ressource_wsdl>
+    <scr_report_file>C://paris_sms_reports//src//</scr_report_file>
+    <path_file_generate_relatif>resources/exported/</path_file_generate_relatif>
+    <path_file_generate_relatif_imported>resources/imported/</path_file_generate_relatif_imported>
+    <path_file_generate_absolute>C://PROJETS\PARIS_SMS//paris_sms//build//web//resources//exported//</path_file_generate_absolute>
+    <path_file_generate_absolute_imported>C://PROJETS\PARIS_SMS//paris_sms//build//web//resources//exported//</path_file_generate_absolute_imported>
+    <scr_report_pdf>C://PROJETS\PARIS_SMS//paris_sms//build//web//resources//reports//pdf//</scr_report_pdf>
+    <scr_report_xls>..//applications//j2ee-modules//paris_sms//resources//reports//xls//</scr_report_xls>
+    <name>paris_sms_db</name>
+    <user>root</user>
+    <password>admin</password>
+    <host>localhost</host>
+    <port>3306</port>
+    <name_sql_server>SMSLOGDATA-NEW</name_sql_server>
+    <user_sql_server>smsadmin</user_sql_server>
+    <password_sql_server>smxtflex</password_sql_server>
+    <host_sql_server>10.12.1.120\SQLSRV2K5</host_sql_server>
+    <port_sql_server>3306</port_sql_server>
+    <sms_size>100</sms_size>
+    <clickatell_IP>3055579</clickatell_IP>
+    <clickatell_User>Soft-Tech</clickatell_User>
+    <clickatell_Password>softtech1</clickatell_Password>
+    <clickatell_phone_number>99005801</clickatell_phone_number>
+    <APP_NAME>PARIS SMS</APP_NAME>
+    <APP_VERSION>V 1.2</APP_VERSION>
+    <APP_RELOAD_ALL>1</APP_RELOAD_ALL>
+    <username_mail>arsnomadic@gmail.com</username_mail>
+    <password_mail>ars00000000</password_mail>
+    <int_size_pagination>20</int_size_pagination>
+    <database_type>mysql</database_type>
+    <ORANGE_FILE_SEPERATOR>;</ORANGE_FILE_SEPERATOR>
+    <log_file>C://LOG/</log_file>
+    <DEFAULT_REMONTE>12:00:00</DEFAULT_REMONTE>
+    <DEFAULT_DT_DEBUT>2009-07-12 00:00:00</DEFAULT_DT_DEBUT>
+    <DEFAULT_DT_FIN>2009-08-20 00:00:00</DEFAULT_DT_FIN> 
+    <MIN_CREDIT_RECHARGE>250</MIN_CREDIT_RECHARGE>   
+    <j2me_dest_port>60004</j2me_dest_port>
+    <modem_port>COM5</modem_port>
+    <kannel_user>j2me</kannel_user>
+    <kannel_pwd>j2me</kannel_pwd>
+    <kannel_ip>10.12.1.1</kannel_ip>
+    <kannel_default_port>0</kannel_default_port>
+    <paris_sms_service_number>8076</paris_sms_service_number>
+    <kannel_port>13003</kannel_port>
+    <path_pari_file>C://pari_files</path_pari_file>	
+    <modem_phone_number>+23795190261</modem_phone_number>	
+    <test_phone_number>+23795190261</test_phone_number>	
+    <pmuc_account_number>+23795190261</pmuc_account_number>	
+    <DEFAULT_SEPARATEUR>-</DEFAULT_SEPARATEUR>
+    <PAYTUS_SEPARATEUR>@</PAYTUS_SEPARATEUR>
+    <BREAKER_SEPARATOR>#</BREAKER_SEPARATOR>
+    <BREAKER_PORT>9632</BREAKER_PORT>
+    <BREAKER_HOST>localhost</BREAKER_HOST>
+    <nb_Max_in_Pool>100</nb_Max_in_Pool>
+    <cp_files_folder>c:/combinaisons/</cp_files_folder>
+    <ce_files_folder>c:/combinaisons_e/</ce_files_folder>
+   </airtime_config>
+</ars>
+
+

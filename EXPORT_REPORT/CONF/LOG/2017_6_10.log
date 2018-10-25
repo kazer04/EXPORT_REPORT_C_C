@@ -1,0 +1,695 @@
+FATAL ERROR 2017-06-10 15:17:53  VALID_USER_DATA
+INFO 2017-06-10 15:17:53  mwA5/LJs+4aMFlf90PV6sA==
+INFO 2017-06-10 15:17:53  mwA5/LJs+4Zkz9LxfVZEyQ==
+INFO 2017-06-10 15:17:53  2017-06-10 15:17:53
+INFO 2017-06-10 15:17:54  Enregistrement de xml   users.xml
+INFO 2017-06-10 15:19:31  MzNph/21PUu+I3SYpgcF86zo8/oIBOWpN/2Xwus8IBkw6g32Oo4pyg==
+INFO 2017-06-10 15:19:31  MzNph/21PUs/VNrS9H9J8D5wy7Nm1y7l
+INFO 2017-06-10 15:19:31  MzNph/21PUvM4tXePzSxpPoivBS+SsjH
+INFO 2017-06-10 15:19:31  6BQ42MnYEt+ocAXSh3s0Ct9q+fz/0Tcj
+INFO 2017-06-10 15:19:31  6BQ42MnYEt+ocAXSh3s0CiGEeXAsHtWk
+INFO 2017-06-10 15:19:31  6BQ42MnYEt8/m86pJMCMOQ==
+INFO 2017-06-10 15:19:31  6BQ42MnYEt8BhAxQGskIdg==
+INFO 2017-06-10 15:19:31  6BQ42MnYEt8MrlkqXIIKCqPWBqB7lOAE06DRlzrHo35VOidv6TLCamhffH1Lz4jL73ysG+K1LdE=
+INFO 2017-06-10 15:19:31  6BQ42MnYEt/OIoGwJexunQ==
+INFO 2017-06-10 15:19:31  Enregistrement de xml   ../CONF/CONF/config.xml
+INFO 2017-06-10 15:19:31  APP_FOLDER_APP : D:\JAVA\PROJECTS\FOOD_TECH\
+INFO 2017-06-10 15:20:09  Ytwadi/aiL76XbZvtHTg7iEqGcZLIACHtETtHlDRqUS6Dhhmw/4e3Q==
+INFO 2017-06-10 15:20:09  Ytwadi/aiL4lFc9E1PUI9Pqgt8EcNYt7
+INFO 2017-06-10 15:20:09  8UKhl6WWDdbw7APe231Li7hBv4yLekNk
+INFO 2017-06-10 15:20:09  8UKhl6WWDdZn+2Hk7lYOmFiBi4M+hebC
+INFO 2017-06-10 15:20:09  8UKhl6WWDdZn+2Hk7lYOmMAYsknLXclO
+INFO 2017-06-10 15:20:09  8UKhl6WWDda0RHU3F57zHg==
+INFO 2017-06-10 15:20:09  8UKhl6WWDda3/WNNiB9suA==
+INFO 2017-06-10 15:20:09  8UKhl6WWDdbf4OzKuTT6tIWAPJJFNC2oaCUETGhY8ZRfClr0ps0PVbxEQIuBe5aPIQBzFrFGLzE=
+INFO 2017-06-10 15:20:09  8UKhl6WWDdYryJ6Y5XVr2A==
+INFO 2017-06-10 15:20:09  Enregistrement de xml   D:\JAVA\PROJECTS\FOOD_TECH\\CONF\CONF\config.xml
+INFO 2017-06-10 15:20:09  D:\JAVA\PROJECTS\FOOD_TECH\BD
+INFO 2017-06-10 15:22:34  Charment de EntityManager
+INFO 2017-06-10 15:22:34  Charment de ModelManager
+INFO 2017-06-10 15:22:34  Charment de GridManager
+INFO 2017-06-10 15:22:34  Charment de AddManager
+INFO 2017-06-10 15:22:34  Charment de AppManager
+INFO 2017-06-10 15:22:34  Charment de DataWsManager
+INFO 2017-06-10 15:22:34  Charment de TransactionManager
+INFO 2017-06-10 15:22:34  Charment de PersistanceManager
+INFO 2017-06-10 15:22:34  Charment de JasperReportManager
+INFO 2017-06-10 15:22:35  Charment de LoadAllTableAndView
+INFO 2017-06-10 15:22:35  \food_tech\web\\general\app\model
+INFO 2017-06-10 15:22:35  buildModel
+INFO 2017-06-10 15:22:35  buildGrid
+INFO 2017-06-10 15:22:35  buildApp
+INFO 2017-06-10 15:22:35  buildDal
+INFO 2017-06-10 15:22:35  DosetJavaClass
+INFO 2017-06-10 15:22:35  buildDal
+INFO 2017-06-10 15:22:35  buildDataWs
+INFO 2017-06-10 15:22:35  buildDataWs
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Integer
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Boolean
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  BigDecimal
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Boolean
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  TAlertEvent
+INFO 2017-06-10 15:22:35  t_alert_event_user_fone  -> strEvent
+INFO 2017-06-10 15:22:35  t_alert_event
+INFO 2017-06-10 15:22:35  TUserFone
+INFO 2017-06-10 15:22:35  t_alert_event_user_fone  -> lgUSERFONEID
+INFO 2017-06-10 15:22:35  t_user_fone
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Integer
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  TModule
+INFO 2017-06-10 15:22:35  t_menu  -> lgMODULEID
+INFO 2017-06-10 15:22:35  t_module
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Integer
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  TUser
+INFO 2017-06-10 15:22:35  t_notification  -> lgUSERIDIN
+INFO 2017-06-10 15:22:35  t_user
+INFO 2017-06-10 15:22:35  TUser
+INFO 2017-06-10 15:22:35  t_notification  -> lgUSERIDOUT
+INFO 2017-06-10 15:22:35  t_user
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  TRole
+INFO 2017-06-10 15:22:35  t_role_privelege  -> lgROLEID
+INFO 2017-06-10 15:22:35  t_role
+INFO 2017-06-10 15:22:35  TPrivilege
+INFO 2017-06-10 15:22:35  t_role_privelege  -> lgPRIVILEGEID
+INFO 2017-06-10 15:22:35  t_privilege
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  TRole
+INFO 2017-06-10 15:22:35  t_role_user  -> lgROLEID
+INFO 2017-06-10 15:22:35  t_role
+INFO 2017-06-10 15:22:35  TUser
+INFO 2017-06-10 15:22:35  t_role_user  -> lgUSERID
+INFO 2017-06-10 15:22:35  t_user
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Double
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  TSms
+INFO 2017-06-10 15:22:35  t_sms_not_send  -> idSmsMaster
+INFO 2017-06-10 15:22:35  t_sms
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  TMenu
+INFO 2017-06-10 15:22:35  t_sous_menu  -> lgMENUID
+INFO 2017-06-10 15:22:35  t_menu
+INFO 2017-06-10 15:22:35  Integer
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  TLanguage
+INFO 2017-06-10 15:22:35  t_user  -> lgLanguageID
+INFO 2017-06-10 15:22:35  t_language
+INFO 2017-06-10 15:22:35  TSkin
+INFO 2017-06-10 15:22:35  t_user  -> lgSKINID
+INFO 2017-06-10 15:22:35  t_skin
+INFO 2017-06-10 15:22:35  Integer
+INFO 2017-06-10 15:22:35  Boolean
+INFO 2017-06-10 15:22:35  Integer
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Boolean
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  TUser
+INFO 2017-06-10 15:22:35  t_user_fone  -> lgUSERID
+INFO 2017-06-10 15:22:35  t_user
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  TUser
+INFO 2017-06-10 15:22:35  t_user_imprimante  -> lgUSERID
+INFO 2017-06-10 15:22:35  t_user
+INFO 2017-06-10 15:22:35  TImprimante
+INFO 2017-06-10 15:22:35  t_user_imprimante  -> lgIMPRIMANTEID
+INFO 2017-06-10 15:22:35  t_imprimante
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  String
+INFO 2017-06-10 15:22:35  Date
+INFO 2017-06-10 15:22:35  TServices
+INFO 2017-06-10 15:22:35  t_user_services  -> lgSERVICESID
+INFO 2017-06-10 15:22:35  t_services
+INFO 2017-06-10 15:22:35  TUser
+INFO 2017-06-10 15:22:35  t_user_services  -> lgUSERID
+INFO 2017-06-10 15:22:35  t_user
+INFO 2017-06-10 15:22:35  buildAdd
+INFO 2017-06-10 15:22:38  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:39  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:39  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:39  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:39  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:39  Opération effectuée avec succes
+INFO 2017-06-10 15:22:39  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:39  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:39  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:39  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:39  Opération effectuée avec succes
+INFO 2017-06-10 15:22:39  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:39  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:39  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:39  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:39  Opération effectuée avec succes
+INFO 2017-06-10 15:22:39  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:39  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:39  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:39  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:39  Opération effectuée avec succes
+INFO 2017-06-10 15:22:40  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:40  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:40  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:40  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:40  Opération effectuée avec succes
+INFO 2017-06-10 15:22:40  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:40  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:40  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:40  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:40  Opération effectuée avec succes
+INFO 2017-06-10 15:22:40  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:40  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:40  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:40  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:40  Opération effectuée avec succes
+INFO 2017-06-10 15:22:40  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:40  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:41  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:41  Opération effectuée avec succes
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:41  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:41  Opération effectuée avec succes
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:41  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:41  Opération effectuée avec succes
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:41  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:41  Opération effectuée avec succes
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:41  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:41  Opération effectuée avec succes
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:41  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:41  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:41  Opération effectuée avec succes
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:42  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:42  Opération effectuée avec succes
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:42  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:42  Opération effectuée avec succes
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:42  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:42  Opération effectuée avec succes
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:42  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:42  Opération effectuée avec succes
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:42  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:42  Opération effectuée avec succes
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:42  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:42  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:42  Opération effectuée avec succes
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:43  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:43  Opération effectuée avec succes
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:43  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:43  Opération effectuée avec succes
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:43  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:43  Opération effectuée avec succes
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:43  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:43  Opération effectuée avec succes
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:43  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:43  Opération effectuée avec succes
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:43  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:43  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:43  Opération effectuée avec succes
+INFO 2017-06-10 15:22:44  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:44  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:44  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:44  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:44  Opération effectuée avec succes
+INFO 2017-06-10 15:22:44  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:44  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:44  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:44  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:44  Opération effectuée avec succes
+INFO 2017-06-10 15:22:44  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-10 15:22:44  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-10 15:22:44  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-10 15:22:44  Opération effectuée avec succes
+INFO 2017-06-10 15:22:44  initMenuConfig
+INFO 2017-06-10 15:22:44  t_alert_event  - TAlertEvent - str_Event null
+INFO 2017-06-10 15:22:44             dtDateEnvoi Date false  null
+INFO 2017-06-10 15:22:44             intMaxMessages Integer false  null
+INFO 2017-06-10 15:22:44             strEvent String false  null
+INFO 2017-06-10 15:22:44             bIsCommand Boolean false  null
+INFO 2017-06-10 15:22:44             strSMSEnglishText String false  null
+INFO 2017-06-10 15:22:44             decNumPercent BigDecimal false  null
+INFO 2017-06-10 15:22:44             strMAILEnglishText String false  null
+INFO 2017-06-10 15:22:44             bRowActive Boolean false  null
+INFO 2017-06-10 15:22:44             strSMSFrenchText String false  null
+INFO 2017-06-10 15:22:44             lgUIDWhoNew String false  null
+INFO 2017-06-10 15:22:44             lgUIDWhoLastUpdate String false  null
+INFO 2017-06-10 15:22:44             strMAILFrenchText String false  null
+INFO 2017-06-10 15:22:44             dtLastEnterDate Date false  null
+INFO 2017-06-10 15:22:44             strERRORCODE String false  null
+INFO 2017-06-10 15:22:44  t_alert_event_user_fone  - TAlertEventUserFone - lg_ID null
+INFO 2017-06-10 15:22:44             lgID String false  null
+INFO 2017-06-10 15:22:44             strEvent TAlertEvent true TAlertEvent 0
+INFO 2017-06-10 15:22:44             lgUSERFONEID TUserFone true TUserFone 23
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44             dtCREATED String false  null
+INFO 2017-06-10 15:22:44  t_event_log  - TEventLog - lg_EVENT_LOG_ID strDESCRIPTION
+INFO 2017-06-10 15:22:44             lgEVENTLOGID String false  null
+INFO 2017-06-10 15:22:44             matriculeEleve String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strDESCRIPTION String false  null
+INFO 2017-06-10 15:22:44             strCREATEDBY String false  null
+INFO 2017-06-10 15:22:44             strUPDATEDBY String false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44             strTABLECONCERN String false  null
+INFO 2017-06-10 15:22:44             strMODULECONCERN String false  null
+INFO 2017-06-10 15:22:44  t_imprimante  - TImprimante - lg_IMPRIMANTE_ID strNAME
+INFO 2017-06-10 15:22:44             lgIMPRIMANTEID String false  null
+INFO 2017-06-10 15:22:44             strNAME String false  null
+INFO 2017-06-10 15:22:44             strDESCRIPTION String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44  t_inboud_message  - TInboudMessage - lg_INBOUND_MESSAGE_ID null
+INFO 2017-06-10 15:22:44             lgINBOUNDMESSAGEID String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strMESSAGE String false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44             strPHONE String false  null
+INFO 2017-06-10 15:22:44  t_institutions  - TInstitutions - lg_INSTITUTION_ID strNAME
+INFO 2017-06-10 15:22:44             lgINSTITUTIONID String false  null
+INFO 2017-06-10 15:22:44             strNAME String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44             strADRESSE String false  null
+INFO 2017-06-10 15:22:44             strEMAIL String false  null
+INFO 2017-06-10 15:22:44             strLOGOLARGE String false  null
+INFO 2017-06-10 15:22:44             strLOGOMIDDLE String false  null
+INFO 2017-06-10 15:22:44             strLOGOSMALL String false  null
+INFO 2017-06-10 15:22:44             strNUMCONTRIBUABLE String false  null
+INFO 2017-06-10 15:22:44             strPARAM1 String false  null
+INFO 2017-06-10 15:22:44             strPARAM2 String false  null
+INFO 2017-06-10 15:22:44             strPARAM3 String false  null
+INFO 2017-06-10 15:22:44             strPHONE String false  null
+INFO 2017-06-10 15:22:44  t_language  - TLanguage - lg_Language_ID strDescription
+INFO 2017-06-10 15:22:44             lgLanguageID String false  null
+INFO 2017-06-10 15:22:44             strLocalCty String false  null
+INFO 2017-06-10 15:22:44             strLocalLg String false  null
+INFO 2017-06-10 15:22:44             strCode String false  null
+INFO 2017-06-10 15:22:44             strDescription String false  null
+INFO 2017-06-10 15:22:44  t_menu  - TMenu - lg_MENU_ID strVALUE
+INFO 2017-06-10 15:22:44             lgMENUID String false  null
+INFO 2017-06-10 15:22:44             strVALUE String false  null
+INFO 2017-06-10 15:22:44             strDESCRIPTION String false  null
+INFO 2017-06-10 15:22:44             intPRIORITY Integer false  null
+INFO 2017-06-10 15:22:44             strStatus String false  null
+INFO 2017-06-10 15:22:44             pKey String false  null
+INFO 2017-06-10 15:22:44             lgMODULEID TModule true TModule 9
+INFO 2017-06-10 15:22:44  t_message  - TMessage - lg_MESSAGE_ID strMESSAGE
+INFO 2017-06-10 15:22:44             lgMESSAGEID String false  null
+INFO 2017-06-10 15:22:44             strMESSAGE String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44  t_module  - TModule - lg_MODULE_ID strVALUE
+INFO 2017-06-10 15:22:44             lgMODULEID String false  null
+INFO 2017-06-10 15:22:44             strVALUE String false  null
+INFO 2017-06-10 15:22:44             strDESCRIPTION String false  null
+INFO 2017-06-10 15:22:44             intPRIORITY Integer false  null
+INFO 2017-06-10 15:22:44             strStatus String false  null
+INFO 2017-06-10 15:22:44             pKey String false  null
+INFO 2017-06-10 15:22:44             strLink String false  null
+INFO 2017-06-10 15:22:44             strIcone String false  null
+INFO 2017-06-10 15:22:44             strIconehover String false  null
+INFO 2017-06-10 15:22:44             strIconeout String false  null
+INFO 2017-06-10 15:22:44             strLinkdefault String false  null
+INFO 2017-06-10 15:22:44  t_notification  - TNotification - lg_ID strDESCRIPTION
+INFO 2017-06-10 15:22:44             lgID String false  null
+INFO 2017-06-10 15:22:44             lgUSERIDIN TUser true TUser 22
+INFO 2017-06-10 15:22:44             lgUSERIDOUT TUser true TUser 22
+INFO 2017-06-10 15:22:44             strDESCRIPTION String false  null
+INFO 2017-06-10 15:22:44             strCONTENT String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44             strTYPE String false  null
+INFO 2017-06-10 15:22:44             strREFRESSOURCE String false  null
+INFO 2017-06-10 15:22:44  t_outboud_message  - TOutboudMessage - lg_OUTBOUND_MESSAGE_ID null
+INFO 2017-06-10 15:22:44             lgOUTBOUNDMESSAGEID String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strMESSAGE String false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44             strPHONE String false  null
+INFO 2017-06-10 15:22:44  t_parameters  - TParameters - str_KEY strVALUE
+INFO 2017-06-10 15:22:44             strKEY String false  null
+INFO 2017-06-10 15:22:44             strVALUE String false  null
+INFO 2017-06-10 15:22:44             strDESCRIPTION String false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44             strISENKRYPTED String false  null
+INFO 2017-06-10 15:22:44             strSECTIONKEY String false  null
+INFO 2017-06-10 15:22:44             strTYPE String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44  t_privilege  - TPrivilege - lg_PRIVELEGE_ID strNAME
+INFO 2017-06-10 15:22:44             lgPRIVELEGEID String false  null
+INFO 2017-06-10 15:22:44             strNAME String false  null
+INFO 2017-06-10 15:22:44             strDESCRIPTION String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             lgCREATEDBY String false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             lgUPDATEDBY String false  null
+INFO 2017-06-10 15:22:44             lgPRIVELEGEIDDEP String false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44  t_role  - TRole - lg_ROLE_ID strNAME
+INFO 2017-06-10 15:22:44             lgROLEID String false  null
+INFO 2017-06-10 15:22:44             strNAME String false  null
+INFO 2017-06-10 15:22:44             strDESIGNATION String false  null
+INFO 2017-06-10 15:22:44             strTYPE String false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44  t_role_privelege  - TRolePrivelege - lg_ROLE_PRIVILEGE null
+INFO 2017-06-10 15:22:44             lgROLEPRIVILEGE String false  null
+INFO 2017-06-10 15:22:44             lgROLEID TRole true TRole 14
+INFO 2017-06-10 15:22:44             lgPRIVILEGEID TPrivilege true TPrivilege 13
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             strCREATEDBY String false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strUPDATEDBY String false  null
+INFO 2017-06-10 15:22:44  t_role_user  - TRoleUser - lg_USER_ROLE_ID null
+INFO 2017-06-10 15:22:44             lgUSERROLEID String false  null
+INFO 2017-06-10 15:22:44             lgROLEID TRole true TRole 14
+INFO 2017-06-10 15:22:44             lgUSERID TUser true TUser 22
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strCREATEDBY String false  null
+INFO 2017-06-10 15:22:44             strUPDATEDBY String false  null
+INFO 2017-06-10 15:22:44  t_services  - TServices - lg_SERVICES_ID strNAME
+INFO 2017-06-10 15:22:44             lgSERVICESID String false  null
+INFO 2017-06-10 15:22:44             strNAME String false  null
+INFO 2017-06-10 15:22:44             strDESCRIPTION String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44  t_skin  - TSkin - lg_SKIN_ID strDESCRIPTION
+INFO 2017-06-10 15:22:44             lgSKINID String false  null
+INFO 2017-06-10 15:22:44             strRESOURCE String false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44             strDESCRIPTION String false  null
+INFO 2017-06-10 15:22:44             strDETAILPATH String false  null
+INFO 2017-06-10 15:22:44  t_sms  - TSms - ID_SMS message
+INFO 2017-06-10 15:22:44             idSms String false  null
+INFO 2017-06-10 15:22:44             message String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             lgCREATEDBY String false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             lgUPDATEDBY String false  null
+INFO 2017-06-10 15:22:44             statut String false  null
+INFO 2017-06-10 15:22:44  t_sms_not_send  - TSmsNotSend - ID_SMS messages
+INFO 2017-06-10 15:22:44             idSms String false  null
+INFO 2017-06-10 15:22:44             expediteur String false  null
+INFO 2017-06-10 15:22:44             destinateur String false  null
+INFO 2017-06-10 15:22:44             messages String false  null
+INFO 2017-06-10 15:22:44             statut String false  null
+INFO 2017-06-10 15:22:44             credit Double false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             lgCREATEDBY String false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             lgUPDATEDBY String false  null
+INFO 2017-06-10 15:22:44             idSmsMaster TSms true TSms 19
+INFO 2017-06-10 15:22:44  t_sous_menu  - TSousMenu - lg_SOUS_MENU_ID strVALUE
+INFO 2017-06-10 15:22:44             lgSOUSMENUID String false  null
+INFO 2017-06-10 15:22:44             strVALUE String false  null
+INFO 2017-06-10 15:22:44             strDESCRIPTION String false  null
+INFO 2017-06-10 15:22:44             strCOMPOSANT String false  null
+INFO 2017-06-10 15:22:44             lgMENUID TMenu true TMenu 7
+INFO 2017-06-10 15:22:44             intPRIORITY Integer false  null
+INFO 2017-06-10 15:22:44             strURL String false  null
+INFO 2017-06-10 15:22:44             strStatus String false  null
+INFO 2017-06-10 15:22:44             pKey String false  null
+INFO 2017-06-10 15:22:44  t_user  - TUser - lg_USER_ID strLOGIN
+INFO 2017-06-10 15:22:44             lgUSERID String false  null
+INFO 2017-06-10 15:22:44             strLOGIN String false  null
+INFO 2017-06-10 15:22:44             strPASSWORD String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strCREATEDBY String false  null
+INFO 2017-06-10 15:22:44             strUPDATEDBY String false  null
+INFO 2017-06-10 15:22:44             strFIRSTNAME String false  null
+INFO 2017-06-10 15:22:44             strLASTNAME String false  null
+INFO 2017-06-10 15:22:44             strLASTCONNECTIONDATE Date false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44             dtLASTACTIVITY Date false  null
+INFO 2017-06-10 15:22:44             function String false  null
+INFO 2017-06-10 15:22:44             strPHONE String false  null
+INFO 2017-06-10 15:22:44             strMAIL String false  null
+INFO 2017-06-10 15:22:44             lgLanguageID TLanguage true TLanguage 6
+INFO 2017-06-10 15:22:44             lgSKINID TSkin true TSkin 18
+INFO 2017-06-10 15:22:44             strIDS Integer false  null
+INFO 2017-06-10 15:22:44             bCHANGEPASSWORD Boolean false  null
+INFO 2017-06-10 15:22:44             intCONNEXION Integer false  null
+INFO 2017-06-10 15:22:44             strFUNCTION String false  null
+INFO 2017-06-10 15:22:44             lgEMPLACEMENTID String false  null
+INFO 2017-06-10 15:22:44             bIsConnected Boolean false  null
+INFO 2017-06-10 15:22:44  t_user_fone  - TUserFone - lg_USER_FONE_ID null
+INFO 2017-06-10 15:22:44             lgUSERFONEID String false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             strPHONE String false  null
+INFO 2017-06-10 15:22:44             lgUSERID TUser true TUser 22
+INFO 2017-06-10 15:22:44  t_user_imprimante  - TUserImprimante - lg_USER_IMPRIMQNTE_ID strNAME
+INFO 2017-06-10 15:22:44             lgUSERIMPRIMQNTEID String false  null
+INFO 2017-06-10 15:22:44             lgUSERID TUser true TUser 22
+INFO 2017-06-10 15:22:44             lgIMPRIMANTEID TImprimante true TImprimante 3
+INFO 2017-06-10 15:22:44             strNAME String false  null
+INFO 2017-06-10 15:22:44             strDESCRIPTION String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44  t_user_services  - TUserServices - lg_USER_SERVICES_ID null
+INFO 2017-06-10 15:22:44             lgUSERSERVICESID String false  null
+INFO 2017-06-10 15:22:44             dtUPDATED Date false  null
+INFO 2017-06-10 15:22:44             strSTATUT String false  null
+INFO 2017-06-10 15:22:44             dtCREATED Date false  null
+INFO 2017-06-10 15:22:44             lgSERVICESID TServices true TServices 17
+INFO 2017-06-10 15:22:44             lgUSERID TUser true TUser 22
+INFO 2017-06-10 15:29:35  9WzaBL+1C8KJdO5dZ2HgwQ==
+INFO 2017-06-10 15:29:35  LEdk4FU8jI/sNzdHNa1+Tg==
+INFO 2017-06-10 15:29:35  LEdk4FU8jI+PJphoyrNZWA==
+INFO 2017-06-10 15:29:35  LEdk4FU8jI/hRNth4Oa0AA==
+INFO 2017-06-10 15:29:35  Enregistrement de xml   users.xml

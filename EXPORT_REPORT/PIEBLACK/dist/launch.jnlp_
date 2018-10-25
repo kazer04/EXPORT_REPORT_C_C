@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>PIEBLACK</title>
+        <vendor>Admin</vendor>
+        <homepage href=""/>
+        <description>PIEBLACK</description>
+        <description kind="short">PIEBLACK</description>
+        
+        
+    </information>
+    <update check="always"/>
+    
+    <resources>
+        <j2se version="1.7+"/>
+        <jar href="PIEBLACK.jar" main="true"/>
+        
+        
+    <jar href="lib/iText-5.0.5.jar"/>
+<jar href="lib/jdom.jar"/>
+<jar href="lib/commons-collections-2.1.1.jar"/>
+<jar href="lib/commons-collections-3.2.jar"/>
+<jar href="lib/commons-el.jar"/>
+<jar href="lib/commons-fileupload-1.2.1.jar"/>
+<jar href="lib/commons-logging-1.1.jar"/>
+<jar href="lib/log4j-1.2.11.jar"/>
+<jar href="lib/log4j.jar"/>
+<jar href="lib/slf4j-api-1.5.0.jar"/>
+<jar href="lib/slf4j-simple-1.5.0.jar"/>
+<jar href="lib/jasypt-1.7.1-javadoc.jar"/>
+<jar href="lib/jasypt-1.7.1-lite.jar"/>
+<jar href="lib/jasypt-1.7.1-sources.jar"/>
+<jar href="lib/jasypt-1.7.1.jar"/>
+<jar href="lib/TOOLKITS.jar"/>
+<jar href="lib/MULTILANGUE.jar"/>
+<jar href="lib/CLIENTSERVICE.jar"/>
+<jar href="lib/BLL.jar"/>
+<jar href="lib/BeanInfo.jar"/>
+<jar href="lib/clientos.jar"/>
+<jar href="lib/commonos.jar"/>
+<jar href="lib/hessian-3.1.1.jar"/>
+<jar href="lib/hsqldb.jar"/>
+<jar href="lib/iText-2.1.7.jar"/>
+<jar href="lib/iText-rtf-2.1.7.jar"/>
+<jar href="lib/itext-1.4.8.jar"/>
+<jar href="lib/jcalendar.jar"/>
+<jar href="lib/jnlp-servlet.jar"/>
+<jar href="lib/jnlp.jar"/>
+<jar href="lib/log4j-1.2.7.jar"/>
+<jar href="lib/poi-2.0-RC2-20040102.jar"/>
+<jar href="lib/pooler.jar"/>
+<jar href="lib/serveros.jar"/>
+<jar href="lib/srcclientos.jar"/>
+<jar href="lib/srccommonos.jar"/>
+<jar href="lib/srcserveros.jar"/>
+<jar href="lib/srcclientos.jar"/>
+<jar href="lib/srccommonos.jar"/>
+<jar href="lib/srcserveros.jar"/>
+<jar href="lib/substance-6.0.jar"/>
+</resources>
+    <application-desc main-class="config_editor.Main">
+        
+    </application-desc>
+</jnlp>

@@ -1,0 +1,1559 @@
+FATAL ERROR 2017-06-02 11:47:02  VALID_USER_DATA
+INFO 2017-06-02 11:47:02  T/qx+PNsQypAVvrqyKntCQ==
+INFO 2017-06-02 11:47:02  T/qx+PNsQyqor4sctS8v1A==
+INFO 2017-06-02 11:47:02  2017-06-02 11:47:02
+INFO 2017-06-02 11:47:02  Enregistrement de xml   users.xml
+INFO 2017-06-02 11:48:41  aefbmSEEPLLfGe+thiMA6piWeCvWtm+Tgo/DdDQSkXfkgF8pXlQ8Zw==
+INFO 2017-06-02 11:48:41  aefbmSEEPLIL8C4Tl5SmiQqc/ZQ5mM8B
+INFO 2017-06-02 11:48:41  aefbmSEEPLJmn5qakpRB40QMcGQZkqlw
+INFO 2017-06-02 11:48:41  aefbmSEEPLJZWTN4ccd5huqdkGaEqWG4Q5bFe7iwQGk=
+INFO 2017-06-02 11:48:41  ZQNYguxzYEqbvAk7FIz+BBq9Hg9Afwt6Cc8/PWxLfxdZjvk3VEeaZg==
+INFO 2017-06-02 11:48:41  ZQNYguxzYEpQSyrEI8EoqA==
+INFO 2017-06-02 11:48:41  ZQNYguxzYEpVT+8PhO2QwA==
+INFO 2017-06-02 11:48:41  ZQNYguxzYEqnZqYApurohbQ2mgCXKdhNJMBm5f6raApEMDi7rmsNIJZH637xMJjWI+G/M7YNY3A=
+INFO 2017-06-02 11:48:41  ZQNYguxzYEpu1XO+Wv8knw==
+INFO 2017-06-02 11:48:42  Enregistrement de xml   ../CONF/CONF/config.xml
+INFO 2017-06-02 11:48:42  APP_FOLDER_APP : D:\JAVA\PROJECTS\RDV_VISA_JAVA\
+INFO 2017-06-02 11:49:35  Charment de EntityManager
+INFO 2017-06-02 11:49:35  Charment de ModelManager
+INFO 2017-06-02 11:49:35  Charment de GridManager
+INFO 2017-06-02 11:49:35  Charment de AddManager
+INFO 2017-06-02 11:49:35  Charment de AppManager
+INFO 2017-06-02 11:49:35  Charment de DataWsManager
+INFO 2017-06-02 11:49:35  Charment de TransactionManager
+INFO 2017-06-02 11:49:35  Charment de PersistanceManager
+INFO 2017-06-02 11:49:35  Charment de JasperReportManager
+INFO 2017-06-02 11:49:36  Charment de LoadAllTableAndView
+INFO 2017-06-02 11:49:37  \rdv_visa_passeport\web\admin\\\general\app\model
+INFO 2017-06-02 11:49:37  buildModel
+INFO 2017-06-02 11:49:37  buildGrid
+INFO 2017-06-02 11:49:37  buildApp
+INFO 2017-06-02 11:49:37  buildDal
+INFO 2017-06-02 11:49:37  DosetJavaClass
+INFO 2017-06-02 11:49:38  buildDal
+INFO 2017-06-02 11:49:38  buildDataWs
+INFO 2017-06-02 11:49:38  buildDataWs
+INFO 2017-06-02 11:49:38  t_annonce_detail  -> lgANNONCEID
+INFO 2017-06-02 11:49:38  t_annonce
+INFO 2017-06-02 11:49:38  t_annonce_detail  -> lgTRANCHESITEID
+INFO 2017-06-02 11:49:38  t_tranche_site
+INFO 2017-06-02 11:49:38  t_caisse  -> lgUSERID
+INFO 2017-06-02 11:49:38  t_user
+INFO 2017-06-02 11:49:38  t_cash_transaction  -> lgTYPEREGLEMENTID
+INFO 2017-06-02 11:49:38  t_type_reglement
+INFO 2017-06-02 11:49:38  t_client  -> lgTYPECLIENTID
+INFO 2017-06-02 11:49:38  t_type_client
+INFO 2017-06-02 11:49:38  t_client  -> lgVILLEID
+INFO 2017-06-02 11:49:38  t_ville
+INFO 2017-06-02 11:49:38  t_code_generic  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_code_passeport  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_code_visa  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_code_visa  -> lgTYPEVISA
+INFO 2017-06-02 11:49:38  t_type_visa
+INFO 2017-06-02 11:49:38  t_coffre_caisse  -> lgUSERID
+INFO 2017-06-02 11:49:38  t_user
+INFO 2017-06-02 11:49:38  t_compte_client  -> lgCLIENTID
+INFO 2017-06-02 11:49:38  t_client
+INFO 2017-06-02 11:49:38  t_concerner  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_concerner  -> intNATIONALITEORIGINE
+INFO 2017-06-02 11:49:38  t_countrys
+INFO 2017-06-02 11:49:38  t_concerner  -> intNATIONALITEACTUELLE
+INFO 2017-06-02 11:49:38  t_countrys
+INFO 2017-06-02 11:49:38  t_concerner_passeport  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_concerner_passeport  -> intNATIONALITEORIGINE
+INFO 2017-06-02 11:49:38  t_countrys
+INFO 2017-06-02 11:49:38  t_concerner_passeport  -> intNATIONALITEACTUELLE
+INFO 2017-06-02 11:49:38  t_countrys
+INFO 2017-06-02 11:49:38  t_demande_visa  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_demande_visa  -> lgTYPEPASSEPORTID
+INFO 2017-06-02 11:49:38  t_type_passeport
+INFO 2017-06-02 11:49:38  t_demande_visa  -> lgNATUREPASSEPORTID
+INFO 2017-06-02 11:49:38  t_nature_passeport
+INFO 2017-06-02 11:49:38  t_demande_visa  -> lgMOTIFVOYAGEID
+INFO 2017-06-02 11:49:38  t_motif_voyage
+INFO 2017-06-02 11:49:38  t_demande_visa  -> lgDUREEVISASOLLICITEID
+INFO 2017-06-02 11:49:38  t_duree_visa_sollicite
+INFO 2017-06-02 11:49:38  t_demande_visa  -> lgDUREESEJOURID
+INFO 2017-06-02 11:49:38  t_duree_voyage_sejour
+INFO 2017-06-02 11:49:38  t_demande_visa  -> lgSERVICEVISAID
+INFO 2017-06-02 11:49:38  t_services_visa
+INFO 2017-06-02 11:49:38  t_depenses  -> lgTYPEDEPENSEID
+INFO 2017-06-02 11:49:38  t_type_depense
+INFO 2017-06-02 11:49:38  t_document  -> lgTYPEVISAID
+INFO 2017-06-02 11:49:38  t_type_visa
+INFO 2017-06-02 11:49:38  t_document  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_documents_visa_arrivee  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_documents_visa_arrivee  -> lgTYPEVISATYPEDOCUMENTID
+INFO 2017-06-02 11:49:38  t_type_visa_type_document
+INFO 2017-06-02 11:49:38  t_groupe_code_visa_detail  -> lgGROUPECODEVISAID
+INFO 2017-06-02 11:49:38  t_groupe_code_visa
+INFO 2017-06-02 11:49:38  t_groupe_code_visa_detail  -> lgCODEID
+INFO 2017-06-02 11:49:38  t_code_visa
+INFO 2017-06-02 11:49:38  t_menu  -> lgMODULEID
+INFO 2017-06-02 11:49:38  t_module
+INFO 2017-06-02 11:49:38  t_notification  -> lgUSERIDIN
+INFO 2017-06-02 11:49:38  t_user
+INFO 2017-06-02 11:49:38  t_notification  -> lgUSERIDOUT
+INFO 2017-06-02 11:49:38  t_user
+INFO 2017-06-02 11:49:38  t_rdv  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_rdv  -> lgTRANCHESITEID
+INFO 2017-06-02 11:49:38  t_tranche_site
+INFO 2017-06-02 11:49:38  t_rdv_generic  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_rdv_generic  -> lgTRANCHESITEGENERICID
+INFO 2017-06-02 11:49:38  t_tranche_site_generic
+INFO 2017-06-02 11:49:38  t_rdv_passeport  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_rdv_passeport  -> lgTRANCHESITEPASSEPORTID
+INFO 2017-06-02 11:49:38  t_tranche_site_passeport
+INFO 2017-06-02 11:49:38  t_recettes  -> lgTYPERECETTEID
+INFO 2017-06-02 11:49:38  t_type_recette
+INFO 2017-06-02 11:49:38  t_repondant  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_resume_caisse  -> lgUSERID
+INFO 2017-06-02 11:49:38  t_user
+INFO 2017-06-02 11:49:38  t_resume_caisse  -> idCoffreCaisse
+INFO 2017-06-02 11:49:38  t_coffre_caisse
+INFO 2017-06-02 11:49:38  t_role_privelege  -> lgROLEID
+INFO 2017-06-02 11:49:38  t_role
+INFO 2017-06-02 11:49:38  t_role_privelege  -> lgPRIVILEGEID
+INFO 2017-06-02 11:49:38  t_privilege
+INFO 2017-06-02 11:49:38  t_role_user  -> lgROLEID
+INFO 2017-06-02 11:49:38  t_role
+INFO 2017-06-02 11:49:38  t_role_user  -> lgUSERID
+INFO 2017-06-02 11:49:38  t_user
+INFO 2017-06-02 11:49:38  t_site  -> intCOUNTRYID
+INFO 2017-06-02 11:49:38  t_countrys
+INFO 2017-06-02 11:49:38  t_snap_shop_daly_recette  -> lgTYPERECETTEID
+INFO 2017-06-02 11:49:38  t_type_recette
+INFO 2017-06-02 11:49:38  t_snap_shop_daly_transaction_generic_by_partenaire  -> lgPARTENAIREID
+INFO 2017-06-02 11:49:38  t_partenaire
+INFO 2017-06-02 11:49:38  t_snap_shop_daly_transaction_passeport_by_partenaire  -> lgPARTENAIREID
+INFO 2017-06-02 11:49:38  t_partenaire
+INFO 2017-06-02 11:49:38  t_snap_shop_daly_transaction_visa_by_partenaire  -> lgPARTENAIREID
+INFO 2017-06-02 11:49:38  t_partenaire
+INFO 2017-06-02 11:49:38  t_snap_shop_rdv  -> lgSITEID
+INFO 2017-06-02 11:49:38  t_site
+INFO 2017-06-02 11:49:38  t_snap_shop_rdv_generic  -> lgSITEID
+INFO 2017-06-02 11:49:38  t_site
+INFO 2017-06-02 11:49:38  t_snap_shop_rdv_passeport  -> lgSITEID
+INFO 2017-06-02 11:49:38  t_site
+INFO 2017-06-02 11:49:38  t_snap_shop_rdv_tranche  -> lgTRANCHESITEID
+INFO 2017-06-02 11:49:38  t_tranche_site
+INFO 2017-06-02 11:49:38  t_snap_shop_rdv_tranche_generic  -> lgTRANCHESITEID
+INFO 2017-06-02 11:49:38  t_tranche_site_generic
+INFO 2017-06-02 11:49:38  t_snap_shop_rdv_tranche_passeport  -> lgTRANCHESITEPASSEPORTID
+INFO 2017-06-02 11:49:38  t_tranche_site_passeport
+INFO 2017-06-02 11:49:38  t_sous_menu  -> lgMENUID
+INFO 2017-06-02 11:49:38  t_menu
+INFO 2017-06-02 11:49:38  t_souscripteur  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_souscripteur  -> intCOUNTRYID
+INFO 2017-06-02 11:49:38  t_countrys
+INFO 2017-06-02 11:49:38  t_souscripteur  -> intNATIONALITY
+INFO 2017-06-02 11:49:38  t_countrys
+INFO 2017-06-02 11:49:38  t_souscripteur_passeport  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_souscripteur_passeport  -> intCOUNTRYID
+INFO 2017-06-02 11:49:38  t_countrys
+INFO 2017-06-02 11:49:38  t_souscripteur_passeport  -> intNATIONALITY
+INFO 2017-06-02 11:49:38  t_countrys
+INFO 2017-06-02 11:49:38  t_tranche_site  -> lgTRANCHEID
+INFO 2017-06-02 11:49:38  t_tranche
+INFO 2017-06-02 11:49:38  t_tranche_site  -> lgSITEID
+INFO 2017-06-02 11:49:38  t_site
+INFO 2017-06-02 11:49:38  t_tranche_site_generic  -> lgTRANCHEID
+INFO 2017-06-02 11:49:38  t_tranche
+INFO 2017-06-02 11:49:38  t_tranche_site_generic  -> lgSITEID
+INFO 2017-06-02 11:49:38  t_site
+INFO 2017-06-02 11:49:38  t_tranche_site_passeport  -> lgTRANCHEID
+INFO 2017-06-02 11:49:38  t_tranche
+INFO 2017-06-02 11:49:38  t_tranche_site_passeport  -> lgSITEID
+INFO 2017-06-02 11:49:38  t_site
+INFO 2017-06-02 11:49:38  t_transaction  -> strtransactioncodeID
+INFO 2017-06-02 11:49:38  t_transaction_code
+INFO 2017-06-02 11:49:38  t_transaction  -> struseraccountID
+INFO 2017-06-02 11:49:38  t_compte_client
+INFO 2017-06-02 11:49:38  t_transaction  -> strtransactiontypeID
+INFO 2017-06-02 11:49:38  t_transaction_type
+INFO 2017-06-02 11:49:38  t_transaction_paiement_generic  -> lgSITEID
+INFO 2017-06-02 11:49:38  t_site
+INFO 2017-06-02 11:49:38  t_transaction_paiement_generic  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_transaction_paiement_passeport  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_transaction_paiement_visa  -> lgSITEID
+INFO 2017-06-02 11:49:38  t_site
+INFO 2017-06-02 11:49:38  t_transaction_paiement_visa  -> lgORDERID
+INFO 2017-06-02 11:49:38  t_order
+INFO 2017-06-02 11:49:38  t_type_visa_type_document  -> lgTYPEVISA
+INFO 2017-06-02 11:49:38  t_type_visa
+INFO 2017-06-02 11:49:38  t_type_visa_type_document  -> lgTYPEDOCUMENTID
+INFO 2017-06-02 11:49:38  t_type_document
+INFO 2017-06-02 11:49:38  t_user  -> lgLanguageID
+INFO 2017-06-02 11:49:38  t_language
+INFO 2017-06-02 11:49:38  t_user_account_snap_shot  -> struseraccountID
+INFO 2017-06-02 11:49:38  t_compte_client
+INFO 2017-06-02 11:49:38  buildAdd
+INFO 2017-06-02 11:49:44  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:44  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:44  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:44  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:44  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:44  Opération effectuée avec succes
+INFO 2017-06-02 11:49:44  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:44  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:45  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:45  Opération effectuée avec succes
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:45  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:45  Opération effectuée avec succes
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:45  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:45  Opération effectuée avec succes
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:45  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:45  Opération effectuée avec succes
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:45  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:45  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:45  Opération effectuée avec succes
+INFO 2017-06-02 11:49:46  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:46  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:46  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:46  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:46  Opération effectuée avec succes
+INFO 2017-06-02 11:49:46  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:46  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:46  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:46  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:46  Opération effectuée avec succes
+INFO 2017-06-02 11:49:46  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:46  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:46  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:46  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:46  Opération effectuée avec succes
+INFO 2017-06-02 11:49:46  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:46  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:46  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:46  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:46  Opération effectuée avec succes
+INFO 2017-06-02 11:49:47  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:47  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:47  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:47  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:47  Opération effectuée avec succes
+INFO 2017-06-02 11:49:47  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:47  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:47  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:47  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:47  Opération effectuée avec succes
+INFO 2017-06-02 11:49:47  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:47  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:47  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:47  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:47  Opération effectuée avec succes
+INFO 2017-06-02 11:49:47  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:47  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:48  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:48  Opération effectuée avec succes
+INFO 2017-06-02 11:49:48  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:48  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:48  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:48  Opération effectuée avec succes
+INFO 2017-06-02 11:49:48  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:48  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:48  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:48  Opération effectuée avec succes
+INFO 2017-06-02 11:49:48  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:48  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:48  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:48  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:48  Opération effectuée avec succes
+INFO 2017-06-02 11:49:48  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:48  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:49  Opération effectuée avec succes
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:49  Opération effectuée avec succes
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:49  Opération effectuée avec succes
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:49  Opération effectuée avec succes
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:49  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:49  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:49  Opération effectuée avec succes
+INFO 2017-06-02 11:49:50  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:50  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:50  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:50  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:50  Opération effectuée avec succes
+INFO 2017-06-02 11:49:50  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:50  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:50  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:50  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:50  Opération effectuée avec succes
+INFO 2017-06-02 11:49:50  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:50  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:50  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:50  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:50  Opération effectuée avec succes
+INFO 2017-06-02 11:49:50  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:50  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:50  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:50  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:50  Opération effectuée avec succes
+INFO 2017-06-02 11:49:51  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:51  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:51  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:51  Opération effectuée avec succes
+INFO 2017-06-02 11:49:51  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:51  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:51  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:51  Opération effectuée avec succes
+INFO 2017-06-02 11:49:51  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:51  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:51  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:51  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:51  Opération effectuée avec succes
+INFO 2017-06-02 11:49:51  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:52  Opération effectuée avec succes
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:52  Opération effectuée avec succes
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:52  Opération effectuée avec succes
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:52  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:52  Opération effectuée avec succes
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:52  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:53  Opération effectuée avec succes
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:53  Opération effectuée avec succes
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:53  Opération effectuée avec succes
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:53  Opération effectuée avec succes
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:53  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:53  Opération effectuée avec succes
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:53  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:54  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:54  Opération effectuée avec succes
+INFO 2017-06-02 11:49:54  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:54  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:54  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:54  Opération effectuée avec succes
+INFO 2017-06-02 11:49:54  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:54  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:54  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:54  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:54  Opération effectuée avec succes
+INFO 2017-06-02 11:49:54  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:54  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:55  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:55  Opération effectuée avec succes
+INFO 2017-06-02 11:49:55  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:55  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:55  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:55  Opération effectuée avec succes
+INFO 2017-06-02 11:49:55  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:55  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:55  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:55  Opération effectuée avec succes
+INFO 2017-06-02 11:49:55  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:55  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:55  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:55  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:55  Opération effectuée avec succes
+INFO 2017-06-02 11:49:55  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:55  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:56  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:56  Opération effectuée avec succes
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:56  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:56  Opération effectuée avec succes
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:56  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:56  Opération effectuée avec succes
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:56  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:56  Opération effectuée avec succes
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:56  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:56  Opération effectuée avec succes
+INFO 2017-06-02 11:49:56  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:57  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:57  Opération effectuée avec succes
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:57  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:57  Opération effectuée avec succes
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:57  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:57  Opération effectuée avec succes
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:57  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:57  Opération effectuée avec succes
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:57  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:57  Opération effectuée avec succes
+INFO 2017-06-02 11:49:57  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:58  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:58  Opération effectuée avec succes
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:58  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:58  Opération effectuée avec succes
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:58  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:58  Opération effectuée avec succes
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:58  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:58  Opération effectuée avec succes
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:58  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:58  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:58  Opération effectuée avec succes
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:59  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:59  Opération effectuée avec succes
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:59  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:59  Opération effectuée avec succes
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:59  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:59  Opération effectuée avec succes
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:59  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:59  Opération effectuée avec succes
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:49:59  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:49:59  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:49:59  Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:00  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:00  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:00  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:00  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:00  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:00  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Opération effectuée avec succes
+INFO 2017-06-02 11:50:00  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:01  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:01  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:01  Opération effectuée avec succes
+INFO 2017-06-02 11:50:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:01  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:01  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:01  Opération effectuée avec succes
+INFO 2017-06-02 11:50:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:01  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:01  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:01  Opération effectuée avec succes
+INFO 2017-06-02 11:50:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:01  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:01  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:01  Opération effectuée avec succes
+INFO 2017-06-02 11:50:01  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:02  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:02  Opération effectuée avec succes
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:02  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:02  Opération effectuée avec succes
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:02  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:02  Opération effectuée avec succes
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:02  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:02  Opération effectuée avec succes
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:02  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:02  Opération effectuée avec succes
+INFO 2017-06-02 11:50:02  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:03  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:03  Opération effectuée avec succes
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:03  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:03  Opération effectuée avec succes
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:03  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:03  Opération effectuée avec succes
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:03  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:03  Opération effectuée avec succes
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:03  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:03  Opération effectuée avec succes
+INFO 2017-06-02 11:50:03  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:04  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:04  Opération effectuée avec succes
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:04  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:04  Opération effectuée avec succes
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:04  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:04  Opération effectuée avec succes
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:04  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:04  Opération effectuée avec succes
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:04  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:04  Opération effectuée avec succes
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:04  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:04  Opération effectuée avec succes
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:04  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:05  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:05  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:05  Opération effectuée avec succes
+INFO 2017-06-02 11:50:05  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:05  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:05  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:05  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:05  Opération effectuée avec succes
+INFO 2017-06-02 11:50:05  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:05  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:05  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:05  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:05  Opération effectuée avec succes
+INFO 2017-06-02 11:50:05  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:05  Message Retour depuis bllbase  @@@@@@    1
+INFO 2017-06-02 11:50:05  Message Retour depuis bllbase  @@@@@@    1
+WARNING 2017-06-02 11:50:05  Can't find resource for bundle java.util.PropertyResourceBundle, key Opération effectuée avec succes
+INFO 2017-06-02 11:50:05  Opération effectuée avec succes
+INFO 2017-06-02 11:50:05  initMenuConfig
+INFO 2017-06-02 11:50:05  t_alert_event  - TAlertEvent - str_Event null
+INFO 2017-06-02 11:50:05             dtDateEnvoi Date false  null
+INFO 2017-06-02 11:50:05             intMaxMessages Integer false  null
+INFO 2017-06-02 11:50:05             strEvent String false  null
+INFO 2017-06-02 11:50:05             bIsCommand Boolean false  null
+INFO 2017-06-02 11:50:05             strSMSEnglishText String false  null
+INFO 2017-06-02 11:50:05             decNumPercent BigDecimal false  null
+INFO 2017-06-02 11:50:05             strMAILEnglishText String false  null
+INFO 2017-06-02 11:50:05             bRowActive Boolean false  null
+INFO 2017-06-02 11:50:05             strSMSFrenchText String false  null
+INFO 2017-06-02 11:50:05             lgUIDWhoNew String false  null
+INFO 2017-06-02 11:50:05             lgUIDWhoLastUpdate String false  null
+INFO 2017-06-02 11:50:05             strMAILFrenchText String false  null
+INFO 2017-06-02 11:50:05             dtLastEnterDate Date false  null
+INFO 2017-06-02 11:50:05             strERRORCODE String false  null
+INFO 2017-06-02 11:50:05  t_annonce  - TAnnonce - lg_ANNONCE_ID null
+INFO 2017-06-02 11:50:05             lgANNONCEID String false  null
+INFO 2017-06-02 11:50:05             strLIBELLE String false  null
+INFO 2017-06-02 11:50:05             strMOTIF String false  null
+INFO 2017-06-02 11:50:05             dtDATE Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_annonce_detail  - TAnnonceDetail - lg_ANNONCE_DETAIL_ID null
+INFO 2017-06-02 11:50:05             lgANNONCEDETAILID String false  null
+INFO 2017-06-02 11:50:05             lgANNONCEID TAnnonce true TAnnonce 1
+INFO 2017-06-02 11:50:05             lgTRANCHESITEID TTrancheSite true TTrancheSite 64
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_caisse  - TCaisse - lg_CAISSE_ID null
+INFO 2017-06-02 11:50:05             lgCAISSEID String false  null
+INFO 2017-06-02 11:50:05             intSOLDE Double false  null
+INFO 2017-06-02 11:50:05             lgUSERID TUser true TUser 82
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             lgUPDATEDBY String false  null
+INFO 2017-06-02 11:50:05             lgCREATEDBY String false  null
+INFO 2017-06-02 11:50:05  t_calendar_type  - TCalendarType - id name
+INFO 2017-06-02 11:50:05             id Integer false  null
+INFO 2017-06-02 11:50:05             userId int false  null
+INFO 2017-06-02 11:50:05             color String false  null
+INFO 2017-06-02 11:50:05             creationDate Date false  null
+INFO 2017-06-02 11:50:05             description String false  null
+INFO 2017-06-02 11:50:05             hide Boolean false  null
+INFO 2017-06-02 11:50:05             name String false  null
+INFO 2017-06-02 11:50:05             updateDate Date false  null
+INFO 2017-06-02 11:50:05  t_cash_transaction  - TCashTransaction - ID strDESCRIPTION
+INFO 2017-06-02 11:50:05             id String false  null
+INFO 2017-06-02 11:50:05             strTRANSACTIONREF String false  null
+INFO 2017-06-02 11:50:05             intAMOUNT Integer false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             lgCREATEDBY String false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             lgUPDATEDBY String false  null
+INFO 2017-06-02 11:50:05             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:05             lgUSERID String false  null
+INFO 2017-06-02 11:50:05             intAMOUNTDEBIT Integer false  null
+INFO 2017-06-02 11:50:05             intAMOUNTCREDIT Integer false  null
+INFO 2017-06-02 11:50:05             strNUMEROCOMPTE String false  null
+INFO 2017-06-02 11:50:05             intAMOUNTREMIS Integer false  null
+INFO 2017-06-02 11:50:05             intAMOUNTRECU Integer false  null
+INFO 2017-06-02 11:50:05             lgTYPEREGLEMENTID TTypeReglement true TTypeReglement 79
+INFO 2017-06-02 11:50:05             strRESSOURCEREF String false  null
+INFO 2017-06-02 11:50:05  t_client  - TClient - lg_CLIENT_ID strFIRSTNAME
+INFO 2017-06-02 11:50:05             lgCLIENTID String false  null
+INFO 2017-06-02 11:50:05             strCODEINTERNE String false  null
+INFO 2017-06-02 11:50:05             strFIRSTNAME String false  null
+INFO 2017-06-02 11:50:05             strLASTNAME String false  null
+INFO 2017-06-02 11:50:05             strNUMEROSECURITESOCIAL String false  null
+INFO 2017-06-02 11:50:05             dtNAISSANCE Date false  null
+INFO 2017-06-02 11:50:05             strSEXE String false  null
+INFO 2017-06-02 11:50:05             strADRESSE String false  null
+INFO 2017-06-02 11:50:05             strDOMICILE String false  null
+INFO 2017-06-02 11:50:05             strAUTREADRESSE String false  null
+INFO 2017-06-02 11:50:05             strCODEPOSTAL String false  null
+INFO 2017-06-02 11:50:05             strCOMMENTAIRE String false  null
+INFO 2017-06-02 11:50:05             lgTYPECLIENTID TTypeClient true TTypeClient 73
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             lgVILLEID TVille true TVille 84
+INFO 2017-06-02 11:50:05             lgMEDECINID String false  null
+INFO 2017-06-02 11:50:05  t_code_generic  - TCodeGeneric - lg_CODE_GENERIC_ID null
+INFO 2017-06-02 11:50:05             lgCODEGENERICID String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strCODEVALUE String false  null
+INFO 2017-06-02 11:50:05             dtEXPIRATIONDATE Date false  null
+INFO 2017-06-02 11:50:05             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:05             bISARRIVE Boolean false  null
+INFO 2017-06-02 11:50:05  t_code_passeport  - TCodePasseport - lg_CODE_ID null
+INFO 2017-06-02 11:50:05             lgCODEID String false  null
+INFO 2017-06-02 11:50:05             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strCODEVALUE String false  null
+INFO 2017-06-02 11:50:05             dtEXPIRATIONDATE Date false  null
+INFO 2017-06-02 11:50:05  t_code_visa  - TCodeVisa - lg_CODE_ID null
+INFO 2017-06-02 11:50:05             lgCODEID String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strCODEVALUE String false  null
+INFO 2017-06-02 11:50:05             dtEXPIRATIONDATE Date false  null
+INFO 2017-06-02 11:50:05             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:05             bISARRIVE Boolean false  null
+INFO 2017-06-02 11:50:05             lgTYPEVISA TTypeVisa true TTypeVisa 80
+INFO 2017-06-02 11:50:05  t_coffre_caisse  - TCoffreCaisse - ID_COFFRE_CAISSE null
+INFO 2017-06-02 11:50:05             idCoffreCaisse String false  null
+INFO 2017-06-02 11:50:05             lgUSERID TUser true TUser 82
+INFO 2017-06-02 11:50:05             intAMOUNT Double false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             ldCREATEDBY String false  null
+INFO 2017-06-02 11:50:05             ldUPDATEDBY String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05  t_compte_client  - TCompteClient - lg_COMPTE_CLIENT_ID strLASTNAME
+INFO 2017-06-02 11:50:05             lgCOMPTECLIENTID String false  null
+INFO 2017-06-02 11:50:05             strCODECOMPTECLIENT String false  null
+INFO 2017-06-02 11:50:05             dblQUOTACONSOMENSUELLE Double false  null
+INFO 2017-06-02 11:50:05             dblCAUTION Double false  null
+INFO 2017-06-02 11:50:05             decBalance Double false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             lgCLIENTID TClient true TClient 6
+INFO 2017-06-02 11:50:05             intCOUNTERTRANSACTION Integer false  null
+INFO 2017-06-02 11:50:05             decbalanceDisponible Integer false  null
+INFO 2017-06-02 11:50:05             decBalanceInDisponible Integer false  null
+INFO 2017-06-02 11:50:05             dtEffective Date false  null
+INFO 2017-06-02 11:50:05             strLASTNAME String false  null
+INFO 2017-06-02 11:50:05             strFIRSTNAME String false  null
+INFO 2017-06-02 11:50:05             strEMAIL String false  null
+INFO 2017-06-02 11:50:05             strPHONE String false  null
+INFO 2017-06-02 11:50:05             strCIVILITE String false  null
+INFO 2017-06-02 11:50:05             intCOUNTRYID Integer false  null
+INFO 2017-06-02 11:50:05             intNATIONALITY Integer false  null
+INFO 2017-06-02 11:50:05             dtNAISSANCE Date false  null
+INFO 2017-06-02 11:50:05             strPASSWORD String false  null
+INFO 2017-06-02 11:50:05  t_concerner  - TConcerner - lg_CONCERNER_ID strLASTNAME
+INFO 2017-06-02 11:50:05             lgCONCERNERID String false  null
+INFO 2017-06-02 11:50:05             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:05             strLASTNAME String false  null
+INFO 2017-06-02 11:50:05             strFIRSTNAME String false  null
+INFO 2017-06-02 11:50:05             strEMAIL String false  null
+INFO 2017-06-02 11:50:05             strPHONE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strCIVILITE String false  null
+INFO 2017-06-02 11:50:05             intNATIONALITEORIGINE TCountrys true TCountrys 16
+INFO 2017-06-02 11:50:05             intNATIONALITEACTUELLE TCountrys true TCountrys 16
+INFO 2017-06-02 11:50:05             strNOMJEUNEFILLE String false  null
+INFO 2017-06-02 11:50:05             strCONJOINT String false  null
+INFO 2017-06-02 11:50:05             dtNAISSANCE Date false  null
+INFO 2017-06-02 11:50:05             strNAISSANCE String false  null
+INFO 2017-06-02 11:50:05             strSEXE String false  null
+INFO 2017-06-02 11:50:05             strSITUATIONMATRIMONIALE String false  null
+INFO 2017-06-02 11:50:05             intPAYSNAISSANCE String false  null
+INFO 2017-06-02 11:50:05             strPROFFESION String false  null
+INFO 2017-06-02 11:50:05             strRESIDENCEACTUELLE String false  null
+INFO 2017-06-02 11:50:05             strPicture String false  null
+INFO 2017-06-02 11:50:05  t_concerner_passeport  - TConcernerPasseport - lg_CONCERNER_ID strLASTNAME
+INFO 2017-06-02 11:50:05             lgCONCERNERID String false  null
+INFO 2017-06-02 11:50:05             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:05             strLASTNAME String false  null
+INFO 2017-06-02 11:50:05             strFIRSTNAME String false  null
+INFO 2017-06-02 11:50:05             strEMAIL String false  null
+INFO 2017-06-02 11:50:05             strPHONE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strCIVILITE String false  null
+INFO 2017-06-02 11:50:05             intNATIONALITEORIGINE TCountrys true TCountrys 16
+INFO 2017-06-02 11:50:05             intNATIONALITEACTUELLE TCountrys true TCountrys 16
+INFO 2017-06-02 11:50:05             strNOMJEUNEFILLE String false  null
+INFO 2017-06-02 11:50:05             strCONJOINT String false  null
+INFO 2017-06-02 11:50:05             dtNAISSANCE Date false  null
+INFO 2017-06-02 11:50:05             strNAISSANCE String false  null
+INFO 2017-06-02 11:50:05             strSEXE String false  null
+INFO 2017-06-02 11:50:05             strSITUATIONMATRIMONIALE String false  null
+INFO 2017-06-02 11:50:05             intPAYSNAISSANCE String false  null
+INFO 2017-06-02 11:50:05             strPROFFESION String false  null
+INFO 2017-06-02 11:50:05             strRESIDENCEACTUELLE String false  null
+INFO 2017-06-02 11:50:05             strPicture String false  null
+INFO 2017-06-02 11:50:05  t_condition  - TCondition - lg_CONDITION_ID null
+INFO 2017-06-02 11:50:05             lgCONDITIONID String false  null
+INFO 2017-06-02 11:50:05             strLIBELLE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_condition_passeport  - TConditionPasseport - lg_CONDITION_ID null
+INFO 2017-06-02 11:50:05             lgCONDITIONID String false  null
+INFO 2017-06-02 11:50:05             strLIBELLE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_countrys  - TCountrys - int_COUNTRY_ID null
+INFO 2017-06-02 11:50:05             intCOUNTRYID String false  null
+INFO 2017-06-02 11:50:05             strCOUNTRYNAME String false  null
+INFO 2017-06-02 11:50:05             a2 String false  null
+INFO 2017-06-02 11:50:05             a3 String false  null
+INFO 2017-06-02 11:50:05             number String false  null
+INFO 2017-06-02 11:50:05             idd String false  null
+INFO 2017-06-02 11:50:05             published Boolean false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05  t_demande_visa  - TDemandeVisa - lg_DEMANDE_VISA_ID null
+INFO 2017-06-02 11:50:05             lgDEMANDEVISAID String false  null
+INFO 2017-06-02 11:50:05             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:05             strNUMPASSPORT String false  null
+INFO 2017-06-02 11:50:05             lgTYPEPASSEPORTID TTypePasseport true TTypePasseport 76
+INFO 2017-06-02 11:50:05             lgNATUREPASSEPORTID TNaturePasseport true TNaturePasseport 30
+INFO 2017-06-02 11:50:05             lgMOTIFVOYAGEID TMotifVoyage true TMotifVoyage 29
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             lgDUREEVISASOLLICITEID TDureeVisaSollicite true TDureeVisaSollicite 21
+INFO 2017-06-02 11:50:05             strADRESSE String false  null
+INFO 2017-06-02 11:50:05             lgDUREESEJOURID TDureeVoyageSejour true TDureeVoyageSejour 22
+INFO 2017-06-02 11:50:05             dtDATEDELIVRANCE Date false  null
+INFO 2017-06-02 11:50:05             lgSERVICEVISAID TServicesVisa true TServicesVisa 45
+INFO 2017-06-02 11:50:05             strRESIDENCEACTUELLE String false  null
+INFO 2017-06-02 11:50:05             dtDATEFINVALIDITE Date false  null
+INFO 2017-06-02 11:50:05             strSERVICEDELIVRANCE String false  null
+INFO 2017-06-02 11:50:05  t_depenses  - TDepenses - ID_DEPENSE strDESCRIPTION
+INFO 2017-06-02 11:50:05             idDepense String false  null
+INFO 2017-06-02 11:50:05             lgTYPEDEPENSEID TTypeDepense true TTypeDepense 74
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             strCREATEDBY String false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strUPDATEDBY String false  null
+INFO 2017-06-02 11:50:05             intAMOUNT Double false  null
+INFO 2017-06-02 11:50:05             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:05             strREFFACTURE String false  null
+INFO 2017-06-02 11:50:05  t_document  - TDocument - lg_DOCUMENT_ID null
+INFO 2017-06-02 11:50:05             lgDOCUMENTID String false  null
+INFO 2017-06-02 11:50:05             strPATHRECUPAIEMENT String false  null
+INFO 2017-06-02 11:50:05             strPATHCOPIEPASSEPORT String false  null
+INFO 2017-06-02 11:50:05             strPATHCERTIFICATVACCINATION String false  null
+INFO 2017-06-02 11:50:05             strPATHRESERVATIONBILLET String false  null
+INFO 2017-06-02 11:50:05             strPATHPHOTOIDENTITE String false  null
+INFO 2017-06-02 11:50:05             strPATHLETTREINVITATION String false  null
+INFO 2017-06-02 11:50:05             strPATHAUTORISATIONPARENT String false  null
+INFO 2017-06-02 11:50:05             strPATHAUTORISATIONPARENTABSENT String false  null
+INFO 2017-06-02 11:50:05             strPATHCONFIRRESERHOTEL String false  null
+INFO 2017-06-02 11:50:05             strPATHCONFIRRESERHOTELTOURISME String false  null
+INFO 2017-06-02 11:50:05             strPATHJUSTMOYENFINANCIER String false  null
+INFO 2017-06-02 11:50:05             strPATHLETTREINVITATIONMISSION String false  null
+INFO 2017-06-02 11:50:05             strPATHCONFIRRESERHOTElMISSION String false  null
+INFO 2017-06-02 11:50:05             strPATHORDREMISSION String false  null
+INFO 2017-06-02 11:50:05             strPATHCERTIFICATIONINSCRIPTION String false  null
+INFO 2017-06-02 11:50:05             strPATHCERTIFICATSCOLARITE String false  null
+INFO 2017-06-02 11:50:05             strPATHJUSTIFICATIFLOGEMENT String false  null
+INFO 2017-06-02 11:50:05             strPATHJUSTIFICATIFBOURSE String false  null
+INFO 2017-06-02 11:50:05             strPATHASSURANCEMALADIE String false  null
+INFO 2017-06-02 11:50:05             strPATHAUTREDOCUMENT String false  null
+INFO 2017-06-02 11:50:05             lgTYPEVISAID TTypeVisa true TTypeVisa 80
+INFO 2017-06-02 11:50:05             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strPATHCONFIRRESERHOTELPRIVE String false  null
+INFO 2017-06-02 11:50:05  t_documents_visa_arrivee  - TDocumentsVisaArrivee - lg_DOCUMENT_VISA_ARRIVEE_ID null
+INFO 2017-06-02 11:50:05             lgDOCUMENTVISAARRIVEEID String false  null
+INFO 2017-06-02 11:50:05             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:05             lgTYPEVISATYPEDOCUMENTID TTypeVisaTypeDocument true TTypeVisaTypeDocument 81
+INFO 2017-06-02 11:50:05             strCOMMENT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             strPATH String false  null
+INFO 2017-06-02 11:50:05  t_duree_visa_sollicite  - TDureeVisaSollicite - lg_DUREE_VISA_SOLLICITE_ID null
+INFO 2017-06-02 11:50:05             lgDUREEVISASOLLICITEID String false  null
+INFO 2017-06-02 11:50:05             strLIBELLE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             intPOS Integer false  null
+INFO 2017-06-02 11:50:05  t_duree_voyage_sejour  - TDureeVoyageSejour - lg_DUREE_SEJOUR_ID null
+INFO 2017-06-02 11:50:05             lgDUREESEJOURID String false  null
+INFO 2017-06-02 11:50:05             strLIBELLE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             intPOS Integer false  null
+INFO 2017-06-02 11:50:05  t_event_log  - TEventLog - lg_EVENT_LOG_ID strDESCRIPTION
+INFO 2017-06-02 11:50:05             lgEVENTLOGID String false  null
+INFO 2017-06-02 11:50:05             matriculeEleve String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:05             strCREATEDBY String false  null
+INFO 2017-06-02 11:50:05             strUPDATEDBY String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             strTABLECONCERN String false  null
+INFO 2017-06-02 11:50:05             strMODULECONCERN String false  null
+INFO 2017-06-02 11:50:05  t_groupe_code_visa  - TGroupeCodeVisa - lg_GROUPE_CODE_VISA_ID null
+INFO 2017-06-02 11:50:05             lgGROUPECODEVISAID String false  null
+INFO 2017-06-02 11:50:05             strLIBELLE String false  null
+INFO 2017-06-02 11:50:05             dtDATE Date false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05  t_groupe_code_visa_detail  - TGroupeCodeVisaDetail - lg_GROUPE_CODE_VISA_DETAIL_ID null
+INFO 2017-06-02 11:50:05             lgGROUPECODEVISADETAILID String false  null
+INFO 2017-06-02 11:50:05             lgGROUPECODEVISAID TGroupeCodeVisa true TGroupeCodeVisa 24
+INFO 2017-06-02 11:50:05             lgCODEID TCodeVisa true TCodeVisa 9
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_language  - TLanguage - lg_Language_ID strDescription
+INFO 2017-06-02 11:50:05             lgLanguageID String false  null
+INFO 2017-06-02 11:50:05             strLocalCty String false  null
+INFO 2017-06-02 11:50:05             strLocalLg String false  null
+INFO 2017-06-02 11:50:05             strCode String false  null
+INFO 2017-06-02 11:50:05             strDescription String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05  t_menu  - TMenu - lg_MENU_ID strVALUE
+INFO 2017-06-02 11:50:05             lgMENUID String false  null
+INFO 2017-06-02 11:50:05             strVALUE String false  null
+INFO 2017-06-02 11:50:05             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:05             intPRIORITY Integer false  null
+INFO 2017-06-02 11:50:05             strStatus String false  null
+INFO 2017-06-02 11:50:05             pKey String false  null
+INFO 2017-06-02 11:50:05             lgMODULEID TModule true TModule 28
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_module  - TModule - lg_MODULE_ID strVALUE
+INFO 2017-06-02 11:50:05             lgMODULEID String false  null
+INFO 2017-06-02 11:50:05             strVALUE String false  null
+INFO 2017-06-02 11:50:05             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:05             intPRIORITY Integer false  null
+INFO 2017-06-02 11:50:05             strStatus String false  null
+INFO 2017-06-02 11:50:05             pKey String false  null
+INFO 2017-06-02 11:50:05             strLink String false  null
+INFO 2017-06-02 11:50:05             strIcone String false  null
+INFO 2017-06-02 11:50:05             strIconehover String false  null
+INFO 2017-06-02 11:50:05             strIconeout String false  null
+INFO 2017-06-02 11:50:05             strLinkdefault String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_motif_voyage  - TMotifVoyage - lg_MOTIF_VOYAGE_ID null
+INFO 2017-06-02 11:50:05             lgMOTIFVOYAGEID String false  null
+INFO 2017-06-02 11:50:05             strLIBELLE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_nature_passeport  - TNaturePasseport - lg_NATURE_PASSEPORT_ID null
+INFO 2017-06-02 11:50:05             lgNATUREPASSEPORTID String false  null
+INFO 2017-06-02 11:50:05             strLIBELLE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             intPOS Integer false  null
+INFO 2017-06-02 11:50:05  t_notification  - TNotification - lg_ID strDESCRIPTION
+INFO 2017-06-02 11:50:05             lgID String false  null
+INFO 2017-06-02 11:50:05             lgUSERIDIN TUser true TUser 82
+INFO 2017-06-02 11:50:05             lgUSERIDOUT TUser true TUser 82
+INFO 2017-06-02 11:50:05             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:05             strCONTENT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             strTYPE String false  null
+INFO 2017-06-02 11:50:05             strREFRESSOURCE String false  null
+INFO 2017-06-02 11:50:05  t_order  - TOrder - lg_ORDER_ID null
+INFO 2017-06-02 11:50:05             lgORDERID String false  null
+INFO 2017-06-02 11:50:05             strTASK String false  null
+INFO 2017-06-02 11:50:05             strORDERID String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_parameters  - TParameters - str_KEY strVALUE
+INFO 2017-06-02 11:50:05             strKEY String false  null
+INFO 2017-06-02 11:50:05             strVALUE String false  null
+INFO 2017-06-02 11:50:05             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             strISENKRYPTED String false  null
+INFO 2017-06-02 11:50:05             strSECTIONKEY String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_partenaire  - TPartenaire - lg_PARTENAIRE_ID null
+INFO 2017-06-02 11:50:05             lgPARTENAIREID String false  null
+INFO 2017-06-02 11:50:05             strLIBELLE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             intPOURCENTAGE Double false  null
+INFO 2017-06-02 11:50:05             intPART Double false  null
+INFO 2017-06-02 11:50:05             strOPPERATION String false  null
+INFO 2017-06-02 11:50:05  t_privilege  - TPrivilege - lg_PRIVELEGE_ID strNAME
+INFO 2017-06-02 11:50:05             lgPRIVELEGEID String false  null
+INFO 2017-06-02 11:50:05             strNAME String false  null
+INFO 2017-06-02 11:50:05             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:05             lgPRIVELEGEIDDEP String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             lgCREATEDBY String false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             lgUPDATEDBY String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05  t_rdv  - TRdv - lg_RDV_ID strFIRSTNAME
+INFO 2017-06-02 11:50:05             lgRDVID String false  null
+INFO 2017-06-02 11:50:05             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:05             dtDATERDV Date false  null
+INFO 2017-06-02 11:50:05             strFIRSTNAME String false  null
+INFO 2017-06-02 11:50:05             strLASTNAME String false  null
+INFO 2017-06-02 11:50:05             strEMAIL String false  null
+INFO 2017-06-02 11:50:05             strPHONE Integer false  null
+INFO 2017-06-02 11:50:05             lgTRANCHESITEID TTrancheSite true TTrancheSite 64
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_rdv_generic  - TRdvGeneric - lg_RDV_GENERIC_ID strFIRSTNAME
+INFO 2017-06-02 11:50:05             lgRDVGENERICID String false  null
+INFO 2017-06-02 11:50:05             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:05             dtDATERDV Date false  null
+INFO 2017-06-02 11:50:05             strFIRSTNAME String false  null
+INFO 2017-06-02 11:50:05             strLASTNAME String false  null
+INFO 2017-06-02 11:50:05             strEMAIL String false  null
+INFO 2017-06-02 11:50:05             strPHONE Integer false  null
+INFO 2017-06-02 11:50:05             lgTRANCHESITEGENERICID TTrancheSiteGeneric true TTrancheSiteGeneric 65
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_rdv_passeport  - TRdvPasseport - lg_RDV_PASSEPORT_ID strFIRSTNAME
+INFO 2017-06-02 11:50:05             lgRDVPASSEPORTID String false  null
+INFO 2017-06-02 11:50:05             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:05             dtDATERDV Date false  null
+INFO 2017-06-02 11:50:05             strFIRSTNAME String false  null
+INFO 2017-06-02 11:50:05             strLASTNAME String false  null
+INFO 2017-06-02 11:50:05             strEMAIL String false  null
+INFO 2017-06-02 11:50:05             strPHONE Integer false  null
+INFO 2017-06-02 11:50:05             lgTRANCHESITEPASSEPORTID TTrancheSitePasseport true TTrancheSitePasseport 66
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_recettes  - TRecettes - ID_RECETTE strDESCRIPTION
+INFO 2017-06-02 11:50:05             idRecette String false  null
+INFO 2017-06-02 11:50:05             lgTYPERECETTEID TTypeRecette true TTypeRecette 78
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             strCREATEDBY String false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strUPDATEDBY String false  null
+INFO 2017-06-02 11:50:05             intAMOUNT Double false  null
+INFO 2017-06-02 11:50:05             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:05             strREFFACTURE String false  null
+INFO 2017-06-02 11:50:05  t_repondant  - TRepondant - lg_REPONDANT_ID strLASTNAME
+INFO 2017-06-02 11:50:05             lgREPONDANTID String false  null
+INFO 2017-06-02 11:50:05             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:05             strLASTNAME String false  null
+INFO 2017-06-02 11:50:05             strFIRSTNAME String false  null
+INFO 2017-06-02 11:50:05             strEMAIL String false  null
+INFO 2017-06-02 11:50:05             strPHONE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strLASTNAMECI String false  null
+INFO 2017-06-02 11:50:05             strFIRSTNAMECI String false  null
+INFO 2017-06-02 11:50:05             strEMAILCI String false  null
+INFO 2017-06-02 11:50:05             strPHONECI String false  null
+INFO 2017-06-02 11:50:05  t_resume_caisse  - TResumeCaisse - ld_CAISSE_ID null
+INFO 2017-06-02 11:50:05             ldCAISSEID String false  null
+INFO 2017-06-02 11:50:05             lgUSERID TUser true TUser 82
+INFO 2017-06-02 11:50:05             intSOLDEMATIN Integer false  null
+INFO 2017-06-02 11:50:05             intSOLDESOIR Integer false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             lgCREATEDBY String false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             lgUPDATEDBY String false  null
+INFO 2017-06-02 11:50:05             idCoffreCaisse TCoffreCaisse true TCoffreCaisse 10
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05  t_role  - TRole - lg_ROLE_ID strNAME
+INFO 2017-06-02 11:50:05             lgROLEID String false  null
+INFO 2017-06-02 11:50:05             strNAME String false  null
+INFO 2017-06-02 11:50:05             strDESIGNATION String false  null
+INFO 2017-06-02 11:50:05             strTYPE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_role_privelege  - TRolePrivelege - lg_ROLE_PRIVILEGE null
+INFO 2017-06-02 11:50:05             lgROLEPRIVILEGE String false  null
+INFO 2017-06-02 11:50:05             lgROLEID TRole true TRole 42
+INFO 2017-06-02 11:50:05             lgPRIVILEGEID TPrivilege true TPrivilege 35
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             strCREATEDBY String false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strUPDATEDBY String false  null
+INFO 2017-06-02 11:50:05  t_role_user  - TRoleUser - lg_USER_ROLE_ID null
+INFO 2017-06-02 11:50:05             lgUSERROLEID String false  null
+INFO 2017-06-02 11:50:05             lgROLEID TRole true TRole 42
+INFO 2017-06-02 11:50:05             lgUSERID TUser true TUser 82
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strCREATEDBY String false  null
+INFO 2017-06-02 11:50:05             strUPDATEDBY String false  null
+INFO 2017-06-02 11:50:05  t_services_visa  - TServicesVisa - lg_SERVICE_VISA_ID null
+INFO 2017-06-02 11:50:05             lgSERVICEVISAID String false  null
+INFO 2017-06-02 11:50:05             strLIBELLE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05  t_site  - TSite - lg_SITE_ID strDESCRIPTION
+INFO 2017-06-02 11:50:05             lgSITEID String false  null
+INFO 2017-06-02 11:50:05             strLIBELLE String false  null
+INFO 2017-06-02 11:50:05             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:05             strTELEPHONETECH String false  null
+INFO 2017-06-02 11:50:05             strTELEPHONESTAND String false  null
+INFO 2017-06-02 11:50:05             strEMAIL String false  null
+INFO 2017-06-02 11:50:05             strSITUATIONGEOGRAPHIQUE String false  null
+INFO 2017-06-02 11:50:05             intCAPACITE Integer false  null
+INFO 2017-06-02 11:50:05             intCAPACITEPASSEPORT Integer false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             lgLONGITUDE Double false  null
+INFO 2017-06-02 11:50:05             lgLATITUDE Double false  null
+INFO 2017-06-02 11:50:05             strCOLOR String false  null
+INFO 2017-06-02 11:50:05             intCOUNTRYID TCountrys true TCountrys 16
+INFO 2017-06-02 11:50:05  t_skin  - TSkin - lg_SKIN_ID strDESCRIPTION
+INFO 2017-06-02 11:50:05             lgSKINID String false  null
+INFO 2017-06-02 11:50:05             strRESOURCE String false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:05             strDETAILPATH String false  null
+INFO 2017-06-02 11:50:05  t_snap_shop_daly_recette  - TSnapShopDalyRecette - lg_ID null
+INFO 2017-06-02 11:50:05             lgID String false  null
+INFO 2017-06-02 11:50:05             lgTYPERECETTEID TTypeRecette true TTypeRecette 78
+INFO 2017-06-02 11:50:05             intAMOUNT Double false  null
+INFO 2017-06-02 11:50:05             dtDAY Date false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             intNUMBERTRANSACTION Integer false  null
+INFO 2017-06-02 11:50:05  t_snap_shop_daly_transaction_generic_by_partenaire  - TSnapShopDalyTransactionGenericByPartenaire - lg_ID null
+INFO 2017-06-02 11:50:05             lgID String false  null
+INFO 2017-06-02 11:50:05             intAMOUNT Double false  null
+INFO 2017-06-02 11:50:05             dtDAY Date false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             intNUMBERTRANSACTION Integer false  null
+INFO 2017-06-02 11:50:05             lgPARTENAIREID TPartenaire true TPartenaire 34
+INFO 2017-06-02 11:50:05  t_snap_shop_daly_transaction_passeport_by_partenaire  - TSnapShopDalyTransactionPasseportByPartenaire - lg_ID null
+INFO 2017-06-02 11:50:05             lgID String false  null
+INFO 2017-06-02 11:50:05             intAMOUNT Double false  null
+INFO 2017-06-02 11:50:05             dtDAY Date false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             intNUMBERTRANSACTION Integer false  null
+INFO 2017-06-02 11:50:05             lgPARTENAIREID TPartenaire true TPartenaire 34
+INFO 2017-06-02 11:50:05  t_snap_shop_daly_transaction_visa_by_partenaire  - TSnapShopDalyTransactionVisaByPartenaire - lg_ID null
+INFO 2017-06-02 11:50:05             lgID String false  null
+INFO 2017-06-02 11:50:05             intAMOUNT Double false  null
+INFO 2017-06-02 11:50:05             dtDAY Date false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05             intNUMBERTRANSACTION Integer false  null
+INFO 2017-06-02 11:50:05             lgPARTENAIREID TPartenaire true TPartenaire 34
+INFO 2017-06-02 11:50:05  t_snap_shop_rdv  - TSnapShopRdv - lg_SNAPSHOPRDV_ID null
+INFO 2017-06-02 11:50:05             lgSNAPSHOPRDVID String false  null
+INFO 2017-06-02 11:50:05             lgSITEID TSite true TSite 46
+INFO 2017-06-02 11:50:05             dtDAY Date false  null
+INFO 2017-06-02 11:50:05             intNBRDV Integer false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05  t_snap_shop_rdv_generic  - TSnapShopRdvGeneric - lg_SNAPSHOPRDV_GENERIC_ID null
+INFO 2017-06-02 11:50:05             lgSNAPSHOPRDVGENERICID String false  null
+INFO 2017-06-02 11:50:05             lgSITEID TSite true TSite 46
+INFO 2017-06-02 11:50:05             dtDAY Date false  null
+INFO 2017-06-02 11:50:05             intNBRDV Integer false  null
+INFO 2017-06-02 11:50:05             dtCREATED Date false  null
+INFO 2017-06-02 11:50:05             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:05             strSTATUT String false  null
+INFO 2017-06-02 11:50:05  t_snap_shop_rdv_passeport  - TSnapShopRdvPasseport - lg_SNAPSHOPRDV_PASSEPORT_ID null
+INFO 2017-06-02 11:50:06             lgSNAPSHOPRDVPASSEPORTID String false  null
+INFO 2017-06-02 11:50:06             lgSITEID TSite true TSite 46
+INFO 2017-06-02 11:50:06             dtDAY Date false  null
+INFO 2017-06-02 11:50:06             intNBRDV Integer false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06  t_snap_shop_rdv_tranche  - TSnapShopRdvTranche - lg_SNAPSHOPRDVTRANCHE_ID null
+INFO 2017-06-02 11:50:06             lgSNAPSHOPRDVTRANCHEID String false  null
+INFO 2017-06-02 11:50:06             lgTRANCHESITEID TTrancheSite true TTrancheSite 64
+INFO 2017-06-02 11:50:06             dtDAY Date false  null
+INFO 2017-06-02 11:50:06             intNBRDV Integer false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06  t_snap_shop_rdv_tranche_generic  - TSnapShopRdvTrancheGeneric - lg_SNAPSHOPRDVTRANCHE_GENERIC_ID null
+INFO 2017-06-02 11:50:06             lgSNAPSHOPRDVTRANCHEGENERICID String false  null
+INFO 2017-06-02 11:50:06             lgTRANCHESITEID TTrancheSiteGeneric true TTrancheSiteGeneric 65
+INFO 2017-06-02 11:50:06             dtDAY Date false  null
+INFO 2017-06-02 11:50:06             intNBRDV Integer false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06  t_snap_shop_rdv_tranche_passeport  - TSnapShopRdvTranchePasseport - lg_SNAPSHOPRDVTRANCHE_PASSEPORT_ID null
+INFO 2017-06-02 11:50:06             lgSNAPSHOPRDVTRANCHEPASSEPORTID String false  null
+INFO 2017-06-02 11:50:06             lgTRANCHESITEPASSEPORTID TTrancheSitePasseport true TTrancheSitePasseport 66
+INFO 2017-06-02 11:50:06             dtDAY Date false  null
+INFO 2017-06-02 11:50:06             intNBRDV Integer false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06  t_sous_menu  - TSousMenu - lg_SOUS_MENU_ID strVALUE
+INFO 2017-06-02 11:50:06             lgSOUSMENUID String false  null
+INFO 2017-06-02 11:50:06             strVALUE String false  null
+INFO 2017-06-02 11:50:06             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:06             strCOMPOSANT String false  null
+INFO 2017-06-02 11:50:06             lgMENUID TMenu true TMenu 27
+INFO 2017-06-02 11:50:06             intPRIORITY Integer false  null
+INFO 2017-06-02 11:50:06             strURL String false  null
+INFO 2017-06-02 11:50:06             strStatus String false  null
+INFO 2017-06-02 11:50:06             pKey String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06  t_souscripteur  - TSouscripteur - lg_SOUSCRIPTEUR_ID strLASTNAME
+INFO 2017-06-02 11:50:06             lgSOUSCRIPTEURID String false  null
+INFO 2017-06-02 11:50:06             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:06             strLASTNAME String false  null
+INFO 2017-06-02 11:50:06             strFIRSTNAME String false  null
+INFO 2017-06-02 11:50:06             strEMAIL String false  null
+INFO 2017-06-02 11:50:06             strPHONE String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             strCIVILITE String false  null
+INFO 2017-06-02 11:50:06             intCOUNTRYID TCountrys true TCountrys 16
+INFO 2017-06-02 11:50:06             intNATIONALITY TCountrys true TCountrys 16
+INFO 2017-06-02 11:50:06             dtNAISSANCE Date false  null
+INFO 2017-06-02 11:50:06  t_souscripteur_passeport  - TSouscripteurPasseport - lg_SOUSCRIPTEUR_PASSEPORT_ID strLASTNAME
+INFO 2017-06-02 11:50:06             lgSOUSCRIPTEURPASSEPORTID String false  null
+INFO 2017-06-02 11:50:06             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:06             strLASTNAME String false  null
+INFO 2017-06-02 11:50:06             strFIRSTNAME String false  null
+INFO 2017-06-02 11:50:06             strEMAIL String false  null
+INFO 2017-06-02 11:50:06             strPHONE String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             strCIVILITE String false  null
+INFO 2017-06-02 11:50:06             intCOUNTRYID TCountrys true TCountrys 16
+INFO 2017-06-02 11:50:06             intNATIONALITY TCountrys true TCountrys 16
+INFO 2017-06-02 11:50:06  t_specialite  - TSpecialite - lg_SPECIALITE_ID null
+INFO 2017-06-02 11:50:06             lgSPECIALITEID String false  null
+INFO 2017-06-02 11:50:06             strLIBELLE String false  null
+INFO 2017-06-02 11:50:06             strCODESPECIALITE String false  null
+INFO 2017-06-02 11:50:06             strLIBELLESPECIALITE String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06  t_tchat_demande  - TTchatDemande - lg_TCHAT_DEMANDE_ID null
+INFO 2017-06-02 11:50:06             lgTCHATDEMANDEID String false  null
+INFO 2017-06-02 11:50:06             strGUESTNAME String false  null
+INFO 2017-06-02 11:50:06             strGUESTMAIL String false  null
+INFO 2017-06-02 11:50:06             strGUESTMESSAGE String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06  t_tranche  - TTranche - lg_TRANCHE_ID null
+INFO 2017-06-02 11:50:06             lgTRANCHEID String false  null
+INFO 2017-06-02 11:50:06             strLIBELLE String false  null
+INFO 2017-06-02 11:50:06             strHEUREDEBUT String false  null
+INFO 2017-06-02 11:50:06             strHEUREFIN String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06  t_tranche_site  - TTrancheSite - lg_TRANCHE_SITE_ID null
+INFO 2017-06-02 11:50:06             lgTRANCHESITEID String false  null
+INFO 2017-06-02 11:50:06             lgTRANCHEID TTranche true TTranche 63
+INFO 2017-06-02 11:50:06             lgSITEID TSite true TSite 46
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             intCAPACITE Integer false  null
+INFO 2017-06-02 11:50:06  t_tranche_site_generic  - TTrancheSiteGeneric - lg_TRANCHE_SITE_GENERIC_ID null
+INFO 2017-06-02 11:50:06             lgTRANCHESITEGENERICID String false  null
+INFO 2017-06-02 11:50:06             lgTRANCHEID TTranche true TTranche 63
+INFO 2017-06-02 11:50:06             lgSITEID TSite true TSite 46
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             intCAPACITE Integer false  null
+INFO 2017-06-02 11:50:06  t_tranche_site_passeport  - TTrancheSitePasseport - lg_TRANCHE_SITE_PASSEPORT_ID null
+INFO 2017-06-02 11:50:06             lgTRANCHESITEPASSEPORTID String false  null
+INFO 2017-06-02 11:50:06             lgTRANCHEID TTranche true TTranche 63
+INFO 2017-06-02 11:50:06             lgSITEID TSite true TSite 46
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             intCAPACITE Integer false  null
+INFO 2017-06-02 11:50:06  t_transaction  - TTransaction - str_transaction_id strDescription
+INFO 2017-06-02 11:50:06             strTransactionId String false  null
+INFO 2017-06-02 11:50:06             strtransactioncodeID TTransactionCode true TTransactionCode 68
+INFO 2017-06-02 11:50:06             dtTransactionDate Date false  null
+INFO 2017-06-02 11:50:06             struseraccountID TCompteClient true TCompteClient 11
+INFO 2017-06-02 11:50:06             strDescription String false  null
+INFO 2017-06-02 11:50:06             decAmount Double false  null
+INFO 2017-06-02 11:50:06             dtDateCreated Date false  null
+INFO 2017-06-02 11:50:06             strTransactionNumber String false  null
+INFO 2017-06-02 11:50:06             bValide Boolean false  null
+INFO 2017-06-02 11:50:06             strtransactiontypeID TTransactionType true TTransactionType 72
+INFO 2017-06-02 11:50:06             strMotifTransaction String false  null
+INFO 2017-06-02 11:50:06             isCancel Boolean false  null
+INFO 2017-06-02 11:50:06             decBalanceInDisponible Double false  null
+INFO 2017-06-02 11:50:06             decBalanceDisponible Double false  null
+INFO 2017-06-02 11:50:06  t_transaction_code  - TTransactionCode - str_transaction_code_ID strDescription
+INFO 2017-06-02 11:50:06             strtransactioncodeID String false  null
+INFO 2017-06-02 11:50:06             strDescription String false  null
+INFO 2017-06-02 11:50:06  t_transaction_paiement_generic  - TTransactionPaiementGeneric - lg_TRANSACTION_GENERIC_ID null
+INFO 2017-06-02 11:50:06             lgTRANSACTIONGENERICID String false  null
+INFO 2017-06-02 11:50:06             lgSITEID TSite true TSite 46
+INFO 2017-06-02 11:50:06             strURL String false  null
+INFO 2017-06-02 11:50:06             intNUMSITE Integer false  null
+INFO 2017-06-02 11:50:06             strIDUSAGER String false  null
+INFO 2017-06-02 11:50:06             strMERCHANTSESSION String false  null
+INFO 2017-06-02 11:50:06             strCLEPAY String false  null
+INFO 2017-06-02 11:50:06             intAMOUNT Integer false  null
+INFO 2017-06-02 11:50:06             strCURRENCY String false  null
+INFO 2017-06-02 11:50:06             strTRANSSTATUS String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             strPROVIDER String false  null
+INFO 2017-06-02 11:50:06             strTYPEPAYEMENT String false  null
+INFO 2017-06-02 11:50:06             dtPAIEMENT Date false  null
+INFO 2017-06-02 11:50:06             strATTESTATION String false  null
+INFO 2017-06-02 11:50:06             strNUMTRANSACTION String false  null
+INFO 2017-06-02 11:50:06             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:06  t_transaction_paiement_passeport  - TTransactionPaiementPasseport - lg_TRANSACTION_PASSEPORT_ID null
+INFO 2017-06-02 11:50:06             lgTRANSACTIONPASSEPORTID String false  null
+INFO 2017-06-02 11:50:06             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:06             strURL String false  null
+INFO 2017-06-02 11:50:06             intNUMSITE Integer false  null
+INFO 2017-06-02 11:50:06             strIDUSAGER String false  null
+INFO 2017-06-02 11:50:06             strMERCHANTSESSION String false  null
+INFO 2017-06-02 11:50:06             strCLEPAY String false  null
+INFO 2017-06-02 11:50:06             intAMOUNT Integer false  null
+INFO 2017-06-02 11:50:06             strCURRENCY String false  null
+INFO 2017-06-02 11:50:06             strTRANSSTATUS String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06  t_transaction_paiement_visa  - TTransactionPaiementVisa - lg_TRANSACTION_VISA_ID null
+INFO 2017-06-02 11:50:06             lgTRANSACTIONVISAID String false  null
+INFO 2017-06-02 11:50:06             lgSITEID TSite true TSite 46
+INFO 2017-06-02 11:50:06             strURL String false  null
+INFO 2017-06-02 11:50:06             intNUMSITE Integer false  null
+INFO 2017-06-02 11:50:06             strIDUSAGER String false  null
+INFO 2017-06-02 11:50:06             strMERCHANTSESSION String false  null
+INFO 2017-06-02 11:50:06             strCLEPAY String false  null
+INFO 2017-06-02 11:50:06             intAMOUNT Integer false  null
+INFO 2017-06-02 11:50:06             strCURRENCY String false  null
+INFO 2017-06-02 11:50:06             strTRANSSTATUS String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             strPROVIDER String false  null
+INFO 2017-06-02 11:50:06             strTYPEPAYEMENT String false  null
+INFO 2017-06-02 11:50:06             dtPAIEMENT Date false  null
+INFO 2017-06-02 11:50:06             strATTESTATION String false  null
+INFO 2017-06-02 11:50:06             strNUMTRANSACTION String false  null
+INFO 2017-06-02 11:50:06             lgORDERID TOrder true TOrder 32
+INFO 2017-06-02 11:50:06  t_transaction_type  - TTransactionType - str_transaction_type_ID strDescription
+INFO 2017-06-02 11:50:06             strtransactiontypeID String false  null
+INFO 2017-06-02 11:50:06             strDescription String false  null
+INFO 2017-06-02 11:50:06  t_type_client  - TTypeClient - lg_TYPE_CLIENT_ID strNAME
+INFO 2017-06-02 11:50:06             lgTYPECLIENTID String false  null
+INFO 2017-06-02 11:50:06             strNAME String false  null
+INFO 2017-06-02 11:50:06             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06  t_type_depense  - TTypeDepense - lg_TYPE_DEPENSE_ID strTYPEDEPENSE
+INFO 2017-06-02 11:50:06             lgTYPEDEPENSEID String false  null
+INFO 2017-06-02 11:50:06             strTYPEDEPENSE String false  null
+INFO 2017-06-02 11:50:06             strNUMEROCOMPTE String false  null
+INFO 2017-06-02 11:50:06  t_type_document  - TTypeDocument - lg_TYPE_DOCUMENT_ID strDESCRIPTION
+INFO 2017-06-02 11:50:06             lgTYPEDOCUMENTID String false  null
+INFO 2017-06-02 11:50:06             strLIBELLE String false  null
+INFO 2017-06-02 11:50:06             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06  t_type_passeport  - TTypePasseport - lg_TYPE_PASSEPORT_ID null
+INFO 2017-06-02 11:50:06             lgTYPEPASSEPORTID String false  null
+INFO 2017-06-02 11:50:06             strLIBELLE String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             intPOS Integer false  null
+INFO 2017-06-02 11:50:06  t_type_rdv  - TTypeRdv - lg_TYPE_RDV_ID null
+INFO 2017-06-02 11:50:06             lgTYPERDVID String false  null
+INFO 2017-06-02 11:50:06             strLIBELLE String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             intPOS Integer false  null
+INFO 2017-06-02 11:50:06  t_type_recette  - TTypeRecette - lg_TYPE_RECETTE_ID strTYPERECETTE
+INFO 2017-06-02 11:50:06             lgTYPERECETTEID String false  null
+INFO 2017-06-02 11:50:06             strTYPERECETTE String false  null
+INFO 2017-06-02 11:50:06             strNUMEROCOMPTE String false  null
+INFO 2017-06-02 11:50:06             isUSETVA Boolean false  null
+INFO 2017-06-02 11:50:06  t_type_reglement  - TTypeReglement - lg_TYPE_REGLEMENT_ID strNAME
+INFO 2017-06-02 11:50:06             lgTYPEREGLEMENTID String false  null
+INFO 2017-06-02 11:50:06             strNAME String false  null
+INFO 2017-06-02 11:50:06             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06  t_type_visa  - TTypeVisa - lg_TYPE_VISA strDESCRIPTION
+INFO 2017-06-02 11:50:06             lgTYPEVISA String false  null
+INFO 2017-06-02 11:50:06             strLIBELLE String false  null
+INFO 2017-06-02 11:50:06             strDESCRIPTION String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             intPOS Integer false  null
+INFO 2017-06-02 11:50:06  t_type_visa_type_document  - TTypeVisaTypeDocument - lg_TYPE_VISA_TYPE_DOCUMENT_ID null
+INFO 2017-06-02 11:50:06             lgTYPEVISATYPEDOCUMENTID String false  null
+INFO 2017-06-02 11:50:06             lgTYPEVISA TTypeVisa true TTypeVisa 80
+INFO 2017-06-02 11:50:06             lgTYPEDOCUMENTID TTypeDocument true TTypeDocument 75
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06  t_user  - TUser - lg_USER_ID strLOGIN
+INFO 2017-06-02 11:50:06             lgUSERID String false  null
+INFO 2017-06-02 11:50:06             strIDS Integer false  null
+INFO 2017-06-02 11:50:06             strLOGIN String false  null
+INFO 2017-06-02 11:50:06             strPASSWORD String false  null
+INFO 2017-06-02 11:50:06             dtCREATED Date false  null
+INFO 2017-06-02 11:50:06             dtUPDATED Date false  null
+INFO 2017-06-02 11:50:06             strCREATEDBY String false  null
+INFO 2017-06-02 11:50:06             strUPDATEDBY String false  null
+INFO 2017-06-02 11:50:06             strFIRSTNAME String false  null
+INFO 2017-06-02 11:50:06             strLASTNAME String false  null
+INFO 2017-06-02 11:50:06             strLASTCONNECTIONDATE Date false  null
+INFO 2017-06-02 11:50:06             lgLanguageID TLanguage true TLanguage 26
+INFO 2017-06-02 11:50:06             lgSKINID String false  null
+INFO 2017-06-02 11:50:06             strSTATUT String false  null
+INFO 2017-06-02 11:50:06             dtLASTACTIVITY Date false  null
+INFO 2017-06-02 11:50:06             strFUNCTION String false  null
+INFO 2017-06-02 11:50:06             strPHONE String false  null
+INFO 2017-06-02 11:50:06             strMAIL String false  null
+INFO 2017-06-02 11:50:06             intCONNEXION Integer false  null
+INFO 2017-06-02 11:50:06             bCHANGEPASSWORD Boolean false  null
+INFO 2017-06-02 11:50:06  t_user_account_snap_shot  - TUserAccountSnapShot - lg_SNAP_SHOT_ID null
+INFO 2017-06-02 11:50:06             struseraccountID TCompteClient true TCompteClient 11
+INFO 2017-06-02 11:50:06             straccounttypeID String false  null
+INFO 2017-06-02 11:50:06             decBalance Double false  null
+INFO 2017-06-02 11:50:06             dtDateCreation Date false  null
+INFO 2017-06-02 11:50:06             dtLastUpdate Date false  null
+INFO 2017-06-02 11:50:06             lgCustomerId String false  null
+INFO 2017-06-02 11:50:06             bActive Boolean false  null
+INFO 2017-06-02 11:50:06             dtEffective Date false  null
+INFO 2017-06-02 11:50:06             decBalanceDisponible Double false  null
+INFO 2017-06-02 11:50:06             decBalanceInDisponible Double false  null
+INFO 2017-06-02 11:50:06             lgSNAPSHOTID String false  null
+INFO 2017-06-02 11:50:06  t_ville  - TVille - lg_VILLE_ID strName
+INFO 2017-06-02 11:50:06             lgVILLEID String false  null
+INFO 2017-06-02 11:50:06             strName String false  null
+INFO 2017-06-02 11:50:06             strCodePostal String false  null
+INFO 2017-06-02 11:50:06             strBureauDistributeur String false  null
+INFO 2017-06-02 11:50:06             strStatut String false  null
+INFO 2017-06-02 11:50:06             dtCreated Date false  null
+INFO 2017-06-02 11:50:06             dtUpdated Date false  null
