@@ -58,7 +58,7 @@ public class ExportReportManager extends bll.bllBase {
         OTFile.setStrSTATUT(commonparameter.statut_enable);
         this.persiste(OTFile);
 
-        // this.loadAndStoreDataTExportCcPoids(OTFile);
+        this.loadAndStoreDataTExportCcPoids(OTFile);
         return OTFile;
 
     }
