@@ -42,7 +42,7 @@ public class Main {
             // ExportReportManager odttManager = new ExportReportManager();
             // odttManager.loadAndStoreDataTExportCcPoids("D:\\JAVA\\PROJECTS\\EXPORT_REPORT_C_C\\DOC\\Extraction Excel.xlsx");
             XlsFiles OXlsFiles = new XlsFiles();
-            OXlsFiles.setPath_input("D:\\JAVA\\PROJECTS\\EXPORT_REPORT_C_C\\DOC\\temp.xlsx");
+            OXlsFiles.setPath_input("..\\DOC\\temp.xlsx");
             ExportReportManager odttManager = new ExportReportManager();
             TFile OOTFile = odttManager.importFileNotProcess(new File(OXlsFiles.getPath_input()));
 
